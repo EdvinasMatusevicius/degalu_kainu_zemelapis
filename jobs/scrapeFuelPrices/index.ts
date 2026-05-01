@@ -1,5 +1,5 @@
-import { db } from '../src/lib/db'
-import { plots } from '../src/lib/schema'
+import { db } from '../../src/lib/db'
+import { plots } from '../../src/lib/schema'
 
 export async function scrapeFuelPrices(): Promise<void> {
   console.log('[scraper] Fetching test data...')

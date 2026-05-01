@@ -1,5 +1,5 @@
 import { schedule } from 'node-cron'
-import { scrapeFuelPrices } from './jobs/scrapeFuelPrices'
+import { scrapeFuelPrices } from './scrapeFuelPrices'
 
 console.log('[worker] Starting...')
 
