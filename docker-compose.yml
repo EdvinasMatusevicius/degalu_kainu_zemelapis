@@ -30,6 +30,18 @@ services:
     networks:
       - app-network
 
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/degalu_zemelapis
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+
 volumes:
   postgres_data:
 
