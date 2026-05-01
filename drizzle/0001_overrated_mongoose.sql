@@ -1,1 +1,0 @@
-ALTER TABLE "plots" ADD COLUMN "descript" text;

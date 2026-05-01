@@ -12,10 +12,12 @@
     "drizzle-orm": "^0.45.2",
     "next": "16.2.4",
     "node-cron": "^4.2.1",
+    "node-html-parser": "^7.1.0",
     "pg": "^8.20.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,6 +26,7 @@
     "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/xlsx": "^0.0.36",
     "drizzle-kit": "^0.31.10",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",

@@ -1,11 +1,11 @@
 {
-  "id": "f8fd9923-9f2e-4674-aa58-d0888803bfed",
+  "id": "6c667cb9-2c5f-4e07-8fa2-7b303cc094f4",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.plots": {
-      "name": "plots",
+    "public.fuel_prices": {
+      "name": "fuel_prices",
       "schema": "",
       "columns": {
         "id": {
@@ -14,24 +14,133 @@
           "primaryKey": true,
           "notNull": true
         },
-        "name": {
-          "name": "name",
-          "type": "text",
+        "price_date": {
+          "name": "price_date",
+          "type": "date",
           "primaryKey": false,
           "notNull": true
         },
+        "station_id": {
+          "name": "station_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "price_95": {
+          "name": "price_95",
+          "type": "numeric(6, 3)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "price_diesel": {
+          "name": "price_diesel",
+          "type": "numeric(6, 3)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "price_lpg": {
+          "name": "price_lpg",
+          "type": "numeric(6, 3)",
+          "primaryKey": false,
+          "notNull": false
+        },
         "created_at": {
           "name": "created_at",
-          "type": "timestamp",
+          "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
           "default": "now()"
         }
       },
+      "indexes": {
+        "fuel_prices_price_date_index": {
+          "name": "fuel_prices_price_date_index",
+          "columns": [
+            {
+              "expression": "price_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "fuel_prices_station_id_stations_id_fk": {
+          "name": "fuel_prices_station_id_stations_id_fk",
+          "tableFrom": "fuel_prices",
+          "tableTo": "stations",
+          "columnsFrom": [
+            "station_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "fuel_prices_price_date_station_id_unique": {
+          "name": "fuel_prices_price_date_station_id_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "price_date",
+            "station_id"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.stations": {
+      "name": "stations",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "brand": {
+          "name": "brand",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "municipality": {
+          "name": "municipality",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "address": {
+          "name": "address",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
+      "uniqueConstraints": {
+        "stations_brand_address_unique": {
+          "name": "stations_brand_address_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "brand",
+            "address"
+          ]
+        }
+      },
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false

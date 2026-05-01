@@ -1,18 +1,122 @@
+import { parse } from 'node-html-parser'
+import * as XLSX from 'xlsx'
+import { and, eq } from 'drizzle-orm'
 import { db } from '../../src/lib/db'
-import { plots } from '../../src/lib/schema'
+import { stations, fuelPrices } from '../../src/lib/schema'
 
 export async function scrapeFuelPrices(): Promise<void> {
-  console.log('[scraper] Fetching test data...')
+  const sharePointUrl = await extractSharePointUrl()
+  console.log(`[scraper] SharePoint URL: ${sharePointUrl}`)
 
-  const res = await fetch('https://httpbin.org/get')
-  if (!res.ok) throw new Error(`Fetch failed: ${res.status}`)
+  const fileGetUrl = await extractFileGetUrl(sharePointUrl)
+  console.log('[scraper] Got authenticated download URL')
 
-  const data = await res.json() as { origin: string }
+  const data = await downloadAndParseXlsx(fileGetUrl)
+  await saveToDb(data)
+}
 
-  await db.insert(plots).values({
-    name: `fuel-scrape-${Date.now()}`,
-    description: `Test scrape at ${new Date().toISOString()} from ${data.origin}`,
-  })
+async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
+  const rows = data['Degalų kainos'] ?? []
+  const dataRows = rows.filter((row) => typeof row[0] === 'number')
 
-  console.log('[scraper] Inserted record successfully')
+  const priceDate = excelSerialToDate(dataRows[0][0] as number)
+  const existing = await db.select({ id: fuelPrices.id }).from(fuelPrices).where(eq(fuelPrices.priceDate, priceDate)).limit(1)
+  if (existing.length > 0) {
+    console.log(`[scraper] Data for ${priceDate} already in DB, skipping`)
+    return
+  }
+
+  console.log(`[scraper] Processing ${dataRows.length} price rows`)
+
+  for (const row of dataRows) {
+    const priceDate = excelSerialToDate(row[0] as number)
+    const brand = row[1] as string
+    const municipality = row[2] as string
+    const address = row[3] as string
+
+    await db
+      .insert(stations)
+      .values({ brand, municipality, address })
+      .onConflictDoNothing()
+
+    const [station] = await db
+      .select({ id: stations.id })
+      .from(stations)
+      .where(and(eq(stations.brand, brand), eq(stations.address, address)))
+
+    await db
+      .insert(fuelPrices)
+      .values({
+        priceDate,
+        stationId: station.id,
+        price95: toPrice(row[4]),
+        priceDiesel: toPrice(row[5]),
+        priceLpg: toPrice(row[6]),
+      })
+      .onConflictDoNothing()
+  }
+
+  console.log(`[scraper] Done`)
+}
+
+function excelSerialToDate(serial: number): string {
+  return new Date((serial - 25569) * 86400 * 1000).toISOString().split('T')[0]
+}
+
+function toPrice(value: unknown): string | null {
+  return typeof value === 'number' ? value.toString() : null
+}
+
+async function extractSharePointUrl(): Promise<string> {
+  console.log('[scraper] Fetching ena.lt...')
+  const res = await fetch('https://www.ena.lt/degalu-kainos-degalinese/')
+  if (!res.ok) throw new Error(`ena.lt fetch failed: ${res.status}`)
+
+  const root = parse(await res.text())
+  const link = root.querySelector('a[title*="Naujausios"]')
+  if (!link) throw new Error('Fuel prices link not found on ena.lt')
+
+  const href = link.getAttribute('href')
+  if (!href) throw new Error('Link has no href')
+  return href
+}
+
+async function extractFileGetUrl(sharePointUrl: string): Promise<string> {
+  console.log('[scraper] Fetching SharePoint page...')
+
+  const redirectRes = await fetch(sharePointUrl, { redirect: 'manual' })
+  const redirectCookies = extractCookies(redirectRes.headers)
+  const viewerPageUrl = redirectRes.headers.get('location')
+  if (!viewerPageUrl) throw new Error('No redirect location from SharePoint')
+
+  const viewerPageRes = await fetch(viewerPageUrl, { headers: { Cookie: redirectCookies } })
+  if (!viewerPageRes.ok) throw new Error(`SharePoint page fetch failed: ${viewerPageRes.status}`)
+
+  const viewerPageHtml = await viewerPageRes.text()
+  const fileGetUrlMatch = viewerPageHtml.match(/"FileGetUrl":"((?:[^"\\]|\\.)*)"/)
+  if (!fileGetUrlMatch) throw new Error('FileGetUrl not found in SharePoint page')
+
+  return JSON.parse(`"${fileGetUrlMatch[1]}"`)
+}
+
+function extractCookies(headers: Headers): string {
+  return (headers as unknown as { getSetCookie?(): string[] })
+    .getSetCookie?.()
+    ?.map((c) => c.split(';')[0])
+    .join('; ') ?? ''
+}
+
+async function downloadAndParseXlsx(url: string): Promise<Record<string, unknown[][]>> {
+  console.log('[scraper] Downloading xlsx...')
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`xlsx download failed: ${res.status}`)
+
+  const buffer = Buffer.from(await res.arrayBuffer())
+  const workbook = XLSX.read(buffer, { type: 'buffer' })
+
+  const result: Record<string, unknown[][]> = {}
+  for (const sheetName of workbook.SheetNames) {
+    result[sheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 })
+  }
+  return result
 }
