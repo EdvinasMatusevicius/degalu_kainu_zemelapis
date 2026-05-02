@@ -2,7 +2,46 @@ export const dynamic = 'force-dynamic'
 
 import { db } from '@/lib/db'
 import { fuelPrices, stations } from '@/lib/schema'
-import { eq, desc } from 'drizzle-orm'
+import { eq, desc, isNotNull, and } from 'drizzle-orm'
+import StationsMap from './components/StationsMap'
+
+async function getStationsWithCoords() {
+  const latest = await db
+    .select({ priceDate: fuelPrices.priceDate })
+    .from(fuelPrices)
+    .orderBy(desc(fuelPrices.priceDate))
+    .limit(1)
+
+  const latestDate = latest[0]?.priceDate ?? null
+
+  const rows = await db
+    .select({
+      id: stations.id,
+      brand: stations.brand,
+      address: stations.address,
+      municipality: stations.municipality,
+      lat: stations.lat,
+      lon: stations.lon,
+      price95: fuelPrices.price95,
+      priceDiesel: fuelPrices.priceDiesel,
+      priceLpg: fuelPrices.priceLpg,
+    })
+    .from(stations)
+    .leftJoin(
+      fuelPrices,
+      and(
+        eq(fuelPrices.stationId, stations.id),
+        latestDate ? eq(fuelPrices.priceDate, latestDate) : undefined,
+      ),
+    )
+    .where(isNotNull(stations.lat))
+
+  return rows.map((r) => ({
+    ...r,
+    lat: parseFloat(r.lat!),
+    lon: parseFloat(r.lon!),
+  }))
+}
 
 async function getLatestPrices() {
   const latestDate = await db
@@ -33,7 +72,10 @@ async function getLatestPrices() {
 }
 
 export default async function Home() {
-  const { date, rows } = await getLatestPrices()
+  const [{ date, rows }, mapStations] = await Promise.all([
+    getLatestPrices(),
+    getStationsWithCoords(),
+  ])
 
   return (
     <div className="p-8">
@@ -42,6 +84,13 @@ export default async function Home() {
         <p className="text-gray-500 mb-6">Data: {date}</p>
       ) : (
         <p className="text-gray-500 mb-6">Nėra duomenų</p>
+      )}
+
+      {mapStations.length > 0 && (
+        <div className="mb-8">
+          <StationsMap stations={mapStations} />
+          <p className="text-xs text-gray-400 mt-1">{mapStations.length} stotys su koordinatėmis</p>
+        </div>
       )}
 
       {rows.length > 0 && (
