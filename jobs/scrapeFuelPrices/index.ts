@@ -5,14 +5,14 @@ import { db } from '../../src/lib/db'
 import { stations, fuelPrices } from '../../src/lib/schema'
 
 export async function scrapeFuelPrices(): Promise<void> {
+  console.log('[scraper] Started')
+
   const sharePointUrl = await extractSharePointUrl()
-  console.log(`[scraper] SharePoint URL: ${sharePointUrl}`)
-
   const fileGetUrl = await extractFileGetUrl(sharePointUrl)
-  console.log('[scraper] Got authenticated download URL')
-
   const data = await downloadAndParseXlsx(fileGetUrl)
   await saveToDb(data)
+
+  console.log('[scraper] Scrape successful')
 }
 
 async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
@@ -25,8 +25,6 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
     console.log(`[scraper] Data for ${priceDate} already in DB, skipping`)
     return
   }
-
-  console.log(`[scraper] Processing ${dataRows.length} price rows`)
 
   for (const row of dataRows) {
     const priceDate = excelSerialToDate(row[0] as number)
@@ -55,8 +53,6 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
       })
       .onConflictDoNothing()
   }
-
-  console.log(`[scraper] Done`)
 }
 
 function excelSerialToDate(serial: number): string {
@@ -68,7 +64,6 @@ function toPrice(value: unknown): string | null {
 }
 
 async function extractSharePointUrl(): Promise<string> {
-  console.log('[scraper] Fetching ena.lt...')
   const res = await fetch('https://www.ena.lt/degalu-kainos-degalinese/')
   if (!res.ok) throw new Error(`ena.lt fetch failed: ${res.status}`)
 
@@ -82,8 +77,6 @@ async function extractSharePointUrl(): Promise<string> {
 }
 
 async function extractFileGetUrl(sharePointUrl: string): Promise<string> {
-  console.log('[scraper] Fetching SharePoint page...')
-
   const redirectRes = await fetch(sharePointUrl, { redirect: 'manual' })
   const redirectCookies = extractCookies(redirectRes.headers)
   const viewerPageUrl = redirectRes.headers.get('location')
@@ -107,7 +100,6 @@ function extractCookies(headers: Headers): string {
 }
 
 async function downloadAndParseXlsx(url: string): Promise<Record<string, unknown[][]>> {
-  console.log('[scraper] Downloading xlsx...')
   const res = await fetch(url)
   if (!res.ok) throw new Error(`xlsx download failed: ${res.status}`)
 

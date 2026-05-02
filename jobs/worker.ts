@@ -1,16 +1,17 @@
 import { schedule } from 'node-cron'
 import { scrapeFuelPrices } from './scrapeFuelPrices'
+import { logger } from './logger'
 
-console.log('[worker] Starting...')
+let retryAfter = 0
 
 // Every minute — tighten this for production
 schedule('* * * * *', async () => {
-  console.log('[worker] Running scrape job...')
+  if (Date.now() < retryAfter) return
+
   try {
     await scrapeFuelPrices()
   } catch (err) {
-    console.error('[worker] Job failed:', err)
+    logger.error({ err }, 'Scrape job failed, retrying in 30 minutes')
+    retryAfter = Date.now() + 30 * 60 * 1000
   }
 })
-
-console.log('[worker] Cron scheduled, waiting...')
