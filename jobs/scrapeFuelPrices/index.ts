@@ -3,16 +3,18 @@ import * as XLSX from 'xlsx'
 import { and, eq } from 'drizzle-orm'
 import { db } from '../../src/lib/db'
 import { stations, fuelPrices } from '../../src/lib/schema'
+import { updateMissingCoordinates, geocodeMissingWithNominatim } from '../coordinates'
+import { logger } from '../logger'
 
 export async function scrapeFuelPrices(): Promise<void> {
-  console.log('[scraper] Started')
+  logger.info('[scraper] Started')
 
   const sharePointUrl = await extractSharePointUrl()
   const fileGetUrl = await extractFileGetUrl(sharePointUrl)
   const data = await downloadAndParseXlsx(fileGetUrl)
   await saveToDb(data)
 
-  console.log('[scraper] Scrape successful')
+  logger.info('[scraper] Done')
 }
 
 async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
@@ -20,14 +22,15 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
   const dataRows = rows.filter((row) => typeof row[0] === 'number')
 
   const priceDate = excelSerialToDate(dataRows[0][0] as number)
+
   const existing = await db.select({ id: fuelPrices.id }).from(fuelPrices).where(eq(fuelPrices.priceDate, priceDate)).limit(1)
   if (existing.length > 0) {
-    console.log(`[scraper] Data for ${priceDate} already in DB, skipping`)
+    logger.info(`[scraper] Data for ${priceDate} already in DB, skipping`)
     return
   }
 
   for (const row of dataRows) {
-    const priceDate = excelSerialToDate(row[0] as number)
+    const rowDate = excelSerialToDate(row[0] as number)
     const brand = row[1] as string
     const municipality = row[2] as string
     const address = row[3] as string
@@ -45,7 +48,7 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
     await db
       .insert(fuelPrices)
       .values({
-        priceDate,
+        priceDate: rowDate,
         stationId: station.id,
         price95: toPrice(row[4]),
         priceDiesel: toPrice(row[5]),
@@ -53,6 +56,11 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
       })
       .onConflictDoNothing()
   }
+
+  // Coordinate pipeline runs in background — doesn't block scheduling
+  updateMissingCoordinates({ allowRefresh: true })
+    .then(() => geocodeMissingWithNominatim())
+    .catch((err) => logger.error({ err }, '[scraper] Post-insert coordinate update failed'))
 }
 
 function excelSerialToDate(serial: number): string {
