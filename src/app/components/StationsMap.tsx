@@ -6,7 +6,7 @@ import { Popup } from "react-map-gl/maplibre";
 import type { MapLayerMouseEvent } from "react-map-gl/maplibre";
 import type { FeatureCollection, Point } from "geojson";
 import StationCirclesBlue, { LAYER_ID as BLUE_ID } from "./layers/StationCirclesBlue";
-import StationCirclesRed, { LAYER_ID as RED_ID } from "./layers/StationCirclesRed";
+import HeatRangeLayer from "./layers/HeatRangeLayer";
 
 type Station = {
   id: number;
@@ -22,12 +22,22 @@ type Station = {
 
 type Props = { stations: Station[] };
 
-type LayerKey = "blue" | "red";
+type LayerKey = "blue" | "dyzelis" | "a95" | "lpg";
 
-const LAYERS: Record<LayerKey, { id: string; label: string }> = {
-  blue: { id: BLUE_ID, label: "Blue" },
-  red:  { id: RED_ID,  label: "Red"  },
+const LAYERS: Record<LayerKey, { id: string; label: string; property: string }> = {
+  blue:    { id: BLUE_ID,        label: "Visi",      property: ""             },
+  dyzelis: { id: "heat-dyzelis", label: "Dyzelis",   property: "priceDiesel"  },
+  a95:     { id: "heat-a95",     label: "A95",        property: "price95"      },
+  lpg:     { id: "heat-lpg",     label: "LPG",        property: "priceLpg"     },
 };
+
+function priceRange(stations: Station[], get: (s: Station) => string | null) {
+  const prices = stations
+    .map(s => { const v = get(s); return v ? parseFloat(v) : null; })
+    .filter((p): p is number => p !== null && !isNaN(p));
+  if (prices.length === 0) return { min: 1.0, max: 2.0 };
+  return { min: Math.min(...prices), max: Math.max(...prices) };
+}
 
 function toGeoJson(stations: Station[]): FeatureCollection<Point> {
   return {
@@ -65,6 +75,12 @@ export default function StationsMap({ stations }: Props) {
 
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
 
+  const ranges = useMemo(() => ({
+    dyzelis: priceRange(stations, s => s.priceDiesel),
+    a95:     priceRange(stations, s => s.price95),
+    lpg:     priceRange(stations, s => s.priceLpg),
+  }), [stations]);
+
   const handleClick = useCallback((e: MapLayerMouseEvent) => {
     const feature = e.features?.[0];
     if (!feature) return;
@@ -90,7 +106,7 @@ export default function StationsMap({ stations }: Props) {
   return (
     <div className="relative h-full rounded-lg overflow-hidden border border-foreground/20">
       <div className="absolute top-2 left-2 z-10 flex gap-1 rounded shadow p-1 bg-white dark:bg-neutral-800">
-        {(Object.entries(LAYERS) as [LayerKey, { id: string; label: string }][]).map(([key, { label }]) => (
+        {(Object.entries(LAYERS) as [LayerKey, typeof LAYERS[LayerKey]][]).map(([key, { label }]) => (
           <button
             key={key}
             onClick={() => handleLayerChange(key)}
@@ -114,7 +130,18 @@ export default function StationsMap({ stations }: Props) {
         onMouseLeave={() => setCursor("auto")}
       >
         {activeLayer === "blue" && <StationCirclesBlue data={geoJson} />}
-        {activeLayer === "red"  && <StationCirclesRed  data={geoJson} />}
+        {activeLayer === "dyzelis" && (
+          <HeatRangeLayer layerId="heat-dyzelis" property="priceDiesel" data={geoJson}
+            minPrice={ranges.dyzelis.min} maxPrice={ranges.dyzelis.max} />
+        )}
+        {activeLayer === "a95" && (
+          <HeatRangeLayer layerId="heat-a95" property="price95" data={geoJson}
+            minPrice={ranges.a95.min} maxPrice={ranges.a95.max} />
+        )}
+        {activeLayer === "lpg" && (
+          <HeatRangeLayer layerId="heat-lpg" property="priceLpg" data={geoJson}
+            minPrice={ranges.lpg.min} maxPrice={ranges.lpg.max} />
+        )}
 
         {selected && (
           <Popup
@@ -128,7 +155,7 @@ export default function StationsMap({ stations }: Props) {
             <div className="text-sm leading-snug min-w-[140px]" style={{ color: "CanvasText", background: "Canvas" }}>
               <p className="font-semibold">{selected.brand}</p>
               <p className="mb-2">{selected.address}, {selected.municipality}</p>
-              <PriceRow label="A95"      value={selected.price95}     />
+              <PriceRow label="A95"       value={selected.price95}     />
               <PriceRow label="Dyzelinas" value={selected.priceDiesel} />
               <PriceRow label="LPG"       value={selected.priceLpg}    />
             </div>
