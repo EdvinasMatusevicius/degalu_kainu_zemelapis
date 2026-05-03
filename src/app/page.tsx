@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 import { db } from '@/lib/db'
 import { fuelPrices, stations } from '@/lib/schema'
 import { eq, desc, isNotNull, and } from 'drizzle-orm'
-import StationsMap from './components/StationsMap'
+import StationsView from './components/StationsView'
 
 async function getStationsWithCoords() {
   const latest = await db
@@ -78,49 +78,18 @@ export default async function Home() {
   ])
 
   return (
-    <div className="p-8">
+    <div className="p-8 h-screen flex flex-col">
       <h1 className="text-2xl font-bold mb-1">Degalų kainos</h1>
       {date ? (
-        <p className="text-gray-500 mb-6">Data: {date}</p>
+        <p className="text-foreground/60 mb-4">Data: {date}</p>
       ) : (
-        <p className="text-gray-500 mb-6">Nėra duomenų</p>
+        <p className="text-foreground/60 mb-4">Nėra duomenų</p>
       )}
 
-      {mapStations.length > 0 && (
-        <div className="mb-8">
-          <StationsMap stations={mapStations} />
-          <p className="text-xs text-gray-400 mt-1">{mapStations.length} stotys su koordinatėmis</p>
-        </div>
-      )}
-
-      {rows.length > 0 && (
-        <div className="overflow-x-auto">
-          <table className="border-collapse text-sm">
-            <thead>
-              <tr className="">
-                <th className="border border-gray-300 px-3 py-2 text-left">Tinklas</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Savivaldybė</th>
-                <th className="border border-gray-300 px-3 py-2 text-left">Adresas</th>
-                <th className="border border-gray-300 px-3 py-2 text-right">A95</th>
-                <th className="border border-gray-300 px-3 py-2 text-right">Dyzelinas</th>
-                <th className="border border-gray-300 px-3 py-2 text-right">LPG</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={i}>
-                  <td className="border border-gray-300 px-3 py-2">{row.brand}</td>
-                  <td className="border border-gray-300 px-3 py-2">{row.municipality}</td>
-                  <td className="border border-gray-300 px-3 py-2">{row.address}</td>
-                  <td className="border border-gray-300 px-3 py-2 text-right">{row.price95 ?? '—'}</td>
-                  <td className="border border-gray-300 px-3 py-2 text-right">{row.priceDiesel ?? '—'}</td>
-                  <td className="border border-gray-300 px-3 py-2 text-right">{row.priceLpg ?? '—'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+      {/* flex-1 min-h-0: takes all remaining vertical space; min-h-0 lets it shrink below content size */}
+      <div className="flex-1 min-h-0">
+        <StationsView mapStations={mapStations} rows={rows} />
+      </div>
     </div>
   )
 }
