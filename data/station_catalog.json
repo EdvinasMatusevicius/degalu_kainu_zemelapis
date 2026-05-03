@@ -1,0 +1,7526 @@
+{
+  "date": "2026-04-30",
+  "fetched_at": "2026-05-01T15:17+00:00",
+  "stations": [
+    {
+      "company": "Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "Palijoniškio g. 1, Utena",
+      "lat": 55.5118474,
+      "lng": 25.6000041,
+      "p95": 1.739,
+      "diesel": 1.999,
+      "lpg": 0.924
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Visagino sav.",
+      "address": "Kosmoso g. 3, Visaginas",
+      "lat": 55.5991692,
+      "lng": 26.4198645,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Kauno m. sav.",
+      "address": "Palemono g. 171, Kaunas",
+      "lat": 54.9236968,
+      "lng": 24.0690468,
+      "p95": 1.754,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kalvarijų g. 204G, Vilnius",
+      "lat": 54.7208665,
+      "lng": 25.284772,
+      "p95": 1.759,
+      "diesel": 2.019,
+      "lpg": 0.924
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kirtimų g. 23A, Vilnius",
+      "lat": 54.6511367,
+      "lng": 25.1502321,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Pelesos g. 1/2, Vilnius",
+      "lat": 54.6663728,
+      "lng": 25.274605,
+      "p95": 1.809,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Kauno g. 37, Ukmergė",
+      "lat": 55.244496,
+      "lng": 24.75002,
+      "p95": 1.769,
+      "diesel": 1.959,
+      "lpg": 0.934
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "Plento g. 17, Daugailiai",
+      "lat": 55.5939916,
+      "lng": 25.8334044,
+      "p95": 1.739,
+      "diesel": 1.999,
+      "lpg": 0.924
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Anykščių r. sav.",
+      "address": "Bajorų k.",
+      "lat": 55.6855723,
+      "lng": 25.3526414,
+      "p95": 1.739,
+      "diesel": 1.949,
+      "lpg": 0.899
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Plento g. 2B, Kairiai",
+      "lat": 55.9201684,
+      "lng": 23.4259981,
+      "p95": 1.749,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilniaus g. 8, Grigiškės",
+      "lat": 54.6774447,
+      "lng": 25.0790496,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.898
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Plytinės g. 2, Puskelnių k.",
+      "lat": 54.60539,
+      "lng": 23.4051424,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Stoties g. 49, Marijampolė",
+      "lat": 54.562859,
+      "lng": 23.3665326,
+      "p95": 1.749,
+      "diesel": 1.979,
+      "lpg": 0.929
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Širvintų r. sav.",
+      "address": "Paširvio g. 1, Paširvinčio k.",
+      "lat": 55.0251304,
+      "lng": 24.9860122,
+      "p95": 1.754,
+      "diesel": 1.994,
+      "lpg": 0.914
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Šakių r. sav.",
+      "address": "Šakių g. 51, Kudirkos Naumiestis",
+      "lat": 54.7841309,
+      "lng": 22.8733826,
+      "p95": 1.749,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Skraičionių g. 1, Skraičionių k.",
+      "lat": 54.2056459,
+      "lng": 25.6157416,
+      "p95": 1.814,
+      "diesel": 2.104,
+      "lpg": 0.914
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Kalvarijos sav.",
+      "address": "Europos g. 17, Salaperaugio k.",
+      "lat": 54.3203791,
+      "lng": 23.1398457,
+      "p95": 1.799,
+      "diesel": 2.099,
+      "lpg": 0.949
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Švenčionių g. 29A, Ignalina",
+      "lat": 55.3320479,
+      "lng": 26.1671283,
+      "p95": 1.829,
+      "diesel": 2.089,
+      "lpg": 0.899
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Šiaurės g. 39, Vilnius",
+      "lat": 54.7033878,
+      "lng": 25.4159415,
+      "p95": 1.754,
+      "diesel": 2.014,
+      "lpg": 0.899
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Marijampolės sav.",
+      "address": "Sporto g. 50A, Marijampolė",
+      "lat": 54.5672951,
+      "lng": 23.3654639,
+      "p95": 1.749,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Utenos r. sav.",
+      "address": "J. Basanavičiaus g. 1C, Utena",
+      "lat": 55.4956691,
+      "lng": 25.5817844,
+      "p95": 1.734,
+      "diesel": 1.994,
+      "lpg": 0.924
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Šv. Stepono g. 44, Vilnius",
+      "lat": 54.669143,
+      "lng": 25.2787962,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Buivydiškių g. 5, Vilnius",
+      "lat": 54.7108303,
+      "lng": 25.2404105,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Alytaus r. sav.",
+      "address": "Santaikos g. 2A, Santaikos k.",
+      "lat": 54.3883449,
+      "lng": 23.8202145,
+      "p95": 1.749,
+      "diesel": 1.999,
+      "lpg": 0.894
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Laisvės pr. 125A, Vilnius",
+      "lat": 54.7276342,
+      "lng": 25.2363041,
+      "p95": 1.719,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Dariaus ir Girėno g. 36, Obeliai",
+      "lat": 55.9485496,
+      "lng": 25.8143193,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "company": "Alauša",
+      "municipality": "Anykščių r. sav.",
+      "address": "A. Vienuolio g. 32A, Anykščiai",
+      "lat": 55.5224395,
+      "lng": 25.0899632,
+      "p95": 1.734,
+      "diesel": 1.934,
+      "lpg": 0.864
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Vilniaus g.16, Šiauliai",
+      "lat": 55.9236739,
+      "lng": 23.350151,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.905
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Pramonės g. 3A, Šiauliai",
+      "lat": 55.9178654,
+      "lng": 23.2975256,
+      "p95": 1.785,
+      "diesel": 1.989,
+      "lpg": 0.92
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Pramonės g. 28, Šiauliai",
+      "lat": 55.9046878,
+      "lng": 23.3284611,
+      "p95": 1.785,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Nuklono g. 4, Šiauliai",
+      "lat": 55.9167296,
+      "lng": 23.2469009,
+      "p95": 1.785,
+      "diesel": 1.989,
+      "lpg": 0.91
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Tilžės g. 223, Šiauliai",
+      "lat": 55.9412708,
+      "lng": 23.3262732,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": 0.91
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Šiaulių m. sav.",
+      "address": "V. Bielskio g. 47A, Šiauliai",
+      "lat": 55.9563473,
+      "lng": 23.3084505,
+      "p95": 1.78,
+      "diesel": 1.99,
+      "lpg": 0.91
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Šiaulių g.12, Radviliškis",
+      "lat": 55.8154505,
+      "lng": 23.5436826,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Beržų g. 19, Baisogalos k.",
+      "lat": 55.6423533,
+      "lng": 23.732074,
+      "p95": 1.745,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Apsaga",
+      "municipality": "Joniškio r. sav.",
+      "address": "Radikių k.",
+      "lat": 56.2074761,
+      "lng": 23.5806289,
+      "p95": 1.745,
+      "diesel": 1.955,
+      "lpg": 0.925
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Antakalnio g. 128",
+      "lat": 54.7222342,
+      "lng": 25.3171326,
+      "p95": 1.719,
+      "diesel": 2.029,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Gudžionių k., Plento g. 24",
+      "lat": 55.0939818,
+      "lng": 24.2986922,
+      "p95": 1.749,
+      "diesel": 1.989,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gerosios Vilties g. 33",
+      "lat": 54.6667672,
+      "lng": 25.2507937,
+      "p95": 1.829,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Savanorių pr. 121",
+      "lat": 54.6608115,
+      "lng": 25.2333764,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 82",
+      "lat": 54.9077624,
+      "lng": 23.874128,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 60A",
+      "lat": 54.9050351,
+      "lng": 23.8995849,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Jaučiakių k.",
+      "lat": 55.0318611,
+      "lng": 23.5955556,
+      "p95": 1.809,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 1",
+      "lat": 55.7049579,
+      "lng": 21.1635571,
+      "p95": 1.689,
+      "diesel": 1.929,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga, Klaipėdos pl. 44",
+      "lat": 55.9156229,
+      "lng": 21.0783812,
+      "p95": 1.769,
+      "diesel": 1.979,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Klaipėdos g. 4A",
+      "lat": 55.3528865,
+      "lng": 21.4632498,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Neringos sav.",
+      "address": "Neringa, Nidos-Smiltynės pl. 6",
+      "lat": 55.3008802,
+      "lng": 20.9798761,
+      "p95": 1.819,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Santaikos g. 33",
+      "lat": 54.3864789,
+      "lng": 24.0330607,
+      "p95": 1.699,
+      "diesel": 1.969,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, Gardino g. 79",
+      "lat": 53.9998992,
+      "lng": 23.9879595,
+      "p95": 1.839,
+      "diesel": 2.089,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijai, Turistų g. 88",
+      "lat": 54.2206302,
+      "lng": 23.5089351,
+      "p95": 1.669,
+      "diesel": 1.989,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Šiaulių pl. 12",
+      "lat": 56.003941,
+      "lng": 22.2447458,
+      "p95": 1.759,
+      "diesel": 2.009,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Joniškio r. sav.",
+      "address": "Joniškis, Vilniaus g. 72",
+      "lat": 56.2234129,
+      "lng": 23.5974166,
+      "p95": 1.689,
+      "diesel": 1.979,
+      "lpg": 0.879
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Miško g. 64",
+      "lat": 55.8006377,
+      "lng": 23.5659386,
+      "p95": 1.739,
+      "diesel": 1.989,
+      "lpg": 0.89
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Velžio kelias 74",
+      "lat": 55.7282053,
+      "lng": 24.3825887,
+      "p95": 1.739,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Basanavičiaus g. 1B",
+      "lat": 55.4953295,
+      "lng": 25.5748777,
+      "p95": 1.739,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Vilniaus g. 30",
+      "lat": 55.3709621,
+      "lng": 23.1331497,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Jurbarkas, Muitinės g. 22A",
+      "lat": 55.0781222,
+      "lng": 22.7447381,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Prienų r. sav.",
+      "address": "Prienai, Vilniaus g. 3A",
+      "lat": 54.6283922,
+      "lng": 23.9588413,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Kėdainiai, J. Basanavičiaus g. 95B",
+      "lat": 55.2769184,
+      "lng": 23.9558741,
+      "p95": 1.779,
+      "diesel": 2.009,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Kauno g. 49",
+      "lat": 55.2408639,
+      "lng": 24.7396036,
+      "p95": 1.769,
+      "diesel": 1.959,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Biržų r. sav.",
+      "address": "Valantiškio k.",
+      "lat": 56.1975366,
+      "lng": 24.7095643,
+      "p95": 1.719,
+      "diesel": 2.029,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šakių r. sav.",
+      "address": "Šakiai, Sodų g. 1",
+      "lat": 54.9453642,
+      "lng": 23.0457682,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vytauto g. 22",
+      "lat": 56.2594374,
+      "lng": 21.5301055,
+      "p95": 1.699,
+      "diesel": 1.949,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius  Kalvarijų g. 161A",
+      "lat": 54.724045,
+      "lng": 25.2823617,
+      "p95": 1.699,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Trakų r. sav.",
+      "address": "Trakai, Vilniaus g. 33",
+      "lat": 54.6273235,
+      "lng": 24.9485509,
+      "p95": 1.779,
+      "diesel": 2.059,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Molėtų r. sav.",
+      "address": "Molėtai, Vilniaus g.104",
+      "lat": 55.2173453,
+      "lng": 25.4033091,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Minkovskių g. 132",
+      "lat": 54.8857026,
+      "lng": 23.9119704,
+      "p95": 1.779,
+      "diesel": 2.039,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Varėna, Čiurlionio g. 63",
+      "lat": 54.2183476,
+      "lng": 24.5656262,
+      "p95": 1.849,
+      "diesel": 2.119,
+      "lpg": 0.969
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Tilžės g. 90",
+      "lat": 55.7003233,
+      "lng": 21.1991789,
+      "p95": 1.689,
+      "diesel": 1.929,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Metalo g. 4B",
+      "lat": 54.6404777,
+      "lng": 25.2674802,
+      "p95": 1.739,
+      "diesel": 1.989,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Šalčininkai, Vilniaus g. 5A",
+      "lat": 54.3179349,
+      "lng": 25.3815802,
+      "p95": 1.839,
+      "diesel": 2.129,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Širvintų r. sav.",
+      "address": "Širvintos, Musninkų g. 21",
+      "lat": 55.0322671,
+      "lng": 24.9671225,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Chemijos g. 6",
+      "lat": 54.903137,
+      "lng": 23.9827343,
+      "p95": 1.739,
+      "diesel": 1.979,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Akmenės r. sav.",
+      "address": "N. Akmenė, V. Kudirkos g. 21A",
+      "lat": 56.3189063,
+      "lng": 22.8852671,
+      "p95": 1.75,
+      "diesel": 2.05,
+      "lpg": 0.87
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Vilkaraisčio k.",
+      "lat": 54.86332552131301,
+      "lng": 25.49081858261168,
+      "p95": 1.75,
+      "diesel": 2.02,
+      "lpg": 0.89
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Smėlynės g. 169",
+      "lat": 55.7577651,
+      "lng": 24.3672487,
+      "p95": 1.739,
+      "diesel": 1.959,
+      "lpg": 0.94
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Pakruojis, Statybininkų g. 28",
+      "lat": 55.9744618,
+      "lng": 23.8689184,
+      "p95": 1.679,
+      "diesel": 1.959,
+      "lpg": 0.88
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė, Rytinio Kelio g. 2",
+      "lat": 55.4900659,
+      "lng": 22.2001901,
+      "p95": 1.679,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Pasiekų k.",
+      "lat": 54.32246847489414,
+      "lng": 23.145318026768127,
+      "p95": 1.769,
+      "diesel": 2.039,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Pietarių k. Kauno g. 164",
+      "lat": 54.5869079,
+      "lng": 23.3846463,
+      "p95": 1.709,
+      "diesel": 1.919,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Molėtų pl. 27A",
+      "lat": 54.7676771,
+      "lng": 25.2725427,
+      "p95": 1.699,
+      "diesel": 1.939,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, S. Batoro g. 15",
+      "lat": 54.6916953,
+      "lng": 25.3548995,
+      "p95": 1.749,
+      "diesel": 1.969,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Užubalių k. Senasis Ukmergės kelias 4",
+      "lat": 54.7684343,
+      "lng": 25.1969881,
+      "p95": 1.799,
+      "diesel": 2.039,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rinktinės g. 59",
+      "lat": 54.7028044,
+      "lng": 25.2882429,
+      "p95": 1.739,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Vasaros g. 15",
+      "lat": 54.5556518,
+      "lng": 23.375474,
+      "p95": 1.709,
+      "diesel": 1.919,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Telšių r. sav.",
+      "address": "Ožtakių k., Dariaus ir Girėno g. 77",
+      "lat": 55.7304344,
+      "lng": 22.3767848,
+      "p95": 1.819,
+      "diesel": 2.069,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Pandėlio k., Elektrinės g. 1",
+      "lat": 56.0192062,
+      "lng": 25.2221729,
+      "p95": 1.859,
+      "diesel": 2.119,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Užuovėjos k.",
+      "lat": 55.7639269,
+      "lng": 23.7427303,
+      "p95": 1.739,
+      "diesel": 1.989,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Vaidoto g. 153",
+      "lat": 54.8613556,
+      "lng": 23.9588064,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.979
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Triliškių k., Kauno pl. 5",
+      "lat": 54.81478,
+      "lng": 24.4578341,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Pagirių k., Marijampolės g. 1",
+      "lat": 54.703341,
+      "lng": 23.2988311,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Spanėnų k., Plento g. 46",
+      "lat": 55.0581255,
+      "lng": 24.2634656,
+      "p95": 1.819,
+      "diesel": 2.069,
+      "lpg": 0.92
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Priekulė, Klaipėdos g. 61",
+      "lat": 55.5618881,
+      "lng": 21.308762,
+      "p95": 1.74,
+      "diesel": 2.07,
+      "lpg": 0.97
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Užežerės k., Gardenio g. 39",
+      "lat": 56.1639316,
+      "lng": 22.1015473,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Taikos pr. 120",
+      "lat": 54.9173777,
+      "lng": 24.0348003,
+      "p95": 1.719,
+      "diesel": 2.009,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Kalnujų k. 1",
+      "lat": 55.3741294,
+      "lng": 23.1209756,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Liepų g. 79A",
+      "lat": 55.7208199,
+      "lng": 21.1524938,
+      "p95": 1.699,
+      "diesel": 1.939,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, M. Daukšos g. 17",
+      "lat": 56.3050956,
+      "lng": 22.3504695,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Druskininkai, Leipalingio g. 26",
+      "lat": 54.0302436,
+      "lng": 23.9832836,
+      "p95": 1.839,
+      "diesel": 2.089,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Merkinė, Vilniaus g. 87",
+      "lat": 54.1691323,
+      "lng": 24.2077437,
+      "p95": 1.839,
+      "diesel": 2.089,
+      "lpg": 0.969
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Rietavo sav.",
+      "address": "Rietavas, Dariaus ir Girėno g. 19",
+      "lat": 55.7194009,
+      "lng": 21.9285021,
+      "p95": 1.73,
+      "diesel": 1.99,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Žemaitės g. 1",
+      "lat": 55.0823811,
+      "lng": 24.2709727,
+      "p95": 1.819,
+      "diesel": 2.069,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Varėnos r. sav.",
+      "address": "Senoji Varėna, Vilniaus g. 6A",
+      "lat": 54.2564922,
+      "lng": 24.5470516,
+      "p95": 1.849,
+      "diesel": 2.119,
+      "lpg": 0.969
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šakių r. sav.",
+      "address": "Griškabūdis",
+      "lat": 54.8510876,
+      "lng": 23.170468,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Brazdžionio g. 2",
+      "lat": 54.6139256,
+      "lng": 25.3090003,
+      "p95": 1.739,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Alytaus r. sav.",
+      "address": "Likiškėlių k.",
+      "lat": 54.3878699,
+      "lng": 23.9961368,
+      "p95": 1.669,
+      "diesel": 1.979,
+      "lpg": 0.899
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Kupiškio g. 4",
+      "lat": 55.9577451,
+      "lng": 23.3160647,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.91
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Grigaičiai, Pavilnės g.",
+      "lat": 54.6806698,
+      "lng": 25.4115586,
+      "p95": 1.759,
+      "diesel": 2.019,
+      "lpg": 0.939
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kauno r. sav.",
+      "address": "Ringaudų k., Gėlių g. 1A",
+      "lat": 54.8895284,
+      "lng": 23.8045763,
+      "p95": 1.759,
+      "diesel": 2.029,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Visalaukio g. 2",
+      "lat": 54.7792861,
+      "lng": 25.3421044,
+      "p95": 1.759,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Zarasų r. sav.",
+      "address": "Sarakiškių k., Vytauto g. 61",
+      "lat": 55.7373205,
+      "lng": 26.272636,
+      "p95": 1.769,
+      "diesel": 2.049,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Noriūnų k., Parko g. 3A",
+      "lat": 55.7964476,
+      "lng": 24.8888306,
+      "p95": 1.669,
+      "diesel": 1.899,
+      "lpg": 0.849
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Klišių k., Pievų g. 2",
+      "lat": 55.0986405,
+      "lng": 22.772654,
+      "p95": 1.68,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Zarasų r. sav.",
+      "address": "Padustėlis, V. Striogos g. 4A",
+      "lat": 55.7398454,
+      "lng": 25.8521638,
+      "p95": 1.769,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Šilalės r. sav.",
+      "address": "Bučių k.",
+      "lat": 55.57025472781984,
+      "lng": 22.17670877100056,
+      "p95": 1.77,
+      "diesel": 2.02,
+      "lpg": 0.88
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Tauragės r. sav.",
+      "address": "Taurų k., Tilžės pl. 36",
+      "lat": 55.243305,
+      "lng": 22.2530088,
+      "p95": 1.719,
+      "diesel": 1.949,
+      "lpg": 0.92
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Raseinių r. sav.",
+      "address": "Girkalnio k., Žemaičių g. 39",
+      "lat": 55.3183118,
+      "lng": 23.2107843,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.92
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Zujūnų g. 2A",
+      "lat": 54.7111087,
+      "lng": 25.161795,
+      "p95": 1.719,
+      "diesel": 1.959,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Tirkšliai, Laukų g. 10",
+      "lat": 56.2625551,
+      "lng": 22.3104529,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Plungės r. sav.",
+      "address": "Plateliai,  Ž. Kalvarijos g. 1A",
+      "lat": 56.0438521,
+      "lng": 21.8157115,
+      "p95": 1.819,
+      "diesel": 2.109,
+      "lpg": 0.889
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Prienų r. sav.",
+      "address": "Veiverių k.",
+      "lat": 54.7387877,
+      "lng": 23.7287055,
+      "p95": 1.819,
+      "diesel": 2.079,
+      "lpg": 0.95
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, P. Armino g. 69",
+      "lat": 54.5338041,
+      "lng": 23.353361,
+      "p95": 1.709,
+      "diesel": 1.919,
+      "lpg": 0.909
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis, Šiaulių g. 1A",
+      "lat": 55.8255852,
+      "lng": 23.523504,
+      "p95": 1.739,
+      "diesel": 1.989,
+      "lpg": 0.91
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Druskininkų sav.",
+      "address": "Leipalingis, Merkinės g. 37",
+      "lat": 54.0946203,
+      "lng": 23.8714383,
+      "p95": 1.839,
+      "diesel": 2.089,
+      "lpg": 0.949
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Palangos m. sav.",
+      "address": "Palanga, Ganyklų g. 28C",
+      "lat": 55.9234396,
+      "lng": 21.0759718,
+      "p95": 1.769,
+      "diesel": 1.979,
+      "lpg": 0.919
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Aukštikalnio k., Mūšos g. 19",
+      "lat": 56.0713735,
+      "lng": 24.4073516,
+      "p95": 1.75,
+      "diesel": 1.98,
+      "lpg": null
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Mindaugo g. 23",
+      "lat": 55.5089869,
+      "lng": 25.1005651,
+      "p95": 1.739,
+      "diesel": 1.939,
+      "lpg": 0.869
+    },
+    {
+      "company": "Baltic Petroleum",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Dariaus ir Girėno g. 10",
+      "lat": 55.7074247,
+      "lng": 21.380302,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Borusta",
+      "municipality": "Trakų r. sav.",
+      "address": "Vilniaus g. 2a, Aukštadvaris",
+      "lat": 54.5780659,
+      "lng": 24.5214818,
+      "p95": 1.74,
+      "diesel": 1.96,
+      "lpg": 0.94
+    },
+    {
+      "company": "Borusta",
+      "municipality": "Prienų r. sav.",
+      "address": "Piliakalnio g. 3, Stakliškės",
+      "lat": 54.5822273,
+      "lng": 24.3177801,
+      "p95": 1.699,
+      "diesel": 1.939,
+      "lpg": 0.929
+    },
+    {
+      "company": "Borusta",
+      "municipality": "Birštono sav.",
+      "address": "Prienų g. 14, Birštonas",
+      "lat": 54.5953856,
+      "lng": 24.0266915,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 2A, Vilnius",
+      "lat": 54.6710025,
+      "lng": 25.2366353,
+      "p95": 1.889,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Baltupio g. 10, Vilnius",
+      "lat": 54.7359333,
+      "lng": 25.2654489,
+      "p95": 1.759,
+      "diesel": 2.009,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "A. P. Kavoliuko g. 32A, Vilnius",
+      "lat": 54.6953297,
+      "lng": 25.2182785,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Sporto g. 16A, Vilnius",
+      "lat": 54.6950807,
+      "lng": 25.2981194,
+      "p95": 1.789,
+      "diesel": 2.004,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Ukmergės g. 231, Vilnius",
+      "lat": 54.7202043,
+      "lng": 25.2463301,
+      "p95": 1.789,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kareivių g. 13, Vilnius",
+      "lat": 54.7185811,
+      "lng": 25.3006212,
+      "p95": 1.809,
+      "diesel": 2.024,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "A. Goštauto g. 13, Vilnius",
+      "lat": 54.6942218,
+      "lng": 25.2634259,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Laisvės pr. 43C, Vilnius",
+      "lat": 54.7091754,
+      "lng": 25.2280415,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "J. Tiškevičiaus g. 24, Vilnius",
+      "lat": 54.6229425,
+      "lng": 25.1103142,
+      "p95": 1.854,
+      "diesel": 2.114,
+      "lpg": 0.989
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Eišiškių pl. 11, Vilnius",
+      "lat": 54.6515293,
+      "lng": 25.2694468,
+      "p95": 1.839,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Pramonės pr. 18, Kaunas",
+      "lat": 54.9162183,
+      "lng": 23.9866766,
+      "p95": 1.864,
+      "diesel": 2.079,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno r. sav.",
+      "address": "Baltijos g. 1, Mastaičių k.",
+      "lat": 54.8188773,
+      "lng": 23.8581372,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Raudondvario pl. 107A, Kaunas",
+      "lat": 54.9081595,
+      "lng": 23.8652652,
+      "p95": 1.804,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Sudervės g. 2G, Avižienių k.",
+      "lat": 54.7603763,
+      "lng": 25.2016326,
+      "p95": 1.889,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "R. Kalantos g. 159, Kaunas",
+      "lat": 54.8940105,
+      "lng": 24.0066234,
+      "p95": 1.849,
+      "diesel": 2.069,
+      "lpg": 0.989
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Alytaus m. sav.",
+      "address": "Naujoji g. 120, Alytus",
+      "lat": 54.4246479,
+      "lng": 24.0035005,
+      "p95": 1.768,
+      "diesel": 2.049,
+      "lpg": 0.949
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Savanorių pr. 321, Kaunas",
+      "lat": 54.9198364,
+      "lng": 23.9503808,
+      "p95": 1.829,
+      "diesel": 2.089,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Veiverių g. 49A, Kaunas",
+      "lat": 54.880898,
+      "lng": 23.8942251,
+      "p95": 1.834,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Dubijos g. 20A, Šiauliai",
+      "lat": 55.9288156,
+      "lng": 23.2976162,
+      "p95": 1.819,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Talino g. 2B, Vilnius",
+      "lat": 54.7133435,
+      "lng": 25.2094358,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Pramonės g. 17a, Šiauliai",
+      "lat": 55.9093544,
+      "lng": 23.3194671,
+      "p95": 1.819,
+      "diesel": 1.999,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Elektrėnų sav.",
+      "address": "Sabališkių g. 1F, Elektrėnai",
+      "lat": 54.7891686,
+      "lng": 24.6760563,
+      "p95": 1.859,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Utenos r. sav.",
+      "address": "J. Basanavičiaus g. 108a, Utena",
+      "lat": 55.5050046,
+      "lng": 25.6209141,
+      "p95": 1.759,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Baltijos Kelio g. 33, Ūtos k.",
+      "lat": 55.8104686,
+      "lng": 24.3688145,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Palangos m. sav.",
+      "address": "Kretingos g. 56, Palanga",
+      "lat": 55.9146665,
+      "lng": 21.0779032,
+      "p95": 1.839,
+      "diesel": 2.049,
+      "lpg": 0.979
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Plento g. 1, Kuršėnai",
+      "lat": 55.999255,
+      "lng": 22.9896575,
+      "p95": 1.889,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g. 90, Klaipėda",
+      "lat": 55.6869012,
+      "lng": 21.145504,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Taikos pr. 61B, Klaipėda",
+      "lat": 55.692392,
+      "lng": 21.1537884,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "H. Manto g. 96, Klaipėda",
+      "lat": 55.7303222,
+      "lng": 21.1246904,
+      "p95": 1.814,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Marijampolės sav.",
+      "address": "Kauno g. 130, Marijampolė",
+      "lat": 54.5762251,
+      "lng": 23.3715049,
+      "p95": 1.809,
+      "diesel": 2.009,
+      "lpg": 0.95
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Alytaus m. sav.",
+      "address": "Rūtų g. 2B, Alytus",
+      "lat": 54.3950614,
+      "lng": 24.0379049,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Druskininkų sav.",
+      "address": "M. K. Čiurlionio g. 113, Druskininkai",
+      "lat": 54.0101815,
+      "lng": 23.993238,
+      "p95": 1.849,
+      "diesel": 2.099,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Panevėžio m. sav.",
+      "address": "J. Basanavičiaus g. 63, Panevėžys",
+      "lat": 55.7175054,
+      "lng": 24.3712382,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Parko g. 7A, Panevėžys",
+      "lat": 55.731737,
+      "lng": 24.3424294,
+      "p95": 1.794,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Marijampolės sav.",
+      "address": "Jono Dailidės g. 10, Marijampolė",
+      "lat": 54.557191,
+      "lng": 23.3540773,
+      "p95": 1.779,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kėdainių r. sav.",
+      "address": "J. Basanavičiaus g. 40a, Kėdainiai",
+      "lat": 55.2865804,
+      "lng": 23.9721881,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ežero g. 7, Kurėnų k.",
+      "lat": 55.3140657,
+      "lng": 24.7787908,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Telšių r. sav.",
+      "address": "Luokės g. 70, Telšiai",
+      "lat": 55.9771223,
+      "lng": 22.2651123,
+      "p95": 1.775,
+      "diesel": 1.969,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šilutės r. sav.",
+      "address": "Cintjoniškių g. 15, Šilutė",
+      "lat": 55.3503645,
+      "lng": 21.4744317,
+      "p95": 1.834,
+      "diesel": 2.035,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Varėnos r. sav.",
+      "address": "Savanorių g. 5, Varėna",
+      "lat": 54.2102459,
+      "lng": 24.5768123,
+      "p95": 1.859,
+      "diesel": 2.129,
+      "lpg": 0.979
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Žemaitijos g. 57, Mažeikiai",
+      "lat": 56.3024538,
+      "lng": 22.3454238,
+      "p95": 1.797,
+      "diesel": 1.959,
+      "lpg": 0.939
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Joniškio r. sav.",
+      "address": "Sidabros g. 2A, Satkūnų k.",
+      "lat": 56.2585625,
+      "lng": 23.6218406,
+      "p95": 1.784,
+      "diesel": 2.039,
+      "lpg": 0.925
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Respublikos g. 111A, Rokiškis",
+      "lat": 55.9522264,
+      "lng": 25.589774,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Jonavos r. sav.",
+      "address": "Vasario 16-osios g. 33, Jonava",
+      "lat": 55.0705601,
+      "lng": 24.2632109,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 39, Vilnius",
+      "lat": 54.7023542,
+      "lng": 25.264959,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kretingos r. sav.",
+      "address": "Klaipėdos g. 155, Kretinga",
+      "lat": 55.8635199,
+      "lng": 21.2177355,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Prūsų g. 26 A, Vilnius",
+      "lat": 54.6587919,
+      "lng": 25.2665323,
+      "p95": 1.839,
+      "diesel": 2.059,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Gedimino g. 42B, Radviliškis",
+      "lat": 55.8116867,
+      "lng": 23.5500705,
+      "p95": 1.779,
+      "diesel": 2.029,
+      "lpg": 0.96
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Tauragės r. sav.",
+      "address": "Gedimino g. 47, Tauragė",
+      "lat": 55.2482942,
+      "lng": 22.3030291,
+      "p95": 1.809,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Panevėžio aplinkl. 20, Šilagalio k.",
+      "lat": 55.672785160554064,
+      "lng": 24.336884163592607,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Vakarinis aplinkkelis 10, Kaunas",
+      "lat": 54.9356047,
+      "lng": 23.8701462,
+      "p95": 1.789,
+      "diesel": 2.004,
+      "lpg": 0.949
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Žemaičių pl. 19, Kaunas",
+      "lat": 54.9252968,
+      "lng": 23.8904637,
+      "p95": 1.804,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šilalės r. sav.",
+      "address": "Dvaro g. 3, Košių II k.",
+      "lat": 55.4843352,
+      "lng": 22.5879147,
+      "p95": 1.859,
+      "diesel": 2.129,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Vilniaus pl. 21, Jakų k.",
+      "lat": 55.71143935743426,
+      "lng": 21.263149671006698,
+      "p95": 1.859,
+      "diesel": 2.119,
+      "lpg": 0.95
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 24, Vilnius",
+      "lat": 54.7514091,
+      "lng": 25.2663978,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Taikos pr. 52A, Kaunas",
+      "lat": 54.9119499,
+      "lng": 23.9567415,
+      "p95": 1.839,
+      "diesel": 2.079,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Biržų r. sav.",
+      "address": "Kilučių g. 93, Biržai",
+      "lat": 56.1948403,
+      "lng": 24.7721388,
+      "p95": 1.779,
+      "diesel": 2.074,
+      "lpg": 0.96
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Briedžių takas 6B, Kaunas",
+      "lat": 54.9355,
+      "lng": 23.9597,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Islandijos pl. 61C, Kaunas",
+      "lat": 54.9335863,
+      "lng": 23.965766,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Karaliaus Mindaugo pr. 34A, Kaunas",
+      "lat": 54.8941634,
+      "lng": 23.9142007,
+      "p95": 1.854,
+      "diesel": 2.069,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Trakų r. sav.",
+      "address": "Didžiulio g. 5, Dėdeliškių k.",
+      "lat": 54.6864296,
+      "lng": 25.0540297,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.999
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Utenos r. sav.",
+      "address": "J. Basanavičiaus g. 3, Utena",
+      "lat": 55.4959844,
+      "lng": 25.5839449,
+      "p95": 1.771,
+      "diesel": 1.999,
+      "lpg": 0.939
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Nekrūnų k. 1",
+      "lat": 54.226832506547915,
+      "lng": 23.524996097928145,
+      "p95": 1.736,
+      "diesel": 2.049,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vilkaviškio g. 10, Serdokų k.",
+      "lat": 54.6286848,
+      "lng": 23.0832195,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Taikos pr. 112A, Klaipėda",
+      "lat": 55.6664679,
+      "lng": 21.1726233,
+      "p95": 1.835,
+      "diesel": 2.035,
+      "lpg": 0.94
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Vilniaus pl. 1A, Klaipėda",
+      "lat": 55.6927945,
+      "lng": 21.1797494,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pikelių k. 1",
+      "lat": 55.46145088413476,
+      "lng": 22.69296418448833,
+      "p95": 1.859,
+      "diesel": 2.129,
+      "lpg": 0.969
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kalvarijos sav.",
+      "address": "Europos g. 13a, Salaperaugio k.",
+      "lat": 54.3322371,
+      "lng": 23.1533094,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kalvarijos sav.",
+      "address": "Muitinės g. 5B, Brazavo k.",
+      "lat": 54.3681515,
+      "lng": 23.1837663,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Vilniaus g. 62, Šiauliai",
+      "lat": 55.9248038,
+      "lng": 23.3340344,
+      "p95": 1.789,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "R. Kalantos g. 68, Kaunas",
+      "lat": 54.8930507,
+      "lng": 23.9958043,
+      "p95": 1.819,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Varnių g. 46, Kaunas",
+      "lat": 54.9144567,
+      "lng": 23.9002271,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Oslo g. 12, Vilnius",
+      "lat": 54.6710312,
+      "lng": 25.1921158,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Tauragės r. sav.",
+      "address": "Dariaus ir Girėno g. 83A, Tauragė",
+      "lat": 55.266997,
+      "lng": 22.3098059,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Islandijos pl. 32, Kaunas",
+      "lat": 54.9396832,
+      "lng": 23.8926605,
+      "p95": 1.814,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Savanorių pr. 118, Vilnius",
+      "lat": 54.6618438,
+      "lng": 25.2354442,
+      "p95": 1.804,
+      "diesel": 2.009,
+      "lpg": 0.979
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "P. Žadeikos g. 1a, Vilnius",
+      "lat": 54.7305638,
+      "lng": 25.2390191,
+      "p95": 1.785,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Savanorių pr. 119A, Vilnius",
+      "lat": 54.6626698,
+      "lng": 25.2347375,
+      "p95": 1.804,
+      "diesel": 2.009,
+      "lpg": 0.979
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kareivių g. 3, Vilnius",
+      "lat": 54.7155483,
+      "lng": 25.29102,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": 0.989
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 4, Vilnius",
+      "lat": 54.7028361,
+      "lng": 25.2639154,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Gariūnų g. 45, Vilnius",
+      "lat": 54.6589215,
+      "lng": 25.1611257,
+      "p95": 1.799,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Savanorių pr. 404B, Kaunas",
+      "lat": 54.9283514,
+      "lng": 23.9739193,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": 0.949
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Tvirtovės alėja 33a, Kaunas",
+      "lat": 54.9131287,
+      "lng": 23.9260738,
+      "p95": 1.839,
+      "diesel": 2.059,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Sukilėlių pr. 120, Kaunas",
+      "lat": 54.9283933,
+      "lng": 23.92897,
+      "p95": 1.819,
+      "diesel": 2.059,
+      "lpg": 0.92
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "K. Baršausko g. 57, Kaunas",
+      "lat": 54.8990388,
+      "lng": 23.9599289,
+      "p95": 1.829,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kauno m. sav.",
+      "address": "Jonavos g. 38, Kaunas",
+      "lat": 54.9015997,
+      "lng": 23.8950293,
+      "p95": 1.819,
+      "diesel": 2.049,
+      "lpg": 0.92
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Tilžės g. 25, Šiauliai",
+      "lat": 55.9126827,
+      "lng": 23.2739983,
+      "p95": 1.809,
+      "diesel": 1.989,
+      "lpg": 0.959
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Tilžės g. 56A, Klaipėda",
+      "lat": 55.7041492,
+      "lng": 21.1608983,
+      "p95": 1.75,
+      "diesel": 1.969,
+      "lpg": 0.929
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Jūrininkų pr. 31, Klaipėda",
+      "lat": 55.6566409,
+      "lng": 21.1823952,
+      "p95": 1.789,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Sausio 15-osios g. 2, Klaipėda",
+      "lat": 55.7020689,
+      "lng": 21.1380345,
+      "p95": 1.77,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 92A, Panevėžys",
+      "lat": 55.7287147,
+      "lng": 24.3389488,
+      "p95": 1.774,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Molėtų g. 15, Didžiosios Riešės k.",
+      "lat": 54.7807412,
+      "lng": 25.2739087,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "V. Kudirkos g. 11D, Šakiai",
+      "lat": 54.9541387,
+      "lng": 23.0246372,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Muitinės g. 32, Jurbarkas",
+      "lat": 55.0771975,
+      "lng": 22.7510003,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Knygnešių g. 9, Jurbarkas",
+      "lat": 55.0854928,
+      "lng": 22.7455381,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Aristavos g. 4, Aristava",
+      "lat": 55.2971374,
+      "lng": 24.0769203,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Mozūriškiai, Mozūriškių 10",
+      "lat": 55.02042,
+      "lng": 22.9628687,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": null
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Sūduvos g. 3, Kiduliai",
+      "lat": 55.0638386,
+      "lng": 22.7807167,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Šakių r. sav.",
+      "address": "Kauno g. 50, Girėnai",
+      "lat": 54.9527529,
+      "lng": 23.0802937,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "S. Šimkaus g. 69, Seredžius",
+      "lat": 55.0789086,
+      "lng": 23.3969234,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": null
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Marijampolės g. 8, Rūdos k.",
+      "lat": 54.6783353,
+      "lng": 23.489411,
+      "p95": 1.78,
+      "diesel": 2.03,
+      "lpg": 0.92
+    },
+    {
+      "company": "Gelvybė",
+      "municipality": "Jurbarko r. sav.",
+      "address": "S. Daukanto g. 66, Jurbarkas",
+      "lat": 55.0825362,
+      "lng": 22.7889958,
+      "p95": 1.67,
+      "diesel": 2.03,
+      "lpg": 0.9
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šolių k., Pietinio Kelio g. 9",
+      "lat": 55.4853314,
+      "lng": 22.1705377,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ukmergės g. 130",
+      "lat": 54.7032049,
+      "lng": 25.2574428,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Parko g. 64",
+      "lat": 54.6859077,
+      "lng": 25.4305922,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pramonės g. 18",
+      "lat": 54.695952,
+      "lng": 25.4320796,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Rudamina, Jašiūnų g. 2",
+      "lat": 54.5971881,
+      "lng": 25.3151484,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Baltosios Vokės g 35",
+      "lat": 54.5861608,
+      "lng": 25.2351388,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Kuršių 13A",
+      "lat": 54.9361261,
+      "lng": 23.895943,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Jonavos g. 51",
+      "lat": 54.9339187,
+      "lng": 23.917586,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Betygalos g. 8",
+      "lat": 54.9045123,
+      "lng": 23.8797231,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Baltų pr. 141A",
+      "lat": 54.922867,
+      "lng": 23.8698791,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Partizanų g. 87G",
+      "lat": 54.9273436,
+      "lng": 23.9992055,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno r. sav.",
+      "address": "Garliava, Vytauto g. 111A",
+      "lat": 54.8282094,
+      "lng": 23.8730854,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kauno r. sav.",
+      "address": "Ramučiai, K. Bielinio g. 2A",
+      "lat": 54.943777,
+      "lng": 24.0339529,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Klipščių k., Šilelių g.1",
+      "lat": 55.7486717,
+      "lng": 21.1801834,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 157",
+      "lat": 55.6608743,
+      "lng": 21.1781231,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Gamyklos g. 1",
+      "lat": 55.7064158,
+      "lng": 21.3634837,
+      "p95": 1.65,
+      "diesel": 1.86,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Trepkalnių k., Mokyklos g. 2",
+      "lat": 55.6085216,
+      "lng": 21.594013,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Architektų g. 80",
+      "lat": 55.9245288,
+      "lng": 23.2795412,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Girulių g. 1",
+      "lat": 55.9221289,
+      "lng": 23.2971368,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Toliočiai, Plento g. 2B",
+      "lat": 55.9543343,
+      "lng": 23.2559893,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kelmė, V.Putvinskio g. 37",
+      "lat": 55.6434152,
+      "lng": 22.9255806,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Liepų g. 10e",
+      "lat": 55.3912316,
+      "lng": 23.1270853,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raseiniai, Maironio g. 78b",
+      "lat": 55.3899919,
+      "lng": 23.130755,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Šiaurės g. 1",
+      "lat": 55.3566091,
+      "lng": 21.4690562,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Kuosiškių k. 4",
+      "lat": 55.96580300196217,
+      "lng": 23.879537826838135,
+      "p95": 1.64,
+      "diesel": 1.87,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Šilutės r. sav.",
+      "address": "Traksėdžių k., Klaipėdos. 1",
+      "lat": 55.3625318,
+      "lng": 21.4450256,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Plungės r. sav.",
+      "address": "Varkaliai, Žemaičių g. 2A",
+      "lat": 55.8969513,
+      "lng": 21.8213402,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Tauragės r. sav.",
+      "address": "Papušynės k, Šilalės g. 105",
+      "lat": 55.2851344,
+      "lng": 22.3030551,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, S. Kerbedžio g. 7F",
+      "lat": 55.7447763,
+      "lng": 24.34628,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.85
+    },
+    {
+      "company": "Jozita",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Priestočio g. 26",
+      "lat": 55.7207548,
+      "lng": 21.1368557,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.85
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Prienų r. sav.",
+      "address": "Alytaus pl. 2, Mardosų k.",
+      "lat": 54.5087067,
+      "lng": 23.9098769,
+      "p95": 1.71,
+      "diesel": 1.99,
+      "lpg": 0.97
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Tauragės g. 29, Rimšų k.",
+      "lat": 55.2619414,
+      "lng": 22.6918021,
+      "p95": 1.79,
+      "diesel": 2.08,
+      "lpg": 0.92
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kelmės r. sav.",
+      "address": "Puttvinskio g. 29, Kelmė",
+      "lat": 55.6412613,
+      "lng": 22.9268833,
+      "p95": 1.749,
+      "diesel": 1.949,
+      "lpg": 0.929
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kretingos r. sav.",
+      "address": "Tiekėjų g. 34a, Kretinga",
+      "lat": 55.884461,
+      "lng": 21.2215329,
+      "p95": 1.74,
+      "diesel": 2.06,
+      "lpg": 0.93
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Šilalės r. sav.",
+      "address": "Paršežerio g.1, Vabalų k.",
+      "lat": 55.6194918,
+      "lng": 22.2461508,
+      "p95": 1.79,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Pagėgių sav.",
+      "address": "Klaipėdos g. 6b, Pagėgiai",
+      "lat": 55.1404171,
+      "lng": 21.9034153,
+      "p95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.94
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Plungės r. sav.",
+      "address": "Dariaus ir Girėno g. 31, Plungė",
+      "lat": 55.919887,
+      "lng": 21.8570671,
+      "p95": 1.76,
+      "diesel": 1.99,
+      "lpg": null
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšių g. 2 b, Rainių k.",
+      "lat": 55.9642451,
+      "lng": 22.2947942,
+      "p95": 1.75,
+      "diesel": 1.97,
+      "lpg": 0.93
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Raseinių r. sav.",
+      "address": "Jurbarko g. 34, Raseiniai",
+      "lat": 55.3706566,
+      "lng": 23.1192973,
+      "p95": 1.74,
+      "diesel": 1.94,
+      "lpg": 0.9
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kretingos r. sav.",
+      "address": "Platelių g. 1 a, Laivių k.",
+      "lat": 56.0630911,
+      "lng": 21.5819897,
+      "p95": 1.74,
+      "diesel": 2.07,
+      "lpg": 0.94
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Tauragės r. sav.",
+      "address": "Adakavo g. 1, Skaudvilė",
+      "lat": 55.4015729,
+      "lng": 22.5977437,
+      "p95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.94
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Šilalės r. sav.",
+      "address": "Rytinio Kelio g. 2a, Šilalė",
+      "lat": 55.4859035,
+      "lng": 22.1996267,
+      "p95": 1.68,
+      "diesel": 1.94,
+      "lpg": 0.89
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Mažeikių g. 1, Telšiai",
+      "lat": 55.9997952,
+      "lng": 22.2416104,
+      "p95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.92
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Šilutės r. sav.",
+      "address": "Klaipėdos g. 76, Žemaičių Naumiestis",
+      "lat": 55.3552823,
+      "lng": 21.6800586,
+      "p95": 1.84,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Plungės r. sav.",
+      "address": "Minijos g. 1, Aleksandravo k.",
+      "lat": 55.928876,
+      "lng": 21.6199022,
+      "p95": 1.76,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Akmenės r. sav.",
+      "address": "Plento g.2, Ventos m.",
+      "lat": 56.1943071,
+      "lng": 22.6779004,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Bačkonių k., Pastrėvio g. 1A,",
+      "lat": 54.8023132,
+      "lng": 24.5021109,
+      "p95": 1.749,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Laižuvos g. 82 d, Mažeikiai,",
+      "lat": 56.3137433,
+      "lng": 22.3682032,
+      "p95": 1.699,
+      "diesel": 1.979,
+      "lpg": 0.929
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodo g. 7, Stripinių k.",
+      "lat": 56.2804056,
+      "lng": 21.8440806,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Alytaus g. 59, Krosnos k.",
+      "lat": 54.3791165,
+      "lng": 23.5285824,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.939
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kelmės r. sav.",
+      "address": "Žemaitės g. 52, Užventis",
+      "lat": 55.7861028,
+      "lng": 22.6709028,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.93
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Ruoščių k. 1",
+      "lat": 55.33612761167063,
+      "lng": 23.914895699826452,
+      "p95": 1.713,
+      "diesel": 1.984,
+      "lpg": 0.89
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Akmenės r. sav.",
+      "address": "Skabeikių k. 4",
+      "lat": 56.1600262,
+      "lng": 22.760705,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Kalnuotės 1 k.",
+      "lat": 54.944732669430635,
+      "lng": 25.34430665563046,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.919
+    },
+    {
+      "company": "Eniris",
+      "municipality": "Telšių r. sav.",
+      "address": "Beržų g. 24/Drąsiųjų 7, Tryškiai",
+      "lat": 56.06207523260507,
+      "lng": 22.58242416917061,
+      "p95": 1.72,
+      "diesel": 1.99,
+      "lpg": 0.94
+    },
+    {
+      "company": "Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Šilo g. 1, Ylių k.",
+      "lat": 55.4129256,
+      "lng": 22.8218568,
+      "p95": 1.72,
+      "diesel": 1.95,
+      "lpg": 0.9
+    },
+    {
+      "company": "Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pievų g. 17, Slabados k.",
+      "lat": 55.3862232,
+      "lng": 23.0430188,
+      "p95": 1.77,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "company": "Naftrus",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Topolių g. 1, Degučių k.",
+      "lat": 55.970742,
+      "lng": 23.5873426,
+      "p95": 1.67,
+      "diesel": 1.92,
+      "lpg": 0.87
+    },
+    {
+      "company": "Naftrus",
+      "municipality": "Raseinių r. sav.",
+      "address": "Vilniaus g. 3B, Raseiniai",
+      "lat": 55.3703149,
+      "lng": 23.1321196,
+      "p95": 1.77,
+      "diesel": 1.989,
+      "lpg": 0.9
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kikonių g. 10, Aleksandrijos k.",
+      "lat": 55.824522,
+      "lng": 25.0010611,
+      "p95": 1.809,
+      "diesel": 2.039,
+      "lpg": 0.969
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Pumpučių g. 25, Pumpučiai",
+      "lat": 55.4243113,
+      "lng": 24.9204947,
+      "p95": 1.809,
+      "diesel": 2.039,
+      "lpg": 0.949
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Sausalaukės k. 2",
+      "lat": 55.67591301760205,
+      "lng": 25.35871365566163,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Vilniaus g. 32, Troškūnai",
+      "lat": 55.5848527,
+      "lng": 24.8784603,
+      "p95": 1.779,
+      "diesel": 2.029,
+      "lpg": 0.919
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Biržų r. sav.",
+      "address": "S. Nėries g. 35, Vabalninkas",
+      "lat": 55.975041,
+      "lng": 24.7401813,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.96
+    },
+    {
+      "company": "Narjanta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Dvariškių vs. 2",
+      "lat": 55.7734118,
+      "lng": 24.754275,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": 0.939
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Servečės g. 2, Vilnius",
+      "lat": 54.6341739,
+      "lng": 25.3045356,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Ukmergės g. 296, Vilnius",
+      "lat": 54.7361438,
+      "lng": 25.2311187,
+      "p95": 1.744,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Talino g. 2C, Vilnius",
+      "lat": 54.7138968,
+      "lng": 25.2096844,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Erfurto g. 41, Vilnius",
+      "lat": 54.672591,
+      "lng": 25.1982634,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 63, Vilnius",
+      "lat": 54.7121034,
+      "lng": 25.2707309,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "S. Stanevičiaus g. 3, Vilnius",
+      "lat": 54.7214903,
+      "lng": 25.2561146,
+      "p95": 1.749,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Žirmūnų g. 68B, Vilnius",
+      "lat": 54.7175523,
+      "lng": 25.3044856,
+      "p95": 1.769,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Rygos g. 2, Vilnius",
+      "lat": 54.71546922562901,
+      "lng": 25.229298584456494,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Savanorių pr. 220A, Vilnius",
+      "lat": 54.6442043,
+      "lng": 25.2070181,
+      "p95": 1.789,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Parodų g. 1A, Vilnius",
+      "lat": 54.6734231,
+      "lng": 25.2240676,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kauno g. 26, Vilnius",
+      "lat": 54.6715532,
+      "lng": 25.2706894,
+      "p95": 1.829,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Savanorių pr. 187, Vilnius",
+      "lat": 54.646852,
+      "lng": 25.2103082,
+      "p95": 1.789,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kedrų g. 2, Vilnius",
+      "lat": 54.6771369,
+      "lng": 25.2560022,
+      "p95": 1.849,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Molėtų pl. 8, Vilnius",
+      "lat": 54.7548195,
+      "lng": 25.2714821,
+      "p95": 1.749,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "P. Lukšio g. 22, Vilnius",
+      "lat": 54.7116784,
+      "lng": 25.2931156,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Žirmūnų g. 54C, Vilnius",
+      "lat": 54.7067448,
+      "lng": 25.304138,
+      "p95": 1.769,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Subačiaus g. 64, Vilnius",
+      "lat": 54.6767718,
+      "lng": 25.3096173,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Dariaus ir Girėno g. 17, Vilnius",
+      "lat": 54.6552621,
+      "lng": 25.2702703,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Architektų g. 130, Vilnius",
+      "lat": 54.6808398,
+      "lng": 25.2076283,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Justiniškių g. 14B, Vilnius",
+      "lat": 54.7049091,
+      "lng": 25.2147007,
+      "p95": 1.789,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 37A, Vilnius",
+      "lat": 54.7013241,
+      "lng": 25.2638052,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Pilaitės pr. 27, Vilnius",
+      "lat": 54.7091436,
+      "lng": 25.1899222,
+      "p95": 1.739,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Žirnių g. 17, Vilnius",
+      "lat": 54.6566534,
+      "lng": 25.2920381,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "J. Tiškevičiaus g. 19, Vilnius",
+      "lat": 54.6244105,
+      "lng": 25.1119854,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Eišiškių pl. 82, Vilnius",
+      "lat": 54.6212846,
+      "lng": 25.2429403,
+      "p95": 1.794,
+      "diesel": 2.014,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Gariūnų g. 55, Vilnius",
+      "lat": 54.6582884,
+      "lng": 25.1588523,
+      "p95": 1.779,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Panerių g. 42, Vilnius",
+      "lat": 54.6681843,
+      "lng": 25.2651336,
+      "p95": 1.799,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Geležinio Vilko g. 41, Vilnius",
+      "lat": 54.7041729,
+      "lng": 25.2670837,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Pramonės pr. 6A, Kaunas",
+      "lat": 54.9099418,
+      "lng": 23.9837672,
+      "p95": 1.774,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Jonavos g. 110, Kaunas",
+      "lat": 54.9133284,
+      "lng": 23.9116506,
+      "p95": 1.769,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Veiverių g. 132D, Kaunas",
+      "lat": 54.8755037,
+      "lng": 23.8909537,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Žemaičių pl. 26, Kaunas",
+      "lat": 54.9255312,
+      "lng": 23.8917929,
+      "p95": 1.784,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "R. Kalantos g. 27, Kaunas",
+      "lat": 54.8950704,
+      "lng": 23.9859176,
+      "p95": 1.779,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Ateities pl. 50B, Kaunas",
+      "lat": 54.9260285,
+      "lng": 24.0605624,
+      "p95": 1.759,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Taikos pr. 80A, Kaunas",
+      "lat": 54.9120996,
+      "lng": 23.9726146,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Birželio 23-iosios g. 23A, Kaunas",
+      "lat": 54.9159784,
+      "lng": 23.9535991,
+      "p95": 1.799,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Islandijos pl. 191E, Kaunas",
+      "lat": 54.9314194,
+      "lng": 23.9508055,
+      "p95": 1.769,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Raudondvario pl. 103, Kaunas",
+      "lat": 54.9068617,
+      "lng": 23.8728216,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Kuršių g. 1, Kaunas",
+      "lat": 54.9364848,
+      "lng": 23.8863425,
+      "p95": 1.769,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno r. sav.",
+      "address": "Vijoklių g. 1C, Ramučių k.",
+      "lat": 54.9483515,
+      "lng": 24.0178299,
+      "p95": 1.754,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Tunelio g. 26, Kaunas",
+      "lat": 54.8948329,
+      "lng": 23.9441925,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno r. sav.",
+      "address": "Vakarų g. 14, Kumpių k.",
+      "lat": 54.9498773,
+      "lng": 23.8738224,
+      "p95": 1.784,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Savanorių pr. 441C, Kaunas",
+      "lat": 54.9293519,
+      "lng": 23.9734688,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Vakarinis aplinkkelis 18, Kaunas",
+      "lat": 54.934546,
+      "lng": 23.8668388,
+      "p95": 1.769,
+      "diesel": 1.984,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kauno m. sav.",
+      "address": "Europos pr. 43, Kaunas",
+      "lat": 54.8756578,
+      "lng": 23.911417,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Plieno g. 1, Klaipėda",
+      "lat": 55.6728215,
+      "lng": 21.2017347,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Šilutės pl. 30, Klaipėda",
+      "lat": 55.6930895,
+      "lng": 21.1747696,
+      "p95": 1.749,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Taikos pr. 60, Klaipėda",
+      "lat": 55.6889111,
+      "lng": 21.1551766,
+      "p95": 1.729,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g. 119, Klaipėda",
+      "lat": 55.6847139,
+      "lng": 21.1505231,
+      "p95": 1.739,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Artojo g. 2, Klaipėda",
+      "lat": 55.7168107,
+      "lng": 21.150527,
+      "p95": 1.719,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Smiltelės g. 17, Klaipėda",
+      "lat": 55.6698479,
+      "lng": 21.1929514,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Šilutės pl. 5C, Klaipėda",
+      "lat": 55.7031833,
+      "lng": 21.1647917,
+      "p95": 1.719,
+      "diesel": 1.949,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Vilniaus pl. 9, Jakų k.",
+      "lat": 55.7066823768495,
+      "lng": 21.23859222812485,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Sendvario g. 2, Sudmantų k.",
+      "lat": 55.7060737,
+      "lng": 21.2025927,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Gegužių g. 28, Šiauliai",
+      "lat": 55.9059107,
+      "lng": 23.2587205,
+      "p95": 1.779,
+      "diesel": 1.959,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Tilžės g. 72, Šiauliai",
+      "lat": 55.9200839,
+      "lng": 23.2932849,
+      "p95": 1.784,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Dubijos g. 18A, Šiauliai",
+      "lat": 55.9293669,
+      "lng": 23.2941339,
+      "p95": 1.779,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 81, Panevėžys",
+      "lat": 55.7283773,
+      "lng": 24.3323377,
+      "p95": 1.774,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Ramygalos g. 145B, Panevėžys",
+      "lat": 55.709517,
+      "lng": 24.3747541,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 66,  Panevėžys",
+      "lat": 55.7277452,
+      "lng": 24.3488051,
+      "p95": 1.774,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Ąžuolpamūšio g. 1A, Raubonių k..",
+      "lat": 56.1152756,
+      "lng": 24.4706809,
+      "p95": 1.784,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Margirio g. 1B, Panevėžys",
+      "lat": 55.7193962,
+      "lng": 24.3488668,
+      "p95": 1.769,
+      "diesel": 1.994,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 144B, Panevėžys",
+      "lat": 55.73063,
+      "lng": 24.316109,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Panevėžio aplinkl. 7, Šilagalio k.",
+      "lat": 55.6703891,
+      "lng": 24.3484309,
+      "p95": 1.779,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Panevėžio aplinkl. 22, Šilagalio k.",
+      "lat": 55.67310982552882,
+      "lng": 24.334302099840944,
+      "p95": 1.769,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Santaikos g. 34A, Alytus",
+      "lat": 54.3870841,
+      "lng": 24.0262949,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Alytaus m. sav.",
+      "address": "Ūdrijos g. 31, Alytus",
+      "lat": 54.408971,
+      "lng": 24.0051825,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Stoties g. 4C, Marijampolė",
+      "lat": 54.5603639,
+      "lng": 23.3659257,
+      "p95": 1.779,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Marijampolės sav.",
+      "address": "Vilkaviškio g. 61D, Marijampolė",
+      "lat": 54.5626096,
+      "lng": 23.3323659,
+      "p95": 1.774,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Europos g. 1, Salaperaugio k.",
+      "lat": 54.3300922,
+      "lng": 23.1494742,
+      "p95": 1.809,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kalvarijos sav.",
+      "address": "Europos g. 6, N.Valios k.",
+      "lat": 54.3282552,
+      "lng": 23.1505396,
+      "p95": null,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Mažeikių r. sav.",
+      "address": "M. Daukšos g. 29, Mažeikiai",
+      "lat": 56.3012334,
+      "lng": 22.3498409,
+      "p95": 1.753,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Šilalės r. sav.",
+      "address": "Katyčių k., Šilalės r.",
+      "lat": 55.2651603,
+      "lng": 21.8209124,
+      "p95": 1.749,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Kėdainių r. sav.",
+      "address": "J. Basanavičiaus g. 91E, Kėdainiai",
+      "lat": 55.2781085,
+      "lng": 23.959972,
+      "p95": 1.769,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Kauno g. 45B, Ukmergė",
+      "lat": 55.2420367,
+      "lng": 24.7429275,
+      "p95": 1.799,
+      "diesel": 1.979,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "J. Basanavičiaus g. 129, Utena",
+      "lat": 55.5051789,
+      "lng": 25.6248833,
+      "p95": 1.739,
+      "diesel": 1.969,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Utenos r. sav.",
+      "address": "Kupiškio g. 12, Utena",
+      "lat": 55.5042901,
+      "lng": 25.5819592,
+      "p95": 1.734,
+      "diesel": 1.964,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Molėtų r. sav.",
+      "address": "Aplinkkelio g. 165, Molėtai",
+      "lat": 55.2215442,
+      "lng": 25.4360169,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Vilniaus g. 94, Pabradė",
+      "lat": 54.9785371,
+      "lng": 25.7566235,
+      "p95": 1.789,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Jonavos r. sav.",
+      "address": "Plento g. 7, Gudžionių k.",
+      "lat": 55.09564855558731,
+      "lng": 24.312077069129174,
+      "p95": 1.724,
+      "diesel": 1.974,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Versmės g. 2, Radviliškis",
+      "lat": 55.8142724,
+      "lng": 23.5460383,
+      "p95": 1.749,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pušyno g. 11, Ylių k.",
+      "lat": 55.4116458,
+      "lng": 22.8310602,
+      "p95": 1.769,
+      "diesel": 2.009,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Dariaus ir Girėno g. 130A, Tauragė",
+      "lat": 55.2651981,
+      "lng": 22.3089244,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Elektrėnų sav.",
+      "address": "Sabališkių g. 1U, Elektrėnai",
+      "lat": 54.7894417,
+      "lng": 24.6727543,
+      "p95": 1.819,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Neste Lietuva",
+      "municipality": "Telšių r. sav.",
+      "address": "Šiaulių pl. 1A, Gaudikaičių k.",
+      "lat": 56.0049692,
+      "lng": 22.2402294,
+      "p95": 1.744,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Alytaus m. sav.",
+      "address": "Kauno g. 73, Alytus",
+      "lat": 54.4033241,
+      "lng": 24.0370877,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Elektrėnų sav.",
+      "address": "​Žilvičių g. 1 A, Kakliniškių k.",
+      "lat": 54.7915703,
+      "lng": 24.6690373,
+      "p95": 1.789,
+      "diesel": 2.069,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Prienų r. sav.",
+      "address": "Alytaus g. 2, ​Verbyliškių k.",
+      "lat": 54.5788534,
+      "lng": 24.1706118,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Žiežmarių k.",
+      "lat": 54.7956182,
+      "lng": 24.4392158,
+      "p95": 1.789,
+      "diesel": 2.069,
+      "lpg": 0.879
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno r. sav.",
+      "address": "Biruliškių k.",
+      "lat": 54.9244183,
+      "lng": 24.0233243,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.879
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno r. sav.",
+      "address": "Beržų g. 2N, Ringaudai",
+      "lat": 54.8888853,
+      "lng": 23.8178211,
+      "p95": 1.779,
+      "diesel": 2.039,
+      "lpg": 0.899
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno m. sav.",
+      "address": "Kalvarijos g. 138, Kaunas",
+      "lat": 54.8649771,
+      "lng": 23.8724387,
+      "p95": 1.759,
+      "diesel": 2.039,
+      "lpg": 0.869
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno m. sav.",
+      "address": "Pramonės pr. 37, Kaunas",
+      "lat": 54.9158143,
+      "lng": 23.9841929,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno m. sav.",
+      "address": "Varnių g. 50, Kaunas",
+      "lat": 54.9138013,
+      "lng": 23.9068499,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kauno m. sav.",
+      "address": "Veiverių g. 148 B, Kaunas",
+      "lat": 54.8673208,
+      "lng": 23.8872771,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g. 44, Klaipėda",
+      "lat": 55.6938676,
+      "lng": 21.1402705,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Šilutės pl. 26 A, Klaipėda",
+      "lat": 55.6985726,
+      "lng": 21.1673283,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Šilutės pl. 94, Klaipėda",
+      "lat": 55.6681613,
+      "lng": 21.2086486,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Vilniaus pl. 13, Jakų k.",
+      "lat": 55.70793284462043,
+      "lng": 21.245723267662083,
+      "p95": 1.769,
+      "diesel": 2.029,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pikelių k. 6",
+      "lat": 55.4615725404888,
+      "lng": 22.695775139491808,
+      "p95": 1.799,
+      "diesel": 2.069,
+      "lpg": 0.919
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Raseinių r. sav.",
+      "address": "Pikelių k. 8",
+      "lat": 55.4615757,
+      "lng": 22.6957679,
+      "p95": 1.799,
+      "diesel": 2.069,
+      "lpg": 0.899
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Marijampolės sav.",
+      "address": "Aleksandravo k.",
+      "lat": 54.5831837,
+      "lng": 23.3708831,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.849
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Mažeikių r. sav.",
+      "address": "​Skuodo g. 14, Mažeikiai",
+      "lat": 56.3144551,
+      "lng": 22.3109727,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Žemaitijos g. 42, Mažeikiai",
+      "lat": 56.3020426,
+      "lng": 22.3424737,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.869
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Kretingos r. sav.",
+      "address": "Vilimiškės k.",
+      "lat": 55.898649,
+      "lng": 21.0868734,
+      "p95": 1.769,
+      "diesel": 2.029,
+      "lpg": 0.869
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Klaipėdos g. 162 D, Panevėžys",
+      "lat": 55.7317394,
+      "lng": 24.3033994,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Senamiesčio g. 115, Panevėžys",
+      "lat": 55.7481994,
+      "lng": 24.3908149,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.859
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šiaulių g. 50, Nausodės k.",
+      "lat": 55.7338433,
+      "lng": 24.2635593,
+      "p95": 1.779,
+      "diesel": 2.039,
+      "lpg": 0.869
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Serbentų g. 82, Šiauliai",
+      "lat": 55.9139254,
+      "lng": 23.3369683,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Tauragės r. sav.",
+      "address": "Gedimino g. 46, Tauragė",
+      "lat": 55.2440986,
+      "lng": 22.3039604,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.869
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Telšių r. sav.",
+      "address": "​Plungės g. 33 D, Telšiai",
+      "lat": 55.9792186,
+      "lng": 22.2266776,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.879
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Juodasis kl. 32, Vilnius",
+      "lat": 54.6629447,
+      "lng": 25.3423921,
+      "p95": 1.779,
+      "diesel": 2.029,
+      "lpg": 0.899
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Vilniaus m. sav.",
+      "address": "O. ​Milašiaus g. 31, Vilnius",
+      "lat": 54.7280491,
+      "lng": 25.3270109,
+      "p95": 1.779,
+      "diesel": 2.029,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Ukmergės g. 319, Vilnius",
+      "lat": 54.7369256,
+      "lng": 25.2321131,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.889
+    },
+    {
+      "company": "Orlen",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Žirmūnų g. 1T, Vilnius",
+      "lat": 54.6960068,
+      "lng": 25.3001004,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.889
+    },
+    {
+      "company": "Tomega",
+      "municipality": "Druskininkų sav.",
+      "address": "Gardino g. 98, Druskininkai",
+      "lat": 53.9901794,
+      "lng": 24.0057031,
+      "p95": 1.75,
+      "diesel": 2.1,
+      "lpg": 0.95
+    },
+    {
+      "company": "Tomega",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Tartoko k.",
+      "lat": 54.3066995,
+      "lng": 25.3612979,
+      "p95": 1.859,
+      "diesel": 2.139,
+      "lpg": null
+    },
+    {
+      "company": "Tomega",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Dumblės k.",
+      "lat": 54.160143712059806,
+      "lng": 25.009838796074174,
+      "p95": 1.869,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Kretingos pl. 1, Gargždai",
+      "lat": 55.7136834,
+      "lng": 21.3865768,
+      "p95": 1.79,
+      "diesel": 2.05,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Klaipėdos g. 39, Gargždai",
+      "lat": 55.7122819,
+      "lng": 21.3816268,
+      "p95": 1.75,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Šilutės r. sav.",
+      "address": "Tilžės g. 21, Saugų k.",
+      "lat": 55.4645941,
+      "lng": 21.47036,
+      "p95": 1.79,
+      "diesel": 1.91,
+      "lpg": 0.89
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Šv. Kristoforo g. 4, Dituvos k.",
+      "lat": 55.5965925,
+      "lng": 21.2832386,
+      "p95": 1.79,
+      "diesel": 2.05,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Rietavo sav.",
+      "address": "Lėgų k. 1, Rietavas",
+      "lat": 55.62691297504316,
+      "lng": 21.97173909798777,
+      "p95": 1.79,
+      "diesel": 2.05,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Kretingos r. sav.",
+      "address": "Laisvės g. 15, Darbėnai",
+      "lat": 56.0267748,
+      "lng": 21.2626243,
+      "p95": 1.75,
+      "diesel": 2.08,
+      "lpg": 0.94
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Kretingos r. sav.",
+      "address": "Vilniaus g. 29B, Kretinga",
+      "lat": 55.8969426,
+      "lng": 21.2443258,
+      "p95": 1.75,
+      "diesel": 2.08,
+      "lpg": 0.94
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Veiviržėnų g. 29, Pyktiškės k.",
+      "lat": 55.6870522,
+      "lng": 21.6932073,
+      "p95": 1.79,
+      "diesel": 2.05,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Šilutės r. sav.",
+      "address": "Liepų g. 4, Žemaitkiemio k.",
+      "lat": 55.22752,
+      "lng": 21.7019347,
+      "p95": 1.79,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Rietavo sav.",
+      "address": "Kvėdarnos g. 2, Vatušių k.",
+      "lat": 55.7184722,
+      "lng": 21.9323747,
+      "p95": 1.76,
+      "diesel": 1.99,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Kretingos g. 28A, Klaipėda",
+      "lat": 55.7283977,
+      "lng": 21.1325842,
+      "p95": 1.79,
+      "diesel": 2.08,
+      "lpg": 0.93
+    },
+    {
+      "company": "Trevena",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g. 152A, Klaipėda",
+      "lat": 55.6696562,
+      "lng": 21.1586131,
+      "p95": 1.79,
+      "diesel": 2.08,
+      "lpg": 0.93
+    },
+    {
+      "company": "Viada",
+      "municipality": "Alytaus r. sav.",
+      "address": "Daugų k., Neveiglo g. 25",
+      "lat": 54.3668527,
+      "lng": 24.3375601,
+      "p95": 1.819,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Naujoji g. 27",
+      "lat": 54.4140414,
+      "lng": 24.0101635,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus, Ulonų g. 33B",
+      "lat": 54.3847857,
+      "lng": 24.0500261,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, A. Vienuolio g. 34",
+      "lat": 55.522041,
+      "lng": 25.0863648,
+      "p95": 1.799,
+      "diesel": 2.099,
+      "lpg": 0.939
+    },
+    {
+      "company": "Viada",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Piliakalnio g. 9",
+      "lat": 55.5413265,
+      "lng": 25.1349412,
+      "p95": 1.799,
+      "diesel": 2.099,
+      "lpg": 0.939
+    },
+    {
+      "company": "Viada",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Parodos g. 2",
+      "lat": 56.2013087,
+      "lng": 24.7490206,
+      "p95": 1.759,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Biržų r. sav.",
+      "address": "Biržai, Pasvalio g. 1B",
+      "lat": 56.2019312,
+      "lng": 24.7377964,
+      "p95": 1.759,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Elektrėnų sav.",
+      "address": "Elektrėnai, Elektrinės g. 6",
+      "lat": 54.7845187,
+      "lng": 24.6542452,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Ignalina, Turistų g. 28A",
+      "lat": 55.3389521,
+      "lng": 26.1455754,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Darbininkų g. 4D",
+      "lat": 55.0937258,
+      "lng": 24.282767,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Joniškio r. sav.",
+      "address": "Joniškis, Vilniaus g. 51",
+      "lat": 56.2246151,
+      "lng": 23.6011237,
+      "p95": 1.769,
+      "diesel": 2.039,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Kaišiadorys, Gedimino g. 135",
+      "lat": 54.8550869,
+      "lng": 24.4417261,
+      "p95": 1.849,
+      "diesel": 2.139,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kalvarija, Dariaus ir Girėno g. 81",
+      "lat": 54.424472,
+      "lng": 23.2319222,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kalvarijos sav.",
+      "address": "Pelucmurgių k., Muitinės g. 35",
+      "lat": 54.3398246,
+      "lng": 23.1631122,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, A. Juozapavičiaus pr. 90",
+      "lat": 54.8776399,
+      "lng": 23.9344807,
+      "p95": 1.859,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 105",
+      "lat": 54.9271996,
+      "lng": 24.0430425,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ateities pl. 37A",
+      "lat": 54.9182205,
+      "lng": 24.0404488,
+      "p95": 1.849,
+      "diesel": 2.079,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Baltijos g. 90B",
+      "lat": 54.9180088,
+      "lng": 23.8736664,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Biruliškių g. 18A",
+      "lat": 54.9114474,
+      "lng": 24.0269007,
+      "p95": 1.869,
+      "diesel": 2.089,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Didžioji g. 84",
+      "lat": 54.8551079,
+      "lng": 24.0131202,
+      "p95": 1.879,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Islandijos pl. 61A",
+      "lat": 54.9335293,
+      "lng": 23.9684792,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, K. Baršausko g. 64",
+      "lat": 54.8975719,
+      "lng": 23.9583731,
+      "p95": 1.829,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Karaliaus Mindaugo pr. 54",
+      "lat": 54.8875335,
+      "lng": 23.9211444,
+      "p95": 1.859,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marijampolės pl. 29",
+      "lat": 54.8495447,
+      "lng": 23.967082,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Miežėnų g. 18",
+      "lat": 54.9176901,
+      "lng": 23.863067,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.939
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, P. Lukšio g. 66A",
+      "lat": 54.9249064,
+      "lng": 23.9423227,
+      "p95": 1.819,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Pramonės pr. 44",
+      "lat": 54.927221,
+      "lng": 23.9747862,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Raudondvario pl. 288",
+      "lat": 54.9213913,
+      "lng": 23.8105362,
+      "p95": 1.809,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Statybininkų g. 3A",
+      "lat": 54.9201003,
+      "lng": 23.9487458,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, T. Masiulio g. 22B",
+      "lat": 54.8809124,
+      "lng": 24.0097867,
+      "p95": 1.869,
+      "diesel": 2.089,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 117",
+      "lat": 54.8664488,
+      "lng": 23.8894647,
+      "p95": 1.839,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Veiverių g. 124B",
+      "lat": 54.8833359,
+      "lng": 23.893637,
+      "p95": 1.839,
+      "diesel": 2.069,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Giraitės k., Automagistralės g. 4",
+      "lat": 54.9591082,
+      "lng": 23.8642584,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Ilgakiemio k., Prienų g. 22",
+      "lat": 54.7738891,
+      "lng": 23.8893499,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Kampiškių k., Baltijos g. 41",
+      "lat": 54.8425457,
+      "lng": 23.8496814,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Kumpių k., Verslo g. 13A",
+      "lat": 54.9591238,
+      "lng": 23.8668163,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Margavos k.",
+      "lat": 54.9581446,
+      "lng": 24.0361596,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kauno r. sav.",
+      "address": "Zapyškis, Vytauto g. 20A",
+      "lat": 54.9269405,
+      "lng": 23.6619016,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Ąžuolų Būdos k.",
+      "lat": 54.7052837,
+      "lng": 23.5228456,
+      "p95": 1.899,
+      "diesel": 2.139,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Dotnuva, Tilto g. 2A",
+      "lat": 55.374726,
+      "lng": 23.8807876,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Gudžiūnų k., Baisogalos g. 5",
+      "lat": 55.5187284,
+      "lng": 23.7735852,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Liepojos g. 242",
+      "lat": 55.7538813,
+      "lng": 21.1313388,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Nemuno g. 139",
+      "lat": 55.6738302,
+      "lng": 21.1481286,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Priestočio g. 28",
+      "lat": 55.7192745,
+      "lng": 21.1411712,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Šilutės pl. 52",
+      "lat": 55.6820055,
+      "lng": 21.1849528,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Klaipėda, Taikos pr. 70A-1",
+      "lat": 55.6832142,
+      "lng": 21.1604477,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Gargždai, Vilniaus pl. 65",
+      "lat": 55.7321931,
+      "lng": 21.3761937,
+      "p95": 1.859,
+      "diesel": 2.119,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Kretingalė, Klaipėdos g. 1A",
+      "lat": 55.8275144,
+      "lng": 21.1849852,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Sudmantų k., Vilniaus pl. 6",
+      "lat": 55.7044373,
+      "lng": 21.2215532,
+      "p95": 1.839,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretinga, Vytauto g. 163",
+      "lat": 55.890563,
+      "lng": 21.2782725,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kretingos r. sav.",
+      "address": "Kretingsodžio k.",
+      "lat": 55.9015622,
+      "lng": 21.2258662,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kerelių k. 1A",
+      "lat": 55.8394722,
+      "lng": 25.1661111,
+      "p95": 1.809,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Kupiškis, Pergalės g. 15",
+      "lat": 55.8445748,
+      "lng": 24.9789992,
+      "p95": 1.809,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijai, Turistų g. 32",
+      "lat": 54.2286056,
+      "lng": 23.5281023,
+      "p95": 1.739,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, Geležinkelio g. 5",
+      "lat": 54.5543671,
+      "lng": 23.3623615,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė, J. Ambrazevičiaus-Brazaičio g. 2",
+      "lat": 54.567734,
+      "lng": 23.3393257,
+      "p95": 1.799,
+      "diesel": 1.999,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Montuotojų g. 2A",
+      "lat": 56.3158969,
+      "lng": 22.302462,
+      "p95": 1.789,
+      "diesel": 1.969,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Mažeikiai, Žemaitijos g. 75",
+      "lat": 56.3003971,
+      "lng": 22.3608471,
+      "p95": 1.789,
+      "diesel": 1.969,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Molėtų r. sav.",
+      "address": "Molėtai, Vilniaus g. 101",
+      "lat": 55.2228435,
+      "lng": 25.4045087,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Molėtų r. sav.",
+      "address": "Gojaus k., Utenos g. 16",
+      "lat": 55.2122341,
+      "lng": 25.4370306,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Pakruojo r. sav.",
+      "address": "Pakruojis, Vytauto Didžiojo g. 98",
+      "lat": 55.9804581,
+      "lng": 23.8579672,
+      "p95": 1.779,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Krekenava, Tilto g. 35",
+      "lat": 55.5406697,
+      "lng": 24.1058148,
+      "p95": 1.879,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Ramygala, Vienkiemio g. 1B",
+      "lat": 55.5211854,
+      "lng": 24.3126597,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl. 5",
+      "lat": 55.670643581477016,
+      "lng": 24.349073742169125,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Tičkūnų k., Tičkūnų g. 31",
+      "lat": 55.7788418,
+      "lng": 24.3648008,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, J. Janonio g. 28A",
+      "lat": 55.7388746,
+      "lng": 24.3101357,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Navadolio g. 31",
+      "lat": 55.714597,
+      "lng": 24.3351417,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Pušaloto g. 193A",
+      "lat": 55.7531878,
+      "lng": 24.3120183,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Ramygalos g. 155",
+      "lat": 55.7040549,
+      "lng": 24.3811573,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Ramygalos g. 186G",
+      "lat": 55.7090681,
+      "lng": 24.3733489,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.949
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Senamiesčio g. 116A",
+      "lat": 55.7485748,
+      "lng": 24.3932637,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Panevėžys, Venslaviškio g. 16",
+      "lat": 55.7368227,
+      "lng": 24.3871183,
+      "p95": 1.819,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Brazdigalos k. 1",
+      "lat": 56.04221695319848,
+      "lng": 24.378292315200376,
+      "p95": 1.889,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Vilniaus g. 50",
+      "lat": 56.0559385,
+      "lng": 24.407185,
+      "p95": 1.859,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, J. Tumo-Vaižganto g. 102",
+      "lat": 55.9030643,
+      "lng": 21.8302735,
+      "p95": 1.789,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė, Žaltakalnio g. 10",
+      "lat": 55.8982917,
+      "lng": 21.8398638,
+      "p95": 1.789,
+      "diesel": 2.019,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Prienų r. sav.",
+      "address": "Grigaliūnų k. 11",
+      "lat": 54.7142176,
+      "lng": 23.6497923,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.95
+    },
+    {
+      "company": "Viada",
+      "municipality": "Prienų r. sav.",
+      "address": "Mačiūnų k., Kauno pl. 40",
+      "lat": 54.6589845,
+      "lng": 23.9470386,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Raseinių r. sav.",
+      "address": "Vejukų k. 5",
+      "lat": 55.3782175,
+      "lng": 22.9110223,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Panevėžio g. 5",
+      "lat": 55.9444281,
+      "lng": 25.5855631,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Žemaitės g. 2C",
+      "lat": 55.9342668,
+      "lng": 25.5856468,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas, Vilniaus g. 50",
+      "lat": 56.270202,
+      "lng": 21.5471092,
+      "p95": 1.779,
+      "diesel": 2.049,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šalčininkų r. sav.",
+      "address": "Jašiūnai, Lydos g. 13",
+      "lat": 54.4395641,
+      "lng": 25.3273302,
+      "p95": 1.859,
+      "diesel": 2.139,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Dubijos g. 1C",
+      "lat": 55.9263963,
+      "lng": 23.3076339,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Gegužių g. 26",
+      "lat": 55.9053537,
+      "lng": 23.2601708,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, J. Basanavičiaus g. 122A",
+      "lat": 55.9546397,
+      "lng": 23.3162373,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Tilžės g. 274",
+      "lat": 55.9441124,
+      "lng": 23.3313703,
+      "p95": 1.829,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai, Užmiesčio g. 2",
+      "lat": 55.9225032,
+      "lng": 23.3579555,
+      "p95": 1.839,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Aukštelkės k., Ilgoji g. 1",
+      "lat": 55.8772089,
+      "lng": 23.214656,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kuršėnai, Vilniaus g. 38A",
+      "lat": 55.9998764,
+      "lng": 22.9476558,
+      "p95": 1.889,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Kužiai, Draugystės g. 2",
+      "lat": 55.9790958,
+      "lng": 23.1362281,
+      "p95": 1.889,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šilalės r. sav.",
+      "address": "Kuodaičių k.",
+      "lat": 55.567315,
+      "lng": 22.1623601,
+      "p95": 1.889,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Šilutės r. sav.",
+      "address": "Šilutė, Tilžės g. 59",
+      "lat": 55.3430638,
+      "lng": 21.4967445,
+      "p95": 1.839,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Širvintų r. sav.",
+      "address": "Širvintos, Plento g. 4",
+      "lat": 55.0458526,
+      "lng": 24.9427122,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Švenčionys, Vilniaus g. 50A",
+      "lat": 55.1254406,
+      "lng": 26.145315,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Kaltanėnai, Utenos g. 1",
+      "lat": 55.255132,
+      "lng": 25.990569,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Pabradė, Vilniaus g. 116B",
+      "lat": 54.975098,
+      "lng": 25.7448545,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Švenčionėliai, Žemutinė g. 51A",
+      "lat": 55.1685061,
+      "lng": 26.015157,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Dariaus ir Girėno g. 138A",
+      "lat": 55.266248,
+      "lng": 22.3107681,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė, Pramonės g. 1",
+      "lat": 55.2408267,
+      "lng": 22.3054542,
+      "p95": 1.799,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Pramonės g. 2A",
+      "lat": 55.9933503,
+      "lng": 22.2401557,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Trakų r. sav.",
+      "address": "Aukštųjų Semeniukų k., Logistikos g. 9",
+      "lat": 54.70175416540973,
+      "lng": 25.009775624932946,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė, Žiedo g. 15",
+      "lat": 55.2461826,
+      "lng": 24.7431883,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Dukstynos k., Vytauto g. 131",
+      "lat": 55.2680017,
+      "lng": 24.8065895,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Šventupės k., Beržų g. 13",
+      "lat": 55.3204305,
+      "lng": 24.8747524,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Metalo g. 8",
+      "lat": 55.4969921,
+      "lng": 25.6307847,
+      "p95": 1.799,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Pramonės g. 23",
+      "lat": 55.4901207,
+      "lng": 25.6503434,
+      "p95": 1.799,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Utenos r. sav.",
+      "address": "Gedimino k., Vyturio g. 2",
+      "lat": 55.4778151,
+      "lng": 25.5815649,
+      "p95": 1.799,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Varėnos r. sav.",
+      "address": "Valkininkai, Vilniaus g. 6",
+      "lat": 54.3646477,
+      "lng": 24.8372767,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Elektrėnų sav.",
+      "address": "Vievis, Kauno g. 26A",
+      "lat": 54.7711508,
+      "lng": 24.8209834,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vilkaviškis, Vytauto g. 105",
+      "lat": 54.6476363,
+      "lng": 23.0294804,
+      "p95": 1.879,
+      "diesel": 2.119,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Avižienių k., Ožiarūčių g. 1a",
+      "lat": 54.7641105,
+      "lng": 25.1972513,
+      "p95": 1.889,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ateities g. 17B",
+      "lat": 54.7357486,
+      "lng": 25.2584251,
+      "p95": 1.769,
+      "diesel": 2.009,
+      "lpg": 0.929
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Dariaus ir Girėno g. 30A",
+      "lat": 54.6529651,
+      "lng": 25.2722027,
+      "p95": 1.839,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Gariūnų g. 16A",
+      "lat": 54.6673496,
+      "lng": 25.1738401,
+      "p95": 1.829,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Grigiškės, Kovo 11-osios g. 75",
+      "lat": 54.6691856,
+      "lng": 25.1048756,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Justiniškių g. 12",
+      "lat": 54.7030645,
+      "lng": 25.2189409,
+      "p95": 1.819,
+      "diesel": 2.039,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Kirtimų g. 29",
+      "lat": 54.633339,
+      "lng": 25.15085,
+      "p95": 1.829,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Laisvės pr. 8",
+      "lat": 54.6742091,
+      "lng": 25.222726,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Liepkalnio g. 128A",
+      "lat": 54.6474889,
+      "lng": 25.3040772,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Naugarduko g. 74",
+      "lat": 54.6711189,
+      "lng": 25.2622548,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Nemenčinės pl. 5",
+      "lat": 54.7263391,
+      "lng": 25.3265596,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Olandų g. 57",
+      "lat": 54.6816927,
+      "lng": 25.3148607,
+      "p95": 1.859,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Ozo g. 12",
+      "lat": 54.7137984,
+      "lng": 25.2770784,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pilaitės pr. 13",
+      "lat": 54.7030486,
+      "lng": 25.2041172,
+      "p95": 1.839,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Pilaitės pr. 28",
+      "lat": 54.7014526,
+      "lng": 25.2032929,
+      "p95": 1.839,
+      "diesel": 2.079,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Saltoniškių g. 12",
+      "lat": 54.6992459,
+      "lng": 25.2601956,
+      "p95": 1.799,
+      "diesel": 2.039,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Sodų g. 22",
+      "lat": 54.7229063,
+      "lng": 25.3850709,
+      "p95": 1.819,
+      "diesel": 2.059,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Verkių g. 52",
+      "lat": 54.7203664,
+      "lng": 25.2943022,
+      "p95": 1.779,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Vilkpėdės g. 2",
+      "lat": 54.6650173,
+      "lng": 25.2464307,
+      "p95": 1.799,
+      "diesel": 2.019,
+      "lpg": null
+    },
+    {
+      "company": "Viada",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Statybininkų g. 1",
+      "lat": 55.5945774,
+      "lng": 26.4387145,
+      "p95": 1.819,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas, Taikos pr. 23B",
+      "lat": 55.594946,
+      "lng": 26.4563923,
+      "p95": 1.819,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Viada",
+      "municipality": "Zarasų r. sav.",
+      "address": "Juodalaukių k. 2",
+      "lat": 55.71791597805992,
+      "lng": 26.213754853812205,
+      "p95": 1.859,
+      "diesel": 2.099,
+      "lpg": 0.959
+    },
+    {
+      "company": "Autograndas",
+      "municipality": "Visagino sav.",
+      "address": "Taikos pr. 47",
+      "lat": 55.5905813,
+      "lng": 26.4632742,
+      "p95": 1.732,
+      "diesel": 1.997,
+      "lpg": null
+    },
+    {
+      "company": "Nostrada (RV Transport)",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kazlavo km. 4 Kalvarijos sav.",
+      "lat": 54.3288515,
+      "lng": 23.147144,
+      "p95": 1.79,
+      "diesel": 2.06,
+      "lpg": null
+    },
+    {
+      "company": "Utentra",
+      "municipality": "Utenos r. sav.",
+      "address": "Utena, Pramonės g. 16",
+      "lat": 55.4946795,
+      "lng": 25.6458529,
+      "p95": null,
+      "diesel": 1.959,
+      "lpg": null
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Simnas, Alytaus g. 48",
+      "lat": 54.3838453,
+      "lng": 23.659403,
+      "p95": 1.73,
+      "diesel": 2.0,
+      "lpg": 0.93
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Alytaus r. sav.",
+      "address": "Likiškėlių k., Kalninės g. 5",
+      "lat": 54.3818655,
+      "lng": 23.9930989,
+      "p95": 1.69,
+      "diesel": 1.98,
+      "lpg": 0.9
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Ašigalio g. 1 A",
+      "lat": 54.9333738,
+      "lng": 23.9435316,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": 0.859
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas, Marvelės g. 106 D",
+      "lat": 54.9012375,
+      "lng": 23.8544016,
+      "p95": 1.759,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Kauno r. sav.",
+      "address": "Virbališkių k., Verslo g. 2",
+      "lat": 54.9025692,
+      "lng": 23.7628342,
+      "p95": 1.76,
+      "diesel": 2.0,
+      "lpg": 0.86
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Mūšos g. 2 E",
+      "lat": 56.0695312,
+      "lng": 24.3878814,
+      "p95": 1.75,
+      "diesel": 1.987,
+      "lpg": 0.85
+    },
+    {
+      "company": "Skulas",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, J.Kazlausko g. 34",
+      "lat": 54.7231706,
+      "lng": 25.2768132,
+      "p95": 1.729,
+      "diesel": 1.959,
+      "lpg": 0.869
+    },
+    {
+      "company": "Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Pušaloto g. 140, Panevėžys",
+      "lat": 55.7465858,
+      "lng": 24.3291567,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "company": "Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "G.Petkevičaitės-Bitės 35C, Panevėžys",
+      "lat": 55.7224376,
+      "lng": 24.3421829,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "company": "Deliuvis",
+      "municipality": "Panevėžio m. sav.",
+      "address": "S.Kerbedžio 2, Panevėžys",
+      "lat": 55.7431736,
+      "lng": 24.3424941,
+      "p95": 1.759,
+      "diesel": 1.969,
+      "lpg": 0.889
+    },
+    {
+      "company": "Velseka",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Panevėžio g. 5, Kupiškis",
+      "lat": 55.8271711,
+      "lng": 24.985997,
+      "p95": 1.671,
+      "diesel": 1.939,
+      "lpg": 0.859
+    },
+    {
+      "company": "Pakelės namai",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Liepų g. 4, Škilinpamūšio k.",
+      "lat": 56.2674059,
+      "lng": 24.3707266,
+      "p95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.95
+    },
+    {
+      "company": "Pakelės namai",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasienio g. 10, Škilinpamūšio k.",
+      "lat": 56.2724649,
+      "lng": 24.3677344,
+      "p95": 1.79,
+      "diesel": 2.09,
+      "lpg": 0.95
+    },
+    {
+      "company": "Tumasa",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Židikai, Mažeikiu g. 10",
+      "lat": 56.3176397,
+      "lng": 22.0135973,
+      "p95": 1.76,
+      "diesel": 2.06,
+      "lpg": 0.95
+    },
+    {
+      "company": "Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Žygaičių k., Žygaičių g.2",
+      "lat": 55.2444013,
+      "lng": 22.1435407,
+      "p95": 1.69,
+      "diesel": 1.96,
+      "lpg": 0.79
+    },
+    {
+      "company": "Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė , Dariaus ir Girėno g.49",
+      "lat": 55.2588881,
+      "lng": 22.2945604,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "company": "Madalva",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tauragė , Pramonės g.10A",
+      "lat": 55.2364476,
+      "lng": 22.2967893,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "company": "Madalva",
+      "municipality": "Plungės r. sav.",
+      "address": "Plungė , Lentpjūvės g.10A",
+      "lat": 55.9214099,
+      "lng": 21.8525815,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.83
+    },
+    {
+      "company": "Madalva",
+      "municipality": "Šilalės r. sav.",
+      "address": "Gineikių k.",
+      "lat": 55.5337591,
+      "lng": 22.4952433,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.84
+    },
+    {
+      "company": "Prie Luksto",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Masčio g. 21",
+      "lat": 55.9757001,
+      "lng": 22.2636566,
+      "p95": 1.773,
+      "diesel": 1.965,
+      "lpg": 0.929
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Ginkūnų k., Aušros g. 26",
+      "lat": 55.9564029,
+      "lng": 23.3427749,
+      "p95": 1.839,
+      "diesel": 2.049,
+      "lpg": 0.949
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kęstučio g. 1B, Kelmė",
+      "lat": 55.6347932,
+      "lng": 22.9454316,
+      "p95": 1.839,
+      "diesel": 2.049,
+      "lpg": 0.949
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Kuršukų k., Plento g. 1",
+      "lat": 55.6183243281097,
+      "lng": 22.901341424971985,
+      "p95": 1.869,
+      "diesel": 2.089,
+      "lpg": 0.959
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Kauno m. sav.",
+      "address": "Marvelės g. 132, Kaunas",
+      "lat": 54.9038368,
+      "lng": 23.835313,
+      "p95": 1.849,
+      "diesel": 2.069,
+      "lpg": 0.95
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Elektrėnų sav.",
+      "address": "Dubijos g. 36",
+      "lat": 54.7866306,
+      "lng": 24.7140775,
+      "p95": 1.869,
+      "diesel": 2.089,
+      "lpg": 0.959
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Molėtų r. sav.",
+      "address": "Smėlinkos k.",
+      "lat": 55.2643673,
+      "lng": 25.490029,
+      "p95": 1.76,
+      "diesel": 1.99,
+      "lpg": 0.92
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Utenos r. sav.",
+      "address": "Zarasų g. 9, Utena",
+      "lat": 55.5123015,
+      "lng": 25.643978,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.919
+    },
+    {
+      "company": "Boost Petrol",
+      "municipality": "Kelmės r. sav.",
+      "address": "Maironių k., Kuršių g. 2",
+      "lat": 55.6005052,
+      "lng": 23.0427503,
+      "p95": 1.76,
+      "diesel": 1.96,
+      "lpg": 0.9
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Marijampolės sav.",
+      "address": "Kantališkių k.",
+      "lat": 54.6344569,
+      "lng": 23.4364079,
+      "p95": 1.69,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Ukmergės g. 246, Vilnius",
+      "lat": 54.7231463,
+      "lng": 25.2410592,
+      "p95": 1.691,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Alytaus k.",
+      "lat": 54.400935,
+      "lng": 24.048116,
+      "p95": 1.691,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Kauno g.1, Miklusėnai",
+      "lat": 54.428055,
+      "lng": 24.001339,
+      "p95": 1.691,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Alytaus r. sav.",
+      "address": "Kaniukų k.",
+      "lat": 54.3674236,
+      "lng": 24.091995,
+      "p95": 1.691,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Prienų r. sav.",
+      "address": "Gustaičių k.",
+      "lat": 54.8297341,
+      "lng": 23.9471779,
+      "p95": 1.69,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Kauno r. sav.",
+      "address": "Erdvės g. 78, Ramučių k.",
+      "lat": 54.9290414,
+      "lng": 24.0379804,
+      "p95": 1.691,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Žemdirbių g. 15, Paliūniškio k.",
+      "lat": 55.7933211,
+      "lng": 24.4428261,
+      "p95": 1.681,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Panevėžio g. 9, Kupiškis",
+      "lat": 55.8260509,
+      "lng": 24.9799373,
+      "p95": 1.681,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Kalvarijos sav.",
+      "address": "Turgaus g. 4, Kreivukė",
+      "lat": 54.4108297,
+      "lng": 23.2069152,
+      "p95": 1.681,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g. 90, Klaipėda",
+      "lat": 55.68522734539656,
+      "lng": 21.147046853810753,
+      "p95": 1.661,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Stateta",
+      "municipality": "Utenos r. sav.",
+      "address": "Palangos g. 66, Utena",
+      "lat": 55.4985476,
+      "lng": 25.5839697,
+      "p95": 1.681,
+      "diesel": 1.949,
+      "lpg": 0.949
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Alytaus m. sav.",
+      "address": "Ūdrijos g.2, Alytus",
+      "lat": 54.4086059,
+      "lng": 24.0162857,
+      "p95": 1.69,
+      "diesel": 1.99,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Raseinių r. sav.",
+      "address": "Žemaičių g. 34, Ariogala",
+      "lat": 55.2614099,
+      "lng": 23.4890145,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Ateities pl.40B, Kaunas",
+      "lat": 54.9218463,
+      "lng": 24.0477225,
+      "p95": 1.739,
+      "diesel": 2.029,
+      "lpg": null
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Biržų r. sav.",
+      "address": "Jaunimo g.2a, Biržai",
+      "lat": 56.2076707,
+      "lng": 24.7708027,
+      "p95": 1.719,
+      "diesel": 1.99,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Bukiškio k. Ukmergės g.437",
+      "lat": 54.753617,
+      "lng": 25.211747,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Draugystės g.8B, Kaunas",
+      "lat": 54.9080536,
+      "lng": 23.9920719,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.889
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Spyglių g. 2",
+      "lat": 54.6684024,
+      "lng": 25.1116773,
+      "p95": 1.789,
+      "diesel": 2.049,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Ilgakiemio k., Kauno g.25",
+      "lat": 54.8481336,
+      "lng": 23.9988303,
+      "p95": 1.759,
+      "diesel": 2.029,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Jeruzalės 2, Vilnius",
+      "lat": 54.7398539,
+      "lng": 25.2761745,
+      "p95": 1.699,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Jonavos r. sav.",
+      "address": "Vasario 16-osios g.70, Jonava",
+      "lat": 55.0708603,
+      "lng": 24.2588537,
+      "p95": 1.749,
+      "diesel": 2.049,
+      "lpg": null
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Durpyno 63, Jonušų k.",
+      "lat": 55.7118069,
+      "lng": 21.2650544,
+      "p95": 1.769,
+      "diesel": 2.029,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Juodgirio k.1,",
+      "lat": 55.1974613,
+      "lng": 23.6260396,
+      "p95": 1.799,
+      "diesel": 2.049,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Medelyno g.126 Kalotės k.",
+      "lat": 55.7822139,
+      "lng": 21.1385526,
+      "p95": 1.76,
+      "diesel": 2.02,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kareivių g. 4, Vilnius",
+      "lat": 54.7179121,
+      "lng": 25.2956973,
+      "p95": 1.719,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Jonavos g. 292B, Kaunas",
+      "lat": 54.9324269,
+      "lng": 23.9180391,
+      "p95": 1.759,
+      "diesel": 1.989,
+      "lpg": 0.88
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Kirtimų g. 33, Vilnius",
+      "lat": 54.6279215,
+      "lng": 25.1496569,
+      "p95": 1.759,
+      "diesel": 2.019,
+      "lpg": 0.909
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Laisvės pr. 80B, Vilnius",
+      "lat": 54.7235952,
+      "lng": 25.232689,
+      "p95": 1.719,
+      "diesel": 2.039,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Lazdijų sen., Janaslavo k.11",
+      "lat": 54.1755753,
+      "lng": 23.4811093,
+      "p95": 1.669,
+      "diesel": 1.989,
+      "lpg": null
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Trakų r. sav.",
+      "address": "Sodų g.3A, Lentvaris",
+      "lat": 54.6434035,
+      "lng": 25.0534576,
+      "p95": 1.77,
+      "diesel": 2.03,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Liepkalnio g.112A, Vilnius",
+      "lat": 54.6526579,
+      "lng": 25.3057172,
+      "p95": 1.759,
+      "diesel": 2.029,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Liuksemburgo aklg. 27, Kaunas",
+      "lat": 54.8592253,
+      "lng": 23.8371192,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Mokyklos g. 26, Maišiagalos mstl.",
+      "lat": 54.873392178170015,
+      "lng": 25.0735173979556,
+      "p95": 1.799,
+      "diesel": 2.059,
+      "lpg": 0.909
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Stoties g. 6B, Marijampolė",
+      "lat": 54.5651422,
+      "lng": 23.3685518,
+      "p95": 1.659,
+      "diesel": 1.959,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Masiulio g.16C, Kaunas",
+      "lat": 54.8851506,
+      "lng": 24.0060134,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Marijampolės g. 58, Mastaičių k.",
+      "lat": 54.8096462,
+      "lng": 23.8537558,
+      "p95": 1.759,
+      "diesel": 2.029,
+      "lpg": 0.9
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Medininkų k., Pasieniečių g.10",
+      "lat": 54.5496804,
+      "lng": 25.6800445,
+      "p95": 1.799,
+      "diesel": 2.099,
+      "lpg": null
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Minijos g.154A, Klaipėda",
+      "lat": 55.6684939,
+      "lng": 21.159076,
+      "p95": 1.74,
+      "diesel": 1.94,
+      "lpg": 0.87
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Savanorių pr.402A, Kaunas",
+      "lat": 54.927502,
+      "lng": 23.9722133,
+      "p95": 1.739,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Taikos g.1, Kreivalaužių k.",
+      "lat": 54.8357456,
+      "lng": 25.4601235,
+      "p95": 1.75,
+      "diesel": 2.04,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Panevėžio m. sav.",
+      "address": "Nemuno g.79A, Panevėžys",
+      "lat": 55.7317427,
+      "lng": 24.3406939,
+      "p95": 1.699,
+      "diesel": 1.949,
+      "lpg": 0.889
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno m. sav.",
+      "address": "Palemono g. 3A, Kaunas",
+      "lat": 54.9010209,
+      "lng": 24.0311752,
+      "p95": 1.7,
+      "diesel": 1.99,
+      "lpg": null
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Pasvalys, Taikos g.24",
+      "lat": 56.063652,
+      "lng": 24.4257529,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Paukštininkų g.4a, Kaišiadorys",
+      "lat": 54.8643505,
+      "lng": 24.436539,
+      "p95": 1.749,
+      "diesel": 2.039,
+      "lpg": 0.91
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Kauno g.165, Pietarių k.",
+      "lat": 54.5928528,
+      "lng": 23.3895564,
+      "p95": 1.659,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Pajautos g. 31, Vilnius (Pilaitė)",
+      "lat": 54.7101432,
+      "lng": 25.1620536,
+      "p95": 1.719,
+      "diesel": 1.969,
+      "lpg": 0.92
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Miško g.62, Radviliškis",
+      "lat": 55.8018115,
+      "lng": 23.5637751,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Ramygalos g.186A, Panevėžys",
+      "lat": 55.7100897,
+      "lng": 24.3723092,
+      "p95": 1.699,
+      "diesel": 1.949,
+      "lpg": 0.88
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Raseinių r. sav.",
+      "address": "Raščių k. 1A",
+      "lat": 55.278022583784974,
+      "lng": 23.341433682629248,
+      "p95": 1.699,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Trakų r. sav.",
+      "address": "Sausių g.2 Sausių k..",
+      "lat": 54.7078578,
+      "lng": 24.9961486,
+      "p95": 1.75,
+      "diesel": 2.01,
+      "lpg": 0.92
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Savanorių 225, Vilnius",
+      "lat": 54.641028,
+      "lng": 25.1841354,
+      "p95": 1.759,
+      "diesel": 2.019,
+      "lpg": 0.909
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Sereikonių k., Baltijos kelio g.2",
+      "lat": 56.0597513,
+      "lng": 24.4200847,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Sembos g.5, Šiauliai",
+      "lat": 55.8988038,
+      "lng": 23.2716381,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.87
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Panevėžio r. sav.",
+      "address": "Šilagalio k., Panevėžio aplinkl.12",
+      "lat": 55.66984490484136,
+      "lng": 24.34633788901688,
+      "p95": 1.699,
+      "diesel": 1.999,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Šilutės r. sav.",
+      "address": "Gluosnių g.4A, Šilutė",
+      "lat": 55.3489154,
+      "lng": 21.4689533,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Marijampolės sav.",
+      "address": "Skaisčiūnų k., Europos g.11",
+      "lat": 54.5582662,
+      "lng": 23.2753422,
+      "p95": 1.659,
+      "diesel": 1.959,
+      "lpg": 0.899
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Klaipėdos m. sav.",
+      "address": "Taikos pr.124, Klaipėda",
+      "lat": 55.6610494,
+      "lng": 21.176255,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.87
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Gunkliškių g.2F, Vilnius",
+      "lat": 54.6227504,
+      "lng": 25.1050189,
+      "p95": 1.779,
+      "diesel": 2.039,
+      "lpg": 0.929
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Vandžiogalos pl.86A, Kaunas",
+      "lat": 54.9515318,
+      "lng": 23.8936351,
+      "p95": 1.69,
+      "diesel": 2.02,
+      "lpg": 0.89
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "S.Nėries g.38, Vilkaviškis",
+      "lat": 54.6581148,
+      "lng": 23.0332434,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.92
+    },
+    {
+      "company": "Emsi",
+      "municipality": "Kauno r. sav.",
+      "address": "Žemaitkiemis, Stasio Krasausko g. 21",
+      "lat": 54.9718515,
+      "lng": 23.8590106,
+      "p95": 1.699,
+      "diesel": 2.029,
+      "lpg": 0.929
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Naujoji Akmenė V. Kudirkos 18A",
+      "lat": 56.3172286,
+      "lng": 22.8848468,
+      "p95": 1.74,
+      "diesel": 1.99,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Akmenės I kaimas Plento g. 1",
+      "lat": 56.2385774,
+      "lng": 22.7507221,
+      "p95": 1.74,
+      "diesel": 1.99,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Akmenės r. sav.",
+      "address": "Pašakarnių km. Pašakarnių g. 1",
+      "lat": 56.2981023,
+      "lng": 22.8851736,
+      "p95": 1.74,
+      "diesel": 2.01,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai Vilniaus g. 373A",
+      "lat": 55.9428191,
+      "lng": 23.2816193,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Šiauliai Pramonės g. 7C",
+      "lat": 55.9164656,
+      "lng": 23.3019411,
+      "p95": 1.71,
+      "diesel": 1.94,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Radviliškis Gedimino g. 50C",
+      "lat": 55.8146018,
+      "lng": 23.553195,
+      "p95": 1.72,
+      "diesel": 1.96,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Radviliškio r. sav.",
+      "address": "Velžių km .Radviliškio plentas 2",
+      "lat": 55.77328660655301,
+      "lng": 23.65630617777114,
+      "p95": 1.72,
+      "diesel": 1.96,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas Vytauto g. 20",
+      "lat": 56.260844492234234,
+      "lng": 21.53006005568681,
+      "p95": 1.71,
+      "diesel": 1.9,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Klaipėda Jūrininkų pr. 29",
+      "lat": 55.6568391,
+      "lng": 21.1838207,
+      "p95": 1.68,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Šilalės r. sav.",
+      "address": "Šilalė Rytinio kelio g. 19",
+      "lat": 55.4918497,
+      "lng": 22.1992774,
+      "p95": 1.71,
+      "diesel": 1.97,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Pašvenčio km.",
+      "lat": 55.08241056688774,
+      "lng": 22.61090464029262,
+      "p95": 1.71,
+      "diesel": 1.98,
+      "lpg": 0.86
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kreivukės km.",
+      "lat": 54.407456637686316,
+      "lng": 23.221039784443477,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kalvarijos sav.",
+      "address": "Kušliškių km. Suvalkijos g. 15",
+      "lat": 54.4362101,
+      "lng": 23.2050045,
+      "p95": 1.71,
+      "diesel": 1.89,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Marijampolės sav.",
+      "address": "Marijampolė Statybininkų g. 8",
+      "lat": 54.5778933,
+      "lng": 23.3769145,
+      "p95": 1.71,
+      "diesel": 1.89,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus Miškininkų g. 7",
+      "lat": 54.4113056,
+      "lng": 24.0676501,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": null
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Alytaus m. sav.",
+      "address": "Alytus Pramonės g. 5",
+      "lat": 54.4235268,
+      "lng": 24.0203936,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Panarvės km.",
+      "lat": 54.233394860453906,
+      "lng": 23.539854311420797,
+      "p95": 1.71,
+      "diesel": 1.95,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Ignacavos km. Kauno pl. 18",
+      "lat": 54.64662590702847,
+      "lng": 23.930566613289525,
+      "p95": 1.7,
+      "diesel": 1.96,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Domeikava Muitinės g. 2",
+      "lat": 54.9563771,
+      "lng": 23.9051117,
+      "p95": 1.71,
+      "diesel": 1.97,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kauno m. sav.",
+      "address": "Kaunas Garažų g. 20",
+      "lat": 54.9236841,
+      "lng": 24.0008424,
+      "p95": 1.71,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kauno r. sav.",
+      "address": "Babtai Vandžiogalos g. 3",
+      "lat": 55.0969665,
+      "lng": 23.8062494,
+      "p95": 1.71,
+      "diesel": 1.9,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Rumšiškės Lekavičiaus g. 71",
+      "lat": 54.87185,
+      "lng": 24.2132026,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Šakių r. sav.",
+      "address": "Lėkėčių km. Šakių g. 3",
+      "lat": 54.9773071,
+      "lng": 23.4835637,
+      "p95": 1.71,
+      "diesel": 1.99,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Prienų r. sav.",
+      "address": "Mauručiai Liepų g. 20",
+      "lat": 54.771033,
+      "lng": 23.7654659,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": null
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė Kareivinių g. 64",
+      "lat": 55.2589928,
+      "lng": 24.7903869,
+      "p95": 1.69,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Ukmergė Vilniaus g. 122",
+      "lat": 55.2335275,
+      "lng": 24.7812525,
+      "p95": 1.69,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Pageležių km.",
+      "lat": 55.165145685885484,
+      "lng": 24.51534358447564,
+      "p95": 1.71,
+      "diesel": 1.99,
+      "lpg": 0.82
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Čekoniškių km",
+      "lat": 54.73746467705277,
+      "lng": 25.079993384457424,
+      "p95": 1.7,
+      "diesel": 1.93,
+      "lpg": null
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Zujūnai Buivydiškių g. 1A",
+      "lat": 54.7271298,
+      "lng": 25.1809342,
+      "p95": 1.7,
+      "diesel": 1.94,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Visagino sav.",
+      "address": "Visaginas Kosmoso g. 1",
+      "lat": 55.5974245,
+      "lng": 26.403381,
+      "p95": 1.71,
+      "diesel": 1.93,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Jankiškių g. 43a",
+      "lat": 54.6518904,
+      "lng": 25.1856677,
+      "p95": 1.7,
+      "diesel": 1.91,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius, Rygos g. 2",
+      "lat": 54.71574763281802,
+      "lng": 25.228412570964238,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.87
+    },
+    {
+      "company": "Saurida",
+      "municipality": "Vilniaus m. sav.",
+      "address": "Vilnius Stanevičiaus g. 3A",
+      "lat": 54.7217316,
+      "lng": 25.2558881,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.87
+    },
+    {
+      "company": "Virši",
+      "municipality": "Marijampolės sav.",
+      "address": "L.Taunio g. 3, Pasūduonės km.",
+      "lat": 54.4757949,
+      "lng": 23.221689,
+      "p95": 1.804,
+      "diesel": 2.004,
+      "lpg": 0.875
+    },
+    {
+      "company": "Pynauja",
+      "municipality": "Šilalės r. sav.",
+      "address": "Dvaro g.1, Papynaujo k.,Kvėdarna",
+      "lat": 55.5658141,
+      "lng": 21.9960971,
+      "p95": 1.73,
+      "diesel": 2.04,
+      "lpg": 0.94
+    },
+    {
+      "company": "GM Circle K",
+      "municipality": "Šakių r. sav.",
+      "address": "Kauno g. 68, Girėnų k.",
+      "lat": 54.952731,
+      "lng": 23.0832716,
+      "p95": 1.887,
+      "diesel": 2.117,
+      "lpg": 0.987
+    },
+    {
+      "company": "GM Circle K",
+      "municipality": "Jurbarko r. sav.",
+      "address": "Muitinės g. 34A, Jurbarkas",
+      "lat": 55.0768054,
+      "lng": 22.7518386,
+      "p95": 1.887,
+      "diesel": 2.117,
+      "lpg": null
+    },
+    {
+      "company": "Žibalas",
+      "municipality": "Jonavos r. sav.",
+      "address": "Jonava, Taurostos g. 16a",
+      "lat": 55.0671367,
+      "lng": 24.2879695,
+      "p95": 1.85,
+      "diesel": 2.11,
+      "lpg": 0.99
+    },
+    {
+      "company": "RV",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Algirdo g. 42, Mažeikiai",
+      "lat": 56.3185082,
+      "lng": 22.3181309,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.88
+    },
+    {
+      "company": "RV",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Daukšos g. 29/Žemaitijos g. 69, Mažeikiai",
+      "lat": 56.3018095,
+      "lng": 22.3507819,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.89
+    },
+    {
+      "company": "RV",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Mokyklos g. 23, Švenčionys",
+      "lat": 55.137806,
+      "lng": 26.155728,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.95
+    },
+    {
+      "company": "Gazimpeksas",
+      "municipality": "Rietavo sav.",
+      "address": "Tverai, Rietavo g. 32",
+      "lat": 55.7362443,
+      "lng": 22.1383099,
+      "p95": 1.69,
+      "diesel": 2.06,
+      "lpg": 0.89
+    },
+    {
+      "company": "Gazimpeksas",
+      "municipality": "Skuodo r. sav.",
+      "address": "Skuodas,Vytauto g. 20",
+      "lat": 56.2612556564222,
+      "lng": 21.53012442870216,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "company": "Gazimpeksas",
+      "municipality": "Telšių r. sav.",
+      "address": "Telšiai, Mažeikių g. 7A",
+      "lat": 56.0005217,
+      "lng": 22.2472702,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.89
+    },
+    {
+      "company": "Skaistčio ŽŪB",
+      "municipality": "Joniškio r. sav.",
+      "address": "Skaistgirys, Liepų g.22",
+      "lat": 56.3104942,
+      "lng": 23.3808325,
+      "p95": 1.69,
+      "diesel": 1.99,
+      "lpg": null
+    },
+    {
+      "company": "Antivis",
+      "municipality": "Kelmės r. sav.",
+      "address": "Tytuvėnai, Žemaitės g.14",
+      "lat": 55.5941513,
+      "lng": 23.1795143,
+      "p95": 1.78,
+      "diesel": 2.04,
+      "lpg": 0.93
+    },
+    {
+      "company": "Degta",
+      "municipality": "Elektrėnų sav.",
+      "address": "Vievis, Kauno g. 55A",
+      "lat": 54.7752192,
+      "lng": 24.8104952,
+      "p95": 1.899,
+      "diesel": 2.149,
+      "lpg": 0.959
+    },
+    {
+      "company": "Degta",
+      "municipality": "Anykščių r. sav.",
+      "address": "Anykščiai, Vienuolio g. 34A",
+      "lat": 55.5226002,
+      "lng": 25.0879884,
+      "p95": 1.739,
+      "diesel": 2.039,
+      "lpg": 0.879
+    },
+    {
+      "company": "Degta",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Rokiškis, Respublikos g.113B,",
+      "lat": 55.9466824,
+      "lng": 25.591055,
+      "p95": 1.839,
+      "diesel": 2.083,
+      "lpg": 0.899
+    },
+    {
+      "company": "Junasa",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Žemaitės g. 131c",
+      "lat": 55.9481053,
+      "lng": 23.3204268,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.84
+    },
+    {
+      "company": "Junasa",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Bačiūnų g. 12a",
+      "lat": 55.8979296,
+      "lng": 23.3517196,
+      "p95": 1.749,
+      "diesel": 1.959,
+      "lpg": 0.84
+    },
+    {
+      "company": "Junasa",
+      "municipality": "Šiaulių r. sav.",
+      "address": "M. Katiliškio g. 50, Gruzdžiai",
+      "lat": 56.0992272,
+      "lng": 23.2658189,
+      "p95": 1.749,
+      "diesel": 1.999,
+      "lpg": 0.84
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Plungės r. sav.",
+      "address": "Pramogų g. 4, Truikių k.",
+      "lat": 55.9387488,
+      "lng": 21.8800433,
+      "p95": 1.789,
+      "diesel": 1.999,
+      "lpg": 0.959
+    },
+    {
+      "company": "Regusa",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "Medelyno g. 4A, Jūrės k.",
+      "lat": 54.7693801,
+      "lng": 23.4865936,
+      "p95": 1.75,
+      "diesel": 2.01,
+      "lpg": 0.91
+    },
+    {
+      "company": "Regusa",
+      "municipality": "Marijampolės sav.",
+      "address": "Sodo g. 11, Gavaltuvos k.",
+      "lat": 54.6767015,
+      "lng": 23.4179279,
+      "p95": 1.75,
+      "diesel": 2.01,
+      "lpg": 0.89
+    },
+    {
+      "company": "Regusa",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "J. Basanavičiaus g. 45A, Kybartai",
+      "lat": 54.6387352,
+      "lng": 22.7632799,
+      "p95": 1.76,
+      "diesel": 2.05,
+      "lpg": 0.91
+    },
+    {
+      "company": "Regusa",
+      "municipality": "Kazlų Rūdos sav.",
+      "address": "S. Daukanto g. 19D, Kazlų Rūda",
+      "lat": 54.7392942,
+      "lng": 23.4962233,
+      "p95": 1.75,
+      "diesel": 2.01,
+      "lpg": 0.91
+    },
+    {
+      "company": "Regusa",
+      "municipality": "Kauno m. sav.",
+      "address": "Marijampolės pl. 20, Kaunas",
+      "lat": 54.8502039,
+      "lng": 23.9657416,
+      "p95": 1.72,
+      "diesel": 1.97,
+      "lpg": 0.89
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Rietavo sav.",
+      "address": "Plungės g. 32, Rietavas",
+      "lat": 55.7350721,
+      "lng": 21.9240545,
+      "p95": 1.769,
+      "diesel": 2.049,
+      "lpg": 0.969
+    },
+    {
+      "company": "Propano ir butano dujų centras",
+      "municipality": "Ignalinos r. sav.",
+      "address": "Švenčionių 35, Ignalina",
+      "lat": 55.3271809,
+      "lng": 26.1744803,
+      "p95": 1.86,
+      "diesel": 2.12,
+      "lpg": 0.95
+    },
+    {
+      "company": "Propano ir butano dujų centras",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Aukštaičių g. 2a, Cirkliškio k.",
+      "lat": 55.1200151,
+      "lng": 26.131442,
+      "p95": 1.849,
+      "diesel": 2.109,
+      "lpg": 0.9
+    },
+    {
+      "company": "Adukesta",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Laisvės g. 50, Maciuičių k.",
+      "lat": 55.6857851,
+      "lng": 21.4178713,
+      "p95": 1.79,
+      "diesel": 2.06,
+      "lpg": 0.93
+    },
+    {
+      "company": "Plovimo sistemos",
+      "municipality": "Šiaulių m. sav.",
+      "address": "Gegužių g. 28",
+      "lat": 55.9059107,
+      "lng": 23.2587205,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.909
+    },
+    {
+      "company": "Melkasta",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Kalvelių k., Lazdijų pl. 29",
+      "lat": 54.1060552,
+      "lng": 23.6737682,
+      "p95": 1.75,
+      "diesel": 2.02,
+      "lpg": 0.92
+    },
+    {
+      "company": "Melkasta",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Gulbiniškių k. 7",
+      "lat": 54.7121286,
+      "lng": 23.2080299,
+      "p95": 1.77,
+      "diesel": 2.03,
+      "lpg": 0.92
+    },
+    {
+      "company": "Melkasta",
+      "municipality": "Lazdijų r. sav.",
+      "address": "Seirijų mstl., Algirdo g. 35A",
+      "lat": 54.2395118,
+      "lng": 23.8230697,
+      "p95": 1.75,
+      "diesel": 2.02,
+      "lpg": 0.92
+    },
+    {
+      "company": "Eu Verslas",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Viekšnių g. 24, Mažeikiai",
+      "lat": 56.3042092,
+      "lng": 22.3602577,
+      "p95": 1.719,
+      "diesel": 1.909,
+      "lpg": 0.89
+    },
+    {
+      "company": "Eu Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Telšių g. 127, Jovaišiškės k.",
+      "lat": 55.9032301,
+      "lng": 21.8772543,
+      "p95": 1.749,
+      "diesel": 1.949,
+      "lpg": 0.91
+    },
+    {
+      "company": "Eu Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Stoties g. 7C, Plungė",
+      "lat": 55.9203765,
+      "lng": 21.8321274,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": 0.91
+    },
+    {
+      "company": "Eu Verslas",
+      "municipality": "Plungės r. sav.",
+      "address": "Rietavo g. 107, Pakerų k.",
+      "lat": 55.8966727,
+      "lng": 21.8644859,
+      "p95": 1.759,
+      "diesel": 1.959,
+      "lpg": null
+    },
+    {
+      "company": "Šventosios investicijos",
+      "municipality": "Palangos m. sav.",
+      "address": "Elijos g.26 Palanga (Šventoji)",
+      "lat": 56.0128803,
+      "lng": 21.1037154,
+      "p95": 1.829,
+      "diesel": 2.099,
+      "lpg": 0.999
+    },
+    {
+      "company": "Atsiauta",
+      "municipality": "Šiaulių r. sav.",
+      "address": "Vytauto 80, Kuršėnai",
+      "lat": 56.0147959,
+      "lng": 22.9514104,
+      "p95": 1.87,
+      "diesel": 2.13,
+      "lpg": 0.95
+    },
+    {
+      "company": "Topgas",
+      "municipality": "Kupiškio r. sav.",
+      "address": "Slavinčiškio g.18, Slavinčiškis",
+      "lat": 55.8324305,
+      "lng": 25.0200782,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "company": "Topgas",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Paukštininkų g.13, Kaišiadorys",
+      "lat": 54.8621235,
+      "lng": 24.3951041,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.9
+    },
+    {
+      "company": "Topgas",
+      "municipality": "Marijampolės sav.",
+      "address": "Gėlyno g.25, Marijampolė",
+      "lat": 54.5840739,
+      "lng": 23.3609621,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.9
+    },
+    {
+      "company": "Topgas",
+      "municipality": "Pasvalio r. sav.",
+      "address": "Stoties g.25, Pasvalys",
+      "lat": 56.0673047,
+      "lng": 24.3859088,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "company": "Circle K",
+      "municipality": "Kėdainių r. sav.",
+      "address": "J.Basanavičiaus g. 103, Kėdainiai",
+      "lat": 55.2742329,
+      "lng": 23.9449674,
+      "p95": 1.799,
+      "diesel": 2.054,
+      "lpg": 0.939
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Šėtos g. 120 , Kėdainiai",
+      "lat": 55.2972995,
+      "lng": 24.001282,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": null
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Dariaus ir Girėno 23 A, Kėdainiai",
+      "lat": 55.3127081,
+      "lng": 23.9781131,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.91
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Gedimino g. 50 , Kėdainiai",
+      "lat": 55.2914813,
+      "lng": 23.96054,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.91
+    },
+    {
+      "company": "S.Savicko įmonė",
+      "municipality": "Kėdainių r. sav.",
+      "address": "Vandžiogalos g 29,Saviečių k.",
+      "lat": 55.1668782,
+      "lng": 23.99486,
+      "p95": 1.769,
+      "diesel": 1.999,
+      "lpg": 0.91
+    },
+    {
+      "company": "Lašų ŽŪB",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Vytėnų vs 9, Vytėnai",
+      "lat": 55.8575363,
+      "lng": 25.733614,
+      "p95": 1.87,
+      "diesel": 2.12,
+      "lpg": null
+    },
+    {
+      "company": "Littaura",
+      "municipality": "Tauragės r. sav.",
+      "address": "Pramonės g. 6, Tauragė",
+      "lat": 55.2382714,
+      "lng": 22.297675,
+      "p95": 1.75,
+      "diesel": 1.95,
+      "lpg": null
+    },
+    {
+      "company": "Valdegra",
+      "municipality": "Marijampolės sav.",
+      "address": "Prienų g.7, Igliaukos k.",
+      "lat": 54.5578185,
+      "lng": 23.6563063,
+      "p95": 1.759,
+      "diesel": 1.979,
+      "lpg": 0.959
+    },
+    {
+      "company": "Andopas",
+      "municipality": "Šilutės r. sav.",
+      "address": "Ramučių g.43",
+      "lat": 55.3588294,
+      "lng": 21.5033999,
+      "p95": 1.75,
+      "diesel": 1.99,
+      "lpg": 0.88
+    },
+    {
+      "company": "Deguva",
+      "municipality": "Kauno m. sav.",
+      "address": "Raudondvario pl.234,Kaunas",
+      "lat": 54.9207602,
+      "lng": 23.8243106,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.88
+    },
+    {
+      "company": "Dujotena",
+      "municipality": "Utenos r. sav.",
+      "address": "Molėtų g. 94, Utena",
+      "lat": 55.4829587,
+      "lng": 25.5710264,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.86
+    },
+    {
+      "company": "Raimondo Balsio IĮ",
+      "municipality": "Kelmės r. sav.",
+      "address": "Ramučių k., Luokės 2",
+      "lat": 55.8303286,
+      "lng": 22.8534343,
+      "p95": 1.76,
+      "diesel": 1.95,
+      "lpg": 0.9
+    },
+    {
+      "company": "DVS Topolis",
+      "municipality": "Rokiškio r. sav.",
+      "address": "Panevėžio 7c, Rokiškis",
+      "lat": 55.9430601,
+      "lng": 25.5856573,
+      "p95": null,
+      "diesel": null,
+      "lpg": 0.959
+    },
+    {
+      "company": "Visvilas",
+      "municipality": "Mažeikių r. sav.",
+      "address": "Laukų g. 2C.,Tirkšlių m.",
+      "lat": 56.2582023,
+      "lng": 22.3094665,
+      "p95": 1.74,
+      "diesel": 1.99,
+      "lpg": 0.89
+    },
+    {
+      "company": "Medelsta",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Pagirių k., Durpių g.45",
+      "lat": 54.5691646,
+      "lng": 25.1878104,
+      "p95": 1.81,
+      "diesel": 2.04,
+      "lpg": 0.96
+    },
+    {
+      "company": "Bonsa",
+      "municipality": "Tauragės r. sav.",
+      "address": "Tilžės pl. 46, Taurai",
+      "lat": 55.2423262,
+      "lng": 22.2497412,
+      "p95": 1.699,
+      "diesel": 1.899,
+      "lpg": 0.8
+    },
+    {
+      "company": "Bonsa",
+      "municipality": "Tauragės r. sav.",
+      "address": "Vaidatonių k. 1",
+      "lat": 55.4691796,
+      "lng": 22.6792258,
+      "p95": 1.7,
+      "diesel": 1.89,
+      "lpg": 0.9
+    },
+    {
+      "company": "Vimijula",
+      "municipality": "Jonavos r. sav.",
+      "address": "Kauno g. 2A, Ručiūnų k.",
+      "lat": 55.1378212,
+      "lng": 24.1933962,
+      "p95": 1.76,
+      "diesel": 2.09,
+      "lpg": 0.97
+    },
+    {
+      "company": "Bemija",
+      "municipality": "Ukmergės r. sav.",
+      "address": "Dariaus ir Girėmo g. 31, Ukmergė",
+      "lat": 55.2407245,
+      "lng": 24.7873484,
+      "p95": 1.75,
+      "diesel": 2.05,
+      "lpg": 0.93
+    },
+    {
+      "company": "Vlantana",
+      "municipality": "Klaipėdos r. sav.",
+      "address": "Dvaro g. 1, Gobergiškės k.",
+      "lat": 55.7188896,
+      "lng": 21.2937025,
+      "p95": 1.74,
+      "diesel": 1.96,
+      "lpg": null
+    },
+    {
+      "company": "Vildega",
+      "municipality": "Vilkaviškio r. sav.",
+      "address": "Vytauto g. 2D, Vilkaviškis",
+      "lat": 54.6433403,
+      "lng": 23.0530856,
+      "p95": 1.779,
+      "diesel": 2.019,
+      "lpg": 0.92
+    },
+    {
+      "company": "A. Praškevičiaus IĮ",
+      "municipality": "Kaišiadorių r. sav.",
+      "address": "Kalvių g. 4, Šventininkų k.",
+      "lat": 54.7260902,
+      "lng": 24.2363611,
+      "p95": 1.7,
+      "diesel": 1.95,
+      "lpg": 0.9
+    }
+  ]
+}

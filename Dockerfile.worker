@@ -9,5 +9,6 @@ RUN pnpm install
 COPY tsconfig.json ./
 COPY src/lib/ ./src/lib/
 COPY jobs/ ./jobs/
+COPY data/ ./data/
 
 CMD ["pnpm", "exec", "tsx", "jobs/worker.ts"]

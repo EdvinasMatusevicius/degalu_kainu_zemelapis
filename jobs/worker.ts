@@ -1,7 +1,7 @@
 import { schedule } from 'node-cron'
 import { max } from 'drizzle-orm'
 import { scrapeFuelPrices } from './scrapeFuelPrices'
-import { geocodeMissingWithNominatim } from './coordinates'
+import { updateCoordinatesFromCatalog } from './coordinates'
 import { logger } from './logger'
 import { db } from '../src/lib/db'
 import { fuelPrices } from '../src/lib/schema'
@@ -50,7 +50,8 @@ function scheduleNextRetry(nextIndex: number): void {
 // Run immediately on boot
 let state: WorkerState = { kind: 'retrying', nextRetryIndex: 0, nextRetryAt: Date.now() }
 
-geocodeMissingWithNominatim().catch((err) => logger.error({ err }, 'Startup Nominatim geocoding failed'))
+updateCoordinatesFromCatalog()
+  .catch((err: unknown) => logger.error({ err }, 'Startup coordinate sync failed'))
 
 let running = false
 

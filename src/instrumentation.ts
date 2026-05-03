@@ -5,8 +5,8 @@ export async function register() {
     await migrate(db, { migrationsFolder: './drizzle' })
 
     try {
-      const { updateMissingCoordinates } = await import('../jobs/coordinates')
-      await updateMissingCoordinates()
+      const { updateCoordinatesFromCatalog } = await import('../jobs/coordinates')
+      await updateCoordinatesFromCatalog()
     } catch (err) {
       console.error('[coordinates] Startup coordinate update failed:', err)
     }

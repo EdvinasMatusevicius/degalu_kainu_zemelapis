@@ -3,7 +3,7 @@ import * as XLSX from 'xlsx'
 import { and, eq } from 'drizzle-orm'
 import { db } from '../../src/lib/db'
 import { stations, fuelPrices } from '../../src/lib/schema'
-import { updateMissingCoordinates, geocodeMissingWithNominatim } from '../coordinates'
+import { updateCoordinatesFromCatalog } from '../coordinates'
 import { logger } from '../logger'
 
 export async function scrapeFuelPrices(): Promise<void> {
@@ -58,9 +58,8 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
   }
 
   // Coordinate pipeline runs in background — doesn't block scheduling
-  updateMissingCoordinates({ allowRefresh: true })
-    .then(() => geocodeMissingWithNominatim())
-    .catch((err) => logger.error({ err }, '[scraper] Post-insert coordinate update failed'))
+  updateCoordinatesFromCatalog()
+    .catch((err: unknown) => logger.error({ err }, '[scraper] Post-insert coordinate update failed'))
 }
 
 function excelSerialToDate(serial: number): string {
