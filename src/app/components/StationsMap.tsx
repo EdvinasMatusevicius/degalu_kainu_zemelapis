@@ -2,9 +2,11 @@
 
 import { useState, useMemo, useCallback } from "react";
 import Map from "./Map";
-import { Source, Layer, Popup } from "react-map-gl/maplibre";
-import type { MapLayerMouseEvent, LayerProps } from "react-map-gl/maplibre";
+import { Popup } from "react-map-gl/maplibre";
+import type { MapLayerMouseEvent } from "react-map-gl/maplibre";
 import type { FeatureCollection, Point } from "geojson";
+import StationCirclesBlue, { LAYER_ID as BLUE_ID } from "./layers/StationCirclesBlue";
+import StationCirclesRed, { LAYER_ID as RED_ID } from "./layers/StationCirclesRed";
 
 type Station = {
   id: number;
@@ -18,24 +20,15 @@ type Station = {
   priceLpg: string | null;
 };
 
-type Props = {
-  stations: Station[];
+type Props = { stations: Station[] };
+
+type LayerKey = "blue" | "red";
+
+const LAYERS: Record<LayerKey, { id: string; label: string }> = {
+  blue: { id: BLUE_ID, label: "Blue" },
+  red:  { id: RED_ID,  label: "Red"  },
 };
 
-// Describes how to draw the circles on the GPU — radius, color, border.
-const circleLayer: LayerProps = {
-  id: "stations",
-  type: "circle",
-  paint: {
-    "circle-radius": 6,
-    "circle-color": "#2563eb",
-    "circle-stroke-width": 2,
-    "circle-stroke-color": "#ffffff",
-  },
-};
-
-// Converts our station list into GeoJSON — the standard format maplibre expects.
-// All station data goes into "properties" so we can read it back on click.
 function toGeoJson(stations: Station[]): FeatureCollection<Point> {
   return {
     type: "FeatureCollection",
@@ -68,12 +61,10 @@ function PriceRow({ label, value }: { label: string; value: string | null }) {
 export default function StationsMap({ stations }: Props) {
   const [selected, setSelected] = useState<Station | null>(null);
   const [cursor, setCursor] = useState("auto");
+  const [activeLayer, setActiveLayer] = useState<LayerKey>("blue");
 
-  // Only recompute GeoJSON when the stations array actually changes (e.g. after filtering).
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
 
-  // interactiveLayerIds=["stations"] tells react-map-gl to populate e.features
-  // when you click on a circle from the "stations" layer.
   const handleClick = useCallback((e: MapLayerMouseEvent) => {
     const feature = e.features?.[0];
     if (!feature) return;
@@ -91,24 +82,39 @@ export default function StationsMap({ stations }: Props) {
     });
   }, []);
 
+  const handleLayerChange = useCallback((key: LayerKey) => {
+    setActiveLayer(key);
+    setSelected(null);
+  }, []);
+
   return (
-    <div className="h-full rounded-lg overflow-hidden border border-foreground/20">
+    <div className="relative h-full rounded-lg overflow-hidden border border-foreground/20">
+      <div className="absolute top-2 left-2 z-10 flex gap-1 rounded shadow p-1 bg-white dark:bg-neutral-800">
+        {(Object.entries(LAYERS) as [LayerKey, { id: string; label: string }][]).map(([key, { label }]) => (
+          <button
+            key={key}
+            onClick={() => handleLayerChange(key)}
+            className={`px-3 py-1 text-sm rounded transition-colors ${
+              activeLayer === key
+                ? "bg-blue-600 text-white"
+                : "text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
       <Map
         initialViewState={{ longitude: 23.9, latitude: 55.9, zoom: 6.5 }}
-        interactiveLayerIds={["stations"]}
+        interactiveLayerIds={[LAYERS[activeLayer].id]}
         cursor={cursor}
         onClick={handleClick}
         onMouseEnter={() => setCursor("pointer")}
         onMouseLeave={() => setCursor("auto")}
       >
-        {/*
-          <Source> feeds the GeoJSON data into maplibre.
-          <Layer> inside it tells maplibre how to render it (circles in our case).
-          When `geoJson` changes (after a filter), maplibre re-renders the dots — no DOM changes.
-        */}
-        <Source id="stations" type="geojson" data={geoJson}>
-          <Layer {...circleLayer} />
-        </Source>
+        {activeLayer === "blue" && <StationCirclesBlue data={geoJson} />}
+        {activeLayer === "red"  && <StationCirclesRed  data={geoJson} />}
 
         {selected && (
           <Popup
@@ -122,9 +128,9 @@ export default function StationsMap({ stations }: Props) {
             <div className="text-sm leading-snug min-w-[140px]" style={{ color: "CanvasText", background: "Canvas" }}>
               <p className="font-semibold">{selected.brand}</p>
               <p className="mb-2">{selected.address}, {selected.municipality}</p>
-              <PriceRow label="A95" value={selected.price95} />
+              <PriceRow label="A95"      value={selected.price95}     />
               <PriceRow label="Dyzelinas" value={selected.priceDiesel} />
-              <PriceRow label="LPG" value={selected.priceLpg} />
+              <PriceRow label="LPG"       value={selected.priceLpg}    />
             </div>
           </Popup>
         )}
