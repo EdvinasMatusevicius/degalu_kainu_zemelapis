@@ -78,7 +78,7 @@ export default async function Home() {
   ])
 
   return (
-    <div className="p-8 h-screen flex flex-col">
+    <div className="p-2 h-screen flex flex-col">
       <h1 className="text-2xl font-bold mb-1">Degalų kainos</h1>
       {date ? (
         <p className="text-foreground/60 mb-4">Data: {date}</p>
