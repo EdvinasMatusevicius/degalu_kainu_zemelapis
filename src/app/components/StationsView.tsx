@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import StationsMap from "./StationsMap";
 import StationsList from "./StationsList";
+import StationsFilter from "./StationsFilter";
 
 type MapStation = {
   id: number;
@@ -60,13 +61,7 @@ export default function StationsView({ mapStations, rows }: Props) {
     <div className="grid gap-4 [grid-template-areas:'filter'_'map'_'list'] [grid-template-rows:auto_18rem_24rem] md:[grid-template-areas:'filter_filter'_'map_list'] md:grid-cols-[2fr_1fr] md:grid-rows-[auto_1fr] md:h-full">
 
       <div className="[grid-area:filter]">
-        <input
-          type="text"
-          placeholder="Filtruoti pagal tinklą, savivaldybę ar adresą…"
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="border border-foreground/20 rounded px-3 py-1.5 text-sm w-full md:w-80 bg-background text-foreground"
-        />
+        <StationsFilter filter={filter} setFilter={setFilter} />
       </div>
 
       <div className="[grid-area:map] flex flex-col gap-1 min-h-0">
