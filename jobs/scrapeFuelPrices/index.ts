@@ -75,7 +75,7 @@ async function extractSharePointUrl(): Promise<string> {
   if (!res.ok) throw new Error(`ena.lt fetch failed: ${res.status}`)
 
   const root = parse(await res.text())
-  const link = root.querySelector('a[title*="Naujausios"]')
+  const link = root.querySelectorAll('a').find((a) => a.text.includes('Naujausios'))
   if (!link) throw new Error('Fuel prices link not found on ena.lt')
 
   const href = link.getAttribute('href')
