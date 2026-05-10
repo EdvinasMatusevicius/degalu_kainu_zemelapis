@@ -67,6 +67,12 @@ export default function StationsView({ mapStations, rows }: Props) {
   const [filter, setFilter] = useState("");
   const [fuel, setFuel] = useState<FuelKey>("all");
   const [view, setView] = useState<ViewMode>("operator");
+  const [selectedBrands, setSelectedBrands] = useState<Set<string>>(new Set());
+
+  const allBrands = useMemo(
+    () => Array.from(new Set(mapStations.map((s) => s.brand))).sort((a, b) => a.localeCompare(b)),
+    [mapStations],
+  );
 
   // Heatmap is only meaningful when a specific fuel is picked.
   // When the user switches back to "Visi", reset view so state can't drift.
@@ -84,17 +90,33 @@ export default function StationsView({ mapStations, rows }: Props) {
     [mapStations, query],
   );
 
-  const filteredRows = useMemo(
+  const textFilteredRows = useMemo(
     () => (query ? rows.filter((r) => matches(query, r.brand, r.municipality, r.address)) : rows),
     [rows, query],
   );
 
+  const brandFilteredMapStations = useMemo(
+    () =>
+      selectedBrands.size === 0
+        ? textFilteredMapStations
+        : textFilteredMapStations.filter((s) => selectedBrands.has(s.brand)),
+    [textFilteredMapStations, selectedBrands],
+  );
+
+  const filteredRows = useMemo(
+    () =>
+      selectedBrands.size === 0
+        ? textFilteredRows
+        : textFilteredRows.filter((r) => selectedBrands.has(r.brand)),
+    [textFilteredRows, selectedBrands],
+  );
+
   // Fuel filter: keep stations that have a price for the selected fuel.
   const visibleMapStations = useMemo(() => {
-    if (fuel === "all") return textFilteredMapStations;
+    if (fuel === "all") return brandFilteredMapStations;
     const property = FUEL_PROPERTY[fuel];
-    return textFilteredMapStations.filter((s) => s[property] != null);
-  }, [textFilteredMapStations, fuel]);
+    return brandFilteredMapStations.filter((s) => s[property] != null);
+  }, [brandFilteredMapStations, fuel]);
 
   const heatmap = useMemo(() => {
     if (view !== "heatmap" || fuel === "all") return null;
@@ -119,7 +141,7 @@ export default function StationsView({ mapStations, rows }: Props) {
         @media (min-width: 768px) {
           .stations-grid {
             grid-template-areas: "filter filter" "map list";
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2fr 1.5fr;
             grid-template-rows: auto 1fr;
             height: 100%;
           }
@@ -136,6 +158,9 @@ export default function StationsView({ mapStations, rows }: Props) {
             setFuel={handleSetFuel}
             view={view}
             setView={setView}
+            brands={allBrands}
+            selectedBrands={selectedBrands}
+            setSelectedBrands={setSelectedBrands}
           />
         </div>
 
