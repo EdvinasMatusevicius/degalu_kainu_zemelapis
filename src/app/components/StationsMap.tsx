@@ -20,24 +20,18 @@ type Station = {
   priceLpg: string | null;
 };
 
-type Props = { stations: Station[] };
-
-type LayerKey = "blue" | "dyzelis" | "a95" | "lpg";
-
-const LAYERS: Record<LayerKey, { id: string; label: string; property: string }> = {
-  blue:    { id: BLUE_ID,        label: "Visi",      property: ""             },
-  dyzelis: { id: "heat-dyzelis", label: "Dyzelis",   property: "priceDiesel"  },
-  a95:     { id: "heat-a95",     label: "A95",        property: "price95"      },
-  lpg:     { id: "heat-lpg",     label: "LPG",        property: "priceLpg"     },
+export type Heatmap = {
+  property: "price95" | "priceDiesel" | "priceLpg";
+  min: number;
+  max: number;
 };
 
-function priceRange(stations: Station[], get: (s: Station) => string | null) {
-  const prices = stations
-    .map(s => { const v = get(s); return v ? parseFloat(v) : null; })
-    .filter((p): p is number => p !== null && !isNaN(p));
-  if (prices.length === 0) return { min: 1.0, max: 2.0 };
-  return { min: Math.min(...prices), max: Math.max(...prices) };
-}
+type Props = {
+  stations: Station[];
+  heatmap: Heatmap | null;
+};
+
+const HEAT_LAYER_ID = "heat";
 
 function toGeoJson(stations: Station[]): FeatureCollection<Point> {
   return {
@@ -68,18 +62,13 @@ function PriceRow({ label, value }: { label: string; value: string | null }) {
   );
 }
 
-export default function StationsMap({ stations }: Props) {
+export default function StationsMap({ stations, heatmap }: Props) {
   const [selected, setSelected] = useState<Station | null>(null);
   const [cursor, setCursor] = useState("auto");
-  const [activeLayer, setActiveLayer] = useState<LayerKey>("blue");
 
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
 
-  const ranges = useMemo(() => ({
-    dyzelis: priceRange(stations, s => s.priceDiesel),
-    a95:     priceRange(stations, s => s.price95),
-    lpg:     priceRange(stations, s => s.priceLpg),
-  }), [stations]);
+  const interactiveLayerId = heatmap ? HEAT_LAYER_ID : BLUE_ID;
 
   const handleClick = useCallback((e: MapLayerMouseEvent) => {
     const feature = e.features?.[0];
@@ -98,49 +87,26 @@ export default function StationsMap({ stations }: Props) {
     });
   }, []);
 
-  const handleLayerChange = useCallback((key: LayerKey) => {
-    setActiveLayer(key);
-    setSelected(null);
-  }, []);
-
   return (
     <div className="relative h-full rounded-lg overflow-hidden border border-foreground/20">
-      <div className="absolute top-2 left-2 z-10 flex gap-1 rounded shadow p-1 bg-white dark:bg-neutral-800">
-        {(Object.entries(LAYERS) as [LayerKey, typeof LAYERS[LayerKey]][]).map(([key, { label }]) => (
-          <button
-            key={key}
-            onClick={() => handleLayerChange(key)}
-            className={`px-3 py-1 text-sm rounded transition-colors ${
-              activeLayer === key
-                ? "bg-blue-600 text-white"
-                : "text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-700"
-            }`}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
       <Map
         initialViewState={{ longitude: 23.9, latitude: 55.9, zoom: 6.5 }}
-        interactiveLayerIds={[LAYERS[activeLayer].id]}
+        interactiveLayerIds={[interactiveLayerId]}
         cursor={cursor}
         onClick={handleClick}
         onMouseEnter={() => setCursor("pointer")}
         onMouseLeave={() => setCursor("auto")}
       >
-        {activeLayer === "blue" && <StationCirclesBlue data={geoJson} />}
-        {activeLayer === "dyzelis" && (
-          <HeatRangeLayer layerId="heat-dyzelis" property="priceDiesel" data={geoJson}
-            minPrice={ranges.dyzelis.min} maxPrice={ranges.dyzelis.max} />
-        )}
-        {activeLayer === "a95" && (
-          <HeatRangeLayer layerId="heat-a95" property="price95" data={geoJson}
-            minPrice={ranges.a95.min} maxPrice={ranges.a95.max} />
-        )}
-        {activeLayer === "lpg" && (
-          <HeatRangeLayer layerId="heat-lpg" property="priceLpg" data={geoJson}
-            minPrice={ranges.lpg.min} maxPrice={ranges.lpg.max} />
+        {heatmap ? (
+          <HeatRangeLayer
+            layerId={HEAT_LAYER_ID}
+            property={heatmap.property}
+            data={geoJson}
+            minPrice={heatmap.min}
+            maxPrice={heatmap.max}
+          />
+        ) : (
+          <StationCirclesBlue data={geoJson} />
         )}
 
         {selected && (
