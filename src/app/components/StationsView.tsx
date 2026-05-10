@@ -104,33 +104,53 @@ export default function StationsView({ mapStations, rows }: Props) {
   }, [view, fuel, visibleMapStations]);
 
   return (
-    // Single grid with named areas.
-    // Mobile:  filter / map (18rem) / list (24rem) stacked vertically.
-    // Desktop: filter spans both columns; map (2fr) and list (1fr) share the second row at full height.
-    <div className="grid gap-4 [grid-template-areas:'filter'_'map'_'list'] [grid-template-rows:auto_18rem_24rem] md:[grid-template-areas:'filter_filter'_'map_list'] md:grid-cols-[2fr_1fr] md:grid-rows-[auto_1fr] md:h-full">
+    <>
+      <style>{`
+        .stations-grid {
+          display: grid;
+          gap: 1rem;
+          grid-template-areas: "filter" "map" "list";
+          grid-template-rows: auto 18rem 24rem;
+        }
+        .stations-grid__filter { grid-area: filter; }
+        .stations-grid__map    { grid-area: map; }
+        .stations-grid__list   { grid-area: list; }
 
-      <div className="[grid-area:filter]">
-        <StationsFilter
-          filter={filter}
-          setFilter={setFilter}
-          fuel={fuel}
-          setFuel={handleSetFuel}
-          view={view}
-          setView={setView}
-        />
-      </div>
+        @media (min-width: 768px) {
+          .stations-grid {
+            grid-template-areas: "filter filter" "map list";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto 1fr;
+            height: 100%;
+          }
+        }
+      `}</style>
 
-      <div className="[grid-area:map] flex flex-col gap-1 min-h-0">
-        <div className="flex-1 min-h-0">
-          <StationsMap stations={visibleMapStations} heatmap={heatmap} />
+      <div className="stations-grid">
+
+        <div className="stations-grid__filter">
+          <StationsFilter
+            filter={filter}
+            setFilter={setFilter}
+            fuel={fuel}
+            setFuel={handleSetFuel}
+            view={view}
+            setView={setView}
+          />
         </div>
-        <p className="text-xs text-foreground/50">{visibleMapStations.length} stotys su koordinatėmis</p>
-      </div>
 
-      <div className="[grid-area:list] overflow-y-auto border border-foreground/20 rounded-lg min-h-0">
-        <StationsList rows={filteredRows} />
-      </div>
+        <div className="stations-grid__map flex flex-col gap-1 min-h-0">
+          <div className="flex-1 min-h-0">
+            <StationsMap stations={visibleMapStations} heatmap={heatmap} />
+          </div>
+          <p className="text-xs text-foreground/50">{visibleMapStations.length} stotys su koordinatėmis</p>
+        </div>
 
-    </div>
+        <div className="stations-grid__list overflow-y-auto border border-foreground/20 rounded-lg min-h-0">
+          <StationsList rows={filteredRows} />
+        </div>
+
+      </div>
+    </>
   );
 }

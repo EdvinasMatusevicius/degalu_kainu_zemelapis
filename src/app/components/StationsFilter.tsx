@@ -74,7 +74,7 @@ export default function StationsFilter({
             onChange={(e) => setView(e.target.value as ViewMode)}
             className={selectClass}
           >
-            <option value="operator">Operatorius</option>
+            <option value="operator">Degaliniu tinklas</option>
             {heatmapAvailable && <option value="heatmap">Šilumos žemėlapis</option>}
           </select>
         </div>

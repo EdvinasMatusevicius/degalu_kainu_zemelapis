@@ -79,12 +79,14 @@ export default async function Home() {
 
   return (
     <div className="p-2 h-screen flex flex-col">
-      <h1 className="text-2xl font-bold mb-1">Degalų kainos</h1>
-      {date ? (
-        <p className="text-foreground/60 mb-4">Data: {date}</p>
-      ) : (
-        <p className="text-foreground/60 mb-4">Nėra duomenų</p>
-      )}
+      <div className='mb-5'>
+        <span className="text-2xl font-bold mb-1">Degalų kainos</span>
+        {date ? (
+          <span className="text-foreground/60 mx-4">Data: {date}</span>
+        ) : (
+          <span className="text-foreground/60 mx-4">Nėra duomenų</span>
+        )}
+      </div>
 
       {/* flex-1 min-h-0: takes all remaining vertical space; min-h-0 lets it shrink below content size */}
       <div className="flex-1 min-h-0">
