@@ -40,6 +40,17 @@ function SortIndicator({ sort, column }: { sort: Sort; column: SortColumn }) {
 export default function StationsList({ rows }: { rows: TableRow[] }) {
   const [expanded, setExpanded] = useState<number | null>(null);
   const [sort, setSort] = useState<Sort>(null);
+  const [locationExpanded, setLocationExpanded] = useState(false);
+
+  // Inline style so we can animate max-width / padding / border-width / opacity.
+  // colSpan changes can't animate, so we keep the column rendered and squash it instead.
+  const addressColStyle: React.CSSProperties = {
+    transition: "max-width 300ms ease, padding 300ms ease, border-width 300ms ease, opacity 200ms ease",
+    overflow: "hidden",
+    ...(locationExpanded
+      ? { maxWidth: "40rem", opacity: 1 }
+      : { maxWidth: 0, paddingLeft: 0, paddingRight: 0, paddingTop: 0, paddingBottom: 0, borderWidth: 0, opacity: 0 }),
+  };
 
   const sortedRows = useMemo(() => {
     if (!sort) return rows;
@@ -67,8 +78,26 @@ export default function StationsList({ rows }: { rows: TableRow[] }) {
       <thead className="sticky top-0 bg-background z-10">
         <tr>
           <th className={`${textCell} text-left`}>Tinklas</th>
-          <th className={`${textCell} text-left`}>Savivaldybė</th>
-          <th className={`${textCell} text-left`}>Adresas</th>
+          <th
+            className={`${textCell} text-left cursor-pointer select-none hover:bg-foreground/5`}
+            onClick={() => setLocationExpanded((v) => !v)}
+            title={locationExpanded ? "Suskleisti" : "Išskleisti"}
+          >
+            {locationExpanded ? "Savivaldybė" : <>Lokacija <span className="text-foreground/60">▶</span></>}
+          </th>
+          <th className={`${textCell} text-left`} style={addressColStyle}>
+            <span className="inline-flex items-center justify-between w-full gap-2">
+              <span>Adresas</span>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); setLocationExpanded(false); }}
+                className="text-foreground/60 hover:text-foreground cursor-pointer"
+                title="Suskleisti"
+              >
+                ◀
+              </button>
+            </span>
+          </th>
           <th
             className={sortableHeader}
             onClick={() => { setSort(nextSort(sort, "price95")); setExpanded(null); }}
@@ -97,8 +126,19 @@ export default function StationsList({ rows }: { rows: TableRow[] }) {
               className="cursor-pointer hover:bg-foreground/5"
             >
               <td className={textCell}><span className={truncated}>{row.brand}</span></td>
-              <td className={textCell}><span className={truncated}>{row.municipality}</span></td>
-              <td className={textCell}><span className={truncated}>{row.address}</span></td>
+              <td
+                className={`${textCell} ${!locationExpanded ? "cursor-pointer" : ""}`}
+                onClick={
+                  !locationExpanded
+                    ? (e) => { e.stopPropagation(); setLocationExpanded(true); }
+                    : undefined
+                }
+              >
+                <span className={truncated}>{row.municipality}</span>
+              </td>
+              <td className={textCell} style={addressColStyle}>
+                <span className={truncated}>{row.address}</span>
+              </td>
               <td className={`${textCell} text-right`}>{row.price95 ?? "—"}</td>
               <td className={`${textCell} text-right`}>{row.priceDiesel ?? "—"}</td>
               <td className={`${textCell} text-right`}>{row.priceLpg ?? "—"}</td>
