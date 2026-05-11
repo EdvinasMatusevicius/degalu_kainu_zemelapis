@@ -166,7 +166,7 @@ export default function StationsView({ mapStations, rows }: Props) {
 
         <div className="stations-grid__map flex flex-col gap-1 min-h-0">
           <div className="flex-1 min-h-0">
-            <StationsMap stations={visibleMapStations} heatmap={heatmap} />
+            <StationsMap stations={visibleMapStations} heatmap={heatmap} fuel={fuel} />
           </div>
           <p className="text-xs text-foreground/50">{visibleMapStations.length} stotys su koordinatėmis</p>
         </div>

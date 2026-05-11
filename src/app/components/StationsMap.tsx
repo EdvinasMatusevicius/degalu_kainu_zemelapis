@@ -15,7 +15,8 @@ import StationCirclesBlue, {
   PILL_TAKEOVER_ZOOM,
 } from "./layers/StationCirclesBlue";
 import StationCardMarker from "./layers/StationCardMarker";
-import HeatRangeLayer from "./layers/HeatRangeLayer";
+import HeatRangeLayer, { priceToColor } from "./layers/HeatRangeLayer";
+import type { FuelKey } from "./StationsView";
 
 type Station = {
   id: number;
@@ -38,6 +39,7 @@ export type Heatmap = {
 type Props = {
   stations: Station[];
   heatmap: Heatmap | null;
+  fuel: FuelKey;
 };
 
 const HEAT_LAYER_ID = "heat";
@@ -64,29 +66,18 @@ function toGeoJson(stations: Station[]): FeatureCollection<Point> {
   };
 }
 
-function PriceRow({ label, value }: { label: string; value: string | null }) {
-  return (
-    <div className="flex justify-between gap-4">
-      <span>{label}</span>
-      <span>{value ?? "—"}</span>
-    </div>
-  );
-}
-
-export default function StationsMap({ stations, heatmap }: Props) {
-  const [selected, setSelected] = useState<Station | null>(null);
+export default function StationsMap({ stations, heatmap, fuel }: Props) {
   const [cursor, setCursor] = useState("auto");
   const [zoom, setZoom] = useState(INITIAL_ZOOM);
   const [bounds, setBounds] = useState<LngLatBounds | null>(null);
-  const [zMap, setZMap] = useState<Map<number, number>>(new Map());
-  const [counter, setCounter] = useState(0);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
 
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
 
   const interactiveLayerId = heatmap ? HEAT_LAYER_ID : BLUE_ID;
 
-  //  only render pill markers when the GL circles are hidden
-  const showPills = !heatmap && zoom >= PILL_TAKEOVER_ZOOM && bounds !== null;
+  //  only render pill markers when the GL circles/heat are hidden
+  const showPills = zoom >= PILL_TAKEOVER_ZOOM && bounds !== null;
 
   const visiblePillStations = useMemo(() => {
     if (!showPills || !bounds) return [];
@@ -99,70 +90,22 @@ export default function StationsMap({ stations, heatmap }: Props) {
     return m;
   }, [stations]);
 
-  const handlePillClick = useCallback(
-    (id: number) => {
-      const currentZ = zMap.get(id);
-      if (currentZ !== undefined) {
-        let maxZ = 0;
-        for (const v of zMap.values()) if (v > maxZ) maxZ = v;
-        if (currentZ === maxZ) {
-          setZMap((prev) => {
-            const next = new Map(prev);
-            next.delete(id);
-            return next;
-          });
-          return;
-        }
-      }
-      const newZ = counter + 1;
-      setCounter(newZ);
-      setZMap((prev) => new Map(prev).set(id, newZ));
-    },
-    [zMap, counter],
-  );
-
-  const handleClosePopup = useCallback((id: number) => {
-    setZMap((prev) => {
-      if (!prev.has(id)) return prev;
-      const next = new Map(prev);
-      next.delete(id);
-      return next;
-    });
+  const handlePillClick = useCallback((id: number) => {
+    setSelectedId((prev) => (prev === id ? null : id));
   }, []);
 
-  const handleClick = useCallback(
-    (e: MapLayerMouseEvent) => {
-      const feature = e.features?.[0];
-      if (!feature) return;
-
-      if (heatmap) {
-        // Preserve existing popup behavior for heatmap mode.
-        const p = feature.properties ?? {};
-        setSelected({
-          id: p.id,
-          brand: p.brand,
-          address: p.address,
-          municipality: p.municipality,
-          lat: e.lngLat.lat,
-          lon: e.lngLat.lng,
-          price95: p.price95 ?? null,
-          priceDiesel: p.priceDiesel ?? null,
-          priceLpg: p.priceLpg ?? null,
-        });
-        return;
-      }
-
-      // Operator mode: zoom in so the HTML pill marker for this station appears.
-      const geom = feature.geometry as Point;
-      const [lon, lat] = geom.coordinates;
-      e.target.flyTo({
-        center: [lon, lat],
-        zoom: Math.max(FLY_TO_ZOOM, e.target.getZoom()),
-        duration: 800,
-      });
-    },
-    [heatmap],
-  );
+  // Both modes: clicking a GL feature zooms in so the HTML pill marker takes over.
+  const handleClick = useCallback((e: MapLayerMouseEvent) => {
+    const feature = e.features?.[0];
+    if (!feature) return;
+    const geom = feature.geometry as Point;
+    const [lon, lat] = geom.coordinates;
+    e.target.flyTo({
+      center: [lon, lat],
+      zoom: Math.max(FLY_TO_ZOOM, e.target.getZoom()),
+      duration: 800,
+    });
+  }, []);
 
   const syncView = useCallback((map: MapEvent["target"]) => {
     setZoom(map.getZoom());
@@ -210,34 +153,49 @@ export default function StationsMap({ stations, heatmap }: Props) {
         )}
 
         {showPills &&
-          visiblePillStations.map((s) => (
-            <StationCardMarker
-              key={s.id}
-              id={s.id}
-              brand={s.brand}
-              lat={s.lat}
-              lon={s.lon}
-              price95={s.price95}
-              priceDiesel={s.priceDiesel}
-              priceLpg={s.priceLpg}
-              zIndex={zMap.get(s.id) ?? 0}
-              onClick={handlePillClick}
-            />
-          ))}
+          visiblePillStations.map((s) => {
+            let glowColor: string | undefined;
+            let bgColor: string | undefined;
+            if (heatmap) {
+              const raw = s[heatmap.property];
+              const price = raw == null ? null : parseFloat(raw);
+              glowColor = priceToColor(price, heatmap.min, heatmap.max);
+              bgColor = priceToColor(price, heatmap.min, heatmap.max, {
+                saturation: 70,
+                lightness: 90,
+                nullColor: "#f3f4f6",
+              });
+            }
+            return (
+              <StationCardMarker
+                key={s.id}
+                id={s.id}
+                brand={s.brand}
+                lat={s.lat}
+                lon={s.lon}
+                price95={s.price95}
+                priceDiesel={s.priceDiesel}
+                priceLpg={s.priceLpg}
+                zIndex={selectedId === s.id ? 10 : 0}
+                fuel={fuel}
+                glowColor={glowColor}
+                bgColor={bgColor}
+                selected={selectedId === s.id}
+                onClick={handlePillClick}
+              />
+            );
+          })}
 
-        {Array.from(zMap.entries()).map(([id, z]) => {
-          const s = stationById.get(id);
-          if (!s) return null;
+        {showPills && selectedId !== null && stationById.get(selectedId) && (() => {
+          const s = stationById.get(selectedId)!;
           return (
             <Popup
-              key={id}
               longitude={s.lon}
               latitude={s.lat}
-              anchor="bottom"
-              offset={20}
+              anchor="top"
+              offset={28}
               closeOnClick={false}
-              onClose={() => handleClosePopup(id)}
-              style={{ zIndex: z }}
+              onClose={() => setSelectedId(null)}
             >
               <div className="text-xs text-gray-800 min-w-[140px]">
                 <p className="font-semibold">{s.brand}</p>
@@ -247,26 +205,8 @@ export default function StationsMap({ stations, heatmap }: Props) {
               </div>
             </Popup>
           );
-        })}
+        })()}
 
-        {selected && (
-          <Popup
-            longitude={selected.lon}
-            latitude={selected.lat}
-            anchor="bottom"
-            offset={10}
-            onClose={() => setSelected(null)}
-            closeOnClick={false}
-          >
-            <div className="text-sm leading-snug min-w-[140px]" style={{ color: "CanvasText", background: "Canvas" }}>
-              <p className="font-semibold">{selected.brand}</p>
-              <p className="mb-2">{selected.address}, {selected.municipality}</p>
-              <PriceRow label="A95"       value={selected.price95}     />
-              <PriceRow label="Dyzelinas" value={selected.priceDiesel} />
-              <PriceRow label="LPG"       value={selected.priceLpg}    />
-            </div>
-          </Popup>
-        )}
       </MapView>
     </div>
   );
