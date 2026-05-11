@@ -9,10 +9,13 @@ import { BRAND_LOGOS } from "@/lib/brandLogos";
 export const LAYER_ID = "stations-blue";
 const ICON_LAYER_ID = "stations-icons";
 const ICON_PIXEL_SIZE = 64;
+// Above this zoom, HTML pill markers take over — hide the GL circle + icon layers.
+export const PILL_TAKEOVER_ZOOM = 12;
 
 const circleLayer: LayerProps = {
   id: LAYER_ID,
   type: "circle",
+  maxzoom: PILL_TAKEOVER_ZOOM,
   paint: {
     "circle-radius": 10,
     "circle-color": "#ffffff",
@@ -24,6 +27,7 @@ const circleLayer: LayerProps = {
 const iconLayer: LayerProps = {
   id: ICON_LAYER_ID,
   type: "symbol",
+  maxzoom: PILL_TAKEOVER_ZOOM,
   layout: {
     "icon-image": ["get", "brand"],
     "icon-size": 0.25,
