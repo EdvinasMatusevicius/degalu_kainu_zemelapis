@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, useMemo, useState } from "react";
+import type { FuelKey } from "./StationsView";
 
 type TableRow = {
   brand: string;
@@ -14,6 +15,12 @@ type TableRow = {
 type SortColumn = "price95" | "priceDiesel" | "priceLpg";
 type SortDir = "asc" | "desc";
 type Sort = { column: SortColumn; dir: SortDir } | null;
+
+const FUEL_COLUMN: Record<Exclude<FuelKey, "all">, SortColumn> = {
+  a95:     "price95",
+  dyzelis: "priceDiesel",
+  lpg:     "priceLpg",
+};
 
 const textCell = "border border-foreground/20 px-2 py-1.5 md:px-3 md:py-2";
 const truncated = "block truncate max-w-[5rem] md:max-w-none md:overflow-visible md:whitespace-normal";
@@ -37,10 +44,14 @@ function SortIndicator({ sort, column }: { sort: Sort; column: SortColumn }) {
   );
 }
 
-export default function StationsList({ rows }: { rows: TableRow[] }) {
+export default function StationsList({ rows, fuel }: { rows: TableRow[]; fuel: FuelKey }) {
   const [expanded, setExpanded] = useState<number | null>(null);
   const [sort, setSort] = useState<Sort>(null);
   const [locationExpanded, setLocationExpanded] = useState(false);
+
+  const show95     = fuel === "all" || FUEL_COLUMN[fuel] === "price95";
+  const showDiesel = fuel === "all" || FUEL_COLUMN[fuel] === "priceDiesel";
+  const showLpg    = fuel === "all" || FUEL_COLUMN[fuel] === "priceLpg";
 
   // Inline style so we can animate max-width / padding / border-width / opacity.
   // colSpan changes can't animate, so we keep the column rendered and squash it instead.
@@ -98,24 +109,30 @@ export default function StationsList({ rows }: { rows: TableRow[] }) {
               </button>
             </span>
           </th>
-          <th
-            className={sortableHeader}
-            onClick={() => { setSort(nextSort(sort, "price95")); setExpanded(null); }}
-          >
-            A95<SortIndicator sort={sort} column="price95" />
-          </th>
-          <th
-            className={sortableHeader}
-            onClick={() => { setSort(nextSort(sort, "priceDiesel")); setExpanded(null); }}
-          >
-            D<SortIndicator sort={sort} column="priceDiesel" />
-          </th>
-          <th
-            className={sortableHeader}
-            onClick={() => { setSort(nextSort(sort, "priceLpg")); setExpanded(null); }}
-          >
-            LPG<SortIndicator sort={sort} column="priceLpg" />
-          </th>
+          {show95 && (
+            <th
+              className={sortableHeader}
+              onClick={() => { setSort(nextSort(sort, "price95")); setExpanded(null); }}
+            >
+              A95<SortIndicator sort={sort} column="price95" />
+            </th>
+          )}
+          {showDiesel && (
+            <th
+              className={sortableHeader}
+              onClick={() => { setSort(nextSort(sort, "priceDiesel")); setExpanded(null); }}
+            >
+              D<SortIndicator sort={sort} column="priceDiesel" />
+            </th>
+          )}
+          {showLpg && (
+            <th
+              className={sortableHeader}
+              onClick={() => { setSort(nextSort(sort, "priceLpg")); setExpanded(null); }}
+            >
+              LPG<SortIndicator sort={sort} column="priceLpg" />
+            </th>
+          )}
         </tr>
       </thead>
       <tbody>
@@ -139,13 +156,13 @@ export default function StationsList({ rows }: { rows: TableRow[] }) {
               <td className={textCell} style={addressColStyle}>
                 <span className={truncated}>{row.address}</span>
               </td>
-              <td className={`${textCell} text-right`}>{row.price95 ?? "—"}</td>
-              <td className={`${textCell} text-right`}>{row.priceDiesel ?? "—"}</td>
-              <td className={`${textCell} text-right`}>{row.priceLpg ?? "—"}</td>
+              {show95     && <td className={`${textCell} text-right`}>{row.price95 ?? "—"}</td>}
+              {showDiesel && <td className={`${textCell} text-right`}>{row.priceDiesel ?? "—"}</td>}
+              {showLpg    && <td className={`${textCell} text-right`}>{row.priceLpg ?? "—"}</td>}
             </tr>
             {expanded === i && (
               <tr className="md:hidden">
-                <td colSpan={6} className="px-3 py-2 text-xs text-foreground/70 bg-foreground/5 border border-foreground/20">
+                <td colSpan={3 + Number(show95) + Number(showDiesel) + Number(showLpg)} className="px-3 py-2 text-xs text-foreground/70 bg-foreground/5 border border-foreground/20">
                   {row.municipality} — {row.address}
                 </td>
               </tr>

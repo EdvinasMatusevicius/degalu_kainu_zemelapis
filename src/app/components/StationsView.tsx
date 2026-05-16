@@ -103,7 +103,7 @@ export default function StationsView({ mapStations, rows }: Props) {
     [textFilteredMapStations, selectedBrands],
   );
 
-  const filteredRows = useMemo(
+  const brandFilteredRows = useMemo(
     () =>
       selectedBrands.size === 0
         ? textFilteredRows
@@ -117,6 +117,12 @@ export default function StationsView({ mapStations, rows }: Props) {
     const property = FUEL_PROPERTY[fuel];
     return brandFilteredMapStations.filter((s) => s[property] != null);
   }, [brandFilteredMapStations, fuel]);
+
+  const filteredRows = useMemo(() => {
+    if (fuel === "all") return brandFilteredRows;
+    const property = FUEL_PROPERTY[fuel];
+    return brandFilteredRows.filter((r) => r[property] != null);
+  }, [brandFilteredRows, fuel]);
 
   const heatmap = useMemo(() => {
     if (view !== "heatmap" || fuel === "all") return null;
@@ -172,7 +178,7 @@ export default function StationsView({ mapStations, rows }: Props) {
         </div>
 
         <div className="stations-grid__list overflow-y-auto border border-foreground/20 rounded-lg min-h-0">
-          <StationsList rows={filteredRows} />
+          <StationsList rows={filteredRows} fuel={fuel} />
         </div>
 
       </div>
