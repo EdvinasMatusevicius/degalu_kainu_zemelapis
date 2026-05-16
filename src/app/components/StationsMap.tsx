@@ -80,6 +80,7 @@ export default function StationsMap({
   const [cursor, setCursor] = useState("auto");
   const [zoom, setZoom] = useState(INITIAL_ZOOM);
   const [bounds, setBounds] = useState<LngLatBounds | null>(null);
+  const [popupOpen, setPopupOpen] = useState(false);
   const mapRef = useRef<MapEvent["target"] | null>(null);
 
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
@@ -112,6 +113,7 @@ export default function StationsMap({
     if (!focusRequest || !mapRef.current) return;
     const s = stationByIdRef.current.get(focusRequest.id);
     if (!s) return;
+    setPopupOpen(true);
     mapRef.current.flyTo({
       center: [s.lon, s.lat],
       zoom: Math.max(FLY_TO_ZOOM, mapRef.current.getZoom()),
@@ -120,21 +122,36 @@ export default function StationsMap({
   }, [focusRequest]);
 
   const handlePillClick = useCallback((id: number) => {
-    setSelectedId((prev) => (prev === id ? null : id));
+    setSelectedId((prev) => {
+      if (prev === id) {
+        // Already focused — toggle popup, keep focus so the pill stays raised.
+        setPopupOpen((open) => !open);
+        return prev;
+      }
+      setPopupOpen(true);
+      return id;
+    });
   }, [setSelectedId]);
 
   // Both modes: clicking a GL feature zooms in so the HTML pill marker takes over.
+  // Also focus the station so its pill is raised and the popup is shown once
+  // we cross the takeover zoom threshold.
   const handleClick = useCallback((e: MapLayerMouseEvent) => {
     const feature = e.features?.[0];
     if (!feature) return;
     const geom = feature.geometry as Point;
     const [lon, lat] = geom.coordinates;
+    const id = feature.properties?.id as number | undefined;
+    if (typeof id === "number") {
+      setSelectedId(id);
+      setPopupOpen(true);
+    }
     e.target.flyTo({
       center: [lon, lat],
       zoom: Math.max(FLY_TO_ZOOM, e.target.getZoom()),
       duration: 800,
     });
-  }, []);
+  }, [setSelectedId]);
 
   const syncView = useCallback((map: MapEvent["target"]) => {
     setZoom(map.getZoom());
@@ -216,7 +233,7 @@ export default function StationsMap({
             );
           })}
 
-        {showPills && selectedId !== null && stationById.get(selectedId) && (() => {
+        {showPills && popupOpen && selectedId !== null && stationById.get(selectedId) && (() => {
           const s = stationById.get(selectedId)!;
           return (
             <Popup
@@ -225,7 +242,7 @@ export default function StationsMap({
               anchor="top"
               offset={28}
               closeOnClick={false}
-              onClose={() => setSelectedId(null)}
+              onClose={() => setPopupOpen(false)}
             >
               <div className="text-xs text-gray-800 min-w-[140px]">
                 <p className="font-semibold">{s.brand}</p>

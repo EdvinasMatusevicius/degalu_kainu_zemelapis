@@ -1,7 +1,11 @@
 "use client";
 
 import { useCallback, useEffect } from "react";
-import { Map as MapLibre, type MapProps } from "react-map-gl/maplibre";
+import {
+  Map as MapLibre,
+  FullscreenControl,
+  type MapProps,
+} from "react-map-gl/maplibre";
 import type { MapEvent } from "react-map-gl/maplibre";
 
 const STYLE_URL =
@@ -23,9 +27,10 @@ function silenceMissingImageWarnings() {
 
 type Props = Omit<MapProps, "mapStyle"> & {
   mapStyle?: string;
+  children?: React.ReactNode;
 };
 
-export default function Map({ mapStyle = STYLE_URL, onLoad, ...props }: Props) {
+export default function Map({ mapStyle = STYLE_URL, onLoad, children, ...props }: Props) {
   useEffect(() => {
     silenceMissingImageWarnings();
   }, []);
@@ -47,6 +52,9 @@ export default function Map({ mapStyle = STYLE_URL, onLoad, ...props }: Props) {
       style={{ width: "100%", height: "100%" }}
       onLoad={handleLoad}
       {...props}
-    />
+    >
+      <FullscreenControl position="top-right" />
+      {children}
+    </MapLibre>
   );
 }
