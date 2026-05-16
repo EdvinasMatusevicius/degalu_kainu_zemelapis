@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import MapView from "./Map";
 import { Popup } from "react-map-gl/maplibre";
 import type {
@@ -16,7 +16,7 @@ import StationCirclesBlue, {
 } from "./layers/StationCirclesBlue";
 import StationCardMarker from "./layers/StationCardMarker";
 import HeatRangeLayer, { priceToColor } from "./layers/HeatRangeLayer";
-import type { FuelKey } from "./StationsView";
+import type { FuelKey, FocusRequest } from "./StationsView";
 
 type Station = {
   id: number;
@@ -40,6 +40,9 @@ type Props = {
   stations: Station[];
   heatmap: Heatmap | null;
   fuel: FuelKey;
+  selectedId: number | null;
+  setSelectedId: React.Dispatch<React.SetStateAction<number | null>>;
+  focusRequest: FocusRequest | null;
 };
 
 const HEAT_LAYER_ID = "heat";
@@ -66,11 +69,18 @@ function toGeoJson(stations: Station[]): FeatureCollection<Point> {
   };
 }
 
-export default function StationsMap({ stations, heatmap, fuel }: Props) {
+export default function StationsMap({
+  stations,
+  heatmap,
+  fuel,
+  selectedId,
+  setSelectedId,
+  focusRequest,
+}: Props) {
   const [cursor, setCursor] = useState("auto");
   const [zoom, setZoom] = useState(INITIAL_ZOOM);
   const [bounds, setBounds] = useState<LngLatBounds | null>(null);
-  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const mapRef = useRef<MapEvent["target"] | null>(null);
 
   const geoJson = useMemo(() => toGeoJson(stations), [stations]);
 
@@ -90,9 +100,28 @@ export default function StationsMap({ stations, heatmap, fuel }: Props) {
     return m;
   }, [stations]);
 
+  // Read inside the focusRequest effect via a ref so the effect's deps stay
+  // limited to focusRequest — otherwise filter changes that mutate stationById
+  // would re-fire the flyTo.
+  const stationByIdRef = useRef(stationById);
+  useEffect(() => {
+    stationByIdRef.current = stationById;
+  }, [stationById]);
+
+  useEffect(() => {
+    if (!focusRequest || !mapRef.current) return;
+    const s = stationByIdRef.current.get(focusRequest.id);
+    if (!s) return;
+    mapRef.current.flyTo({
+      center: [s.lon, s.lat],
+      zoom: Math.max(FLY_TO_ZOOM, mapRef.current.getZoom()),
+      duration: 800,
+    });
+  }, [focusRequest]);
+
   const handlePillClick = useCallback((id: number) => {
     setSelectedId((prev) => (prev === id ? null : id));
-  }, []);
+  }, [setSelectedId]);
 
   // Both modes: clicking a GL feature zooms in so the HTML pill marker takes over.
   const handleClick = useCallback((e: MapLayerMouseEvent) => {
@@ -114,6 +143,7 @@ export default function StationsMap({ stations, heatmap, fuel }: Props) {
 
   const handleLoad = useCallback(
     (e: MapEvent) => {
+      mapRef.current = e.target;
       syncView(e.target);
     },
     [syncView],

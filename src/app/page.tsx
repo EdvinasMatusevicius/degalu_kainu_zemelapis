@@ -56,6 +56,7 @@ async function getLatestPrices() {
 
   const rows = await db
     .select({
+      id: stations.id,
       brand: stations.brand,
       municipality: stations.municipality,
       address: stations.address,

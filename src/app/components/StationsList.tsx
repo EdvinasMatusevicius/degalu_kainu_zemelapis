@@ -4,6 +4,7 @@ import { Fragment, useMemo, useState } from "react";
 import type { FuelKey } from "./StationsView";
 
 type TableRow = {
+  id: number;
   brand: string;
   municipality: string;
   address: string;
@@ -11,6 +12,26 @@ type TableRow = {
   priceDiesel: string | null;
   priceLpg: string | null;
 };
+
+function MapPinIcon() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="shrink-0"
+    >
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  );
+}
 
 type SortColumn = "price95" | "priceDiesel" | "priceLpg";
 type SortDir = "asc" | "desc";
@@ -44,7 +65,14 @@ function SortIndicator({ sort, column }: { sort: Sort; column: SortColumn }) {
   );
 }
 
-export default function StationsList({ rows, fuel }: { rows: TableRow[]; fuel: FuelKey }) {
+type Props = {
+  rows: TableRow[];
+  fuel: FuelKey;
+  mappableIds: Set<number>;
+  onFocusStation: (id: number) => void;
+};
+
+export default function StationsList({ rows, fuel, mappableIds, onFocusStation }: Props) {
   const [expanded, setExpanded] = useState<number | null>(null);
   const [sort, setSort] = useState<Sort>(null);
   const [locationExpanded, setLocationExpanded] = useState(false);
@@ -142,7 +170,21 @@ export default function StationsList({ rows, fuel }: { rows: TableRow[]; fuel: F
               onClick={() => setExpanded(expanded === i ? null : i)}
               className="cursor-pointer hover:bg-foreground/5"
             >
-              <td className={textCell}><span className={truncated}>{row.brand}</span></td>
+              <td className={textCell}>
+                {mappableIds.has(row.id) ? (
+                  <button
+                    type="button"
+                    onClick={(e) => { e.stopPropagation(); onFocusStation(row.id); }}
+                    className="inline-flex items-center gap-1.5 cursor-pointer hover:text-foreground/70 text-left w-full"
+                    title="Rodyti žemėlapyje"
+                  >
+                    <MapPinIcon />
+                    <span className={truncated}>{row.brand}</span>
+                  </button>
+                ) : (
+                  <span className={truncated}>{row.brand}</span>
+                )}
+              </td>
               <td
                 className={`${textCell} ${!locationExpanded ? "cursor-pointer" : ""}`}
                 onClick={

@@ -18,6 +18,7 @@ type MapStation = {
 };
 
 type TableRow = {
+  id: number;
   brand: string;
   municipality: string;
   address: string;
@@ -25,6 +26,8 @@ type TableRow = {
   priceDiesel: string | null;
   priceLpg: string | null;
 };
+
+export type FocusRequest = { id: number; nonce: number };
 
 export type FuelKey = "all" | "dyzelis" | "a95" | "lpg";
 export type ViewMode = "operator" | "heatmap";
@@ -68,6 +71,15 @@ export default function StationsView({ mapStations, rows }: Props) {
   const [fuel, setFuel] = useState<FuelKey>("all");
   const [view, setView] = useState<ViewMode>("operator");
   const [selectedBrands, setSelectedBrands] = useState<Set<string>>(new Set());
+  const [selectedId, setSelectedId] = useState<number | null>(null);
+  const [focusRequest, setFocusRequest] = useState<FocusRequest | null>(null);
+
+  // Always bumps the nonce so clicking the same row's pin twice re-focuses,
+  // letting the user recover after panning away by mistake.
+  const focusStation = useCallback((id: number) => {
+    setSelectedId(id);
+    setFocusRequest((prev) => ({ id, nonce: (prev?.nonce ?? 0) + 1 }));
+  }, []);
 
   const allBrands = useMemo(
     () => Array.from(new Set(mapStations.map((s) => s.brand))).sort((a, b) => a.localeCompare(b)),
@@ -124,6 +136,11 @@ export default function StationsView({ mapStations, rows }: Props) {
     return brandFilteredRows.filter((r) => r[property] != null);
   }, [brandFilteredRows, fuel]);
 
+  const mappableIds = useMemo(
+    () => new Set(visibleMapStations.map((s) => s.id)),
+    [visibleMapStations],
+  );
+
   const heatmap = useMemo(() => {
     if (view !== "heatmap" || fuel === "all") return null;
     const property = FUEL_PROPERTY[fuel];
@@ -172,13 +189,25 @@ export default function StationsView({ mapStations, rows }: Props) {
 
         <div className="stations-grid__map flex flex-col gap-1 min-h-0">
           <div className="flex-1 min-h-0">
-            <StationsMap stations={visibleMapStations} heatmap={heatmap} fuel={fuel} />
+            <StationsMap
+              stations={visibleMapStations}
+              heatmap={heatmap}
+              fuel={fuel}
+              selectedId={selectedId}
+              setSelectedId={setSelectedId}
+              focusRequest={focusRequest}
+            />
           </div>
           <p className="text-xs text-foreground/50">{visibleMapStations.length} stotys su koordinatėmis</p>
         </div>
 
         <div className="stations-grid__list overflow-y-auto border border-foreground/20 rounded-lg min-h-0">
-          <StationsList rows={filteredRows} fuel={fuel} />
+          <StationsList
+            rows={filteredRows}
+            fuel={fuel}
+            mappableIds={mappableIds}
+            onFocusStation={focusStation}
+          />
         </div>
 
       </div>
