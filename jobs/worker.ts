@@ -62,7 +62,7 @@ function startTodayChain(): void {
 }
 
 async function isTodayInDb(): Promise<boolean> {
-  const today = new Date().toISOString().split('T')[0]
+  const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Vilnius' })
   const [{ latest }] = await db.select({ latest: max(fuelPrices.priceDate) }).from(fuelPrices)
   return latest === today
 }

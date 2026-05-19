@@ -39,6 +39,7 @@ services:
       dockerfile: Dockerfile.worker
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/degalu_zemelapis
+      TZ: Europe/Vilnius
     depends_on:
       db:
         condition: service_healthy
