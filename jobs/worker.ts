@@ -22,6 +22,10 @@ function isWeekend(d: Date): boolean {
   return day === 0 || day === 6
 }
 
+function fmtLT(d: Date): string {
+  return d.toLocaleString('sv-SE', { timeZone: 'Europe/Vilnius' })
+}
+
 function todayAtChainStart(): Date {
   const d = new Date()
   d.setHours(CHAIN_START_HOUR, 0, 0, 0)
@@ -40,7 +44,7 @@ function nextWeekdayAtChainStart(): Date {
 
 function scheduleNextChain(): void {
   const at = nextWeekdayAtChainStart()
-  logger.info(`[worker] Next chain at ${at.toISOString()}`)
+  logger.info(`[worker] Next chain at ${fmtLT(at)}`)
   state = { kind: 'waiting', runAt: at.getTime() }
 }
 
@@ -57,7 +61,7 @@ function startTodayChain(): void {
   }
 
   const nextSlotTime = today11 + nextSlotIndex * RETRY_INTERVAL_MS
-  logger.info(`[worker] Today's chain: ${attemptsLeft} attempts left, next at ${new Date(nextSlotTime).toISOString()}`)
+  logger.info(`[worker] Today's chain: ${attemptsLeft} attempts left, next at ${fmtLT(new Date(nextSlotTime))}`)
   state = { kind: 'in-chain', runAt: nextSlotTime, attemptsLeft }
 }
 
@@ -124,7 +128,7 @@ async function tick(): Promise<void> {
     }
 
     const nextSlotTime = slotTime + RETRY_INTERVAL_MS
-    logger.info(`[worker] Stale — next attempt at ${new Date(nextSlotTime).toISOString()} (${newAttemptsLeft} left)`)
+    logger.info(`[worker] Stale — next attempt at ${fmtLT(new Date(nextSlotTime))} (${newAttemptsLeft} left)`)
     state = { kind: 'in-chain', runAt: nextSlotTime, attemptsLeft: newAttemptsLeft }
   } finally {
     scraping = false
