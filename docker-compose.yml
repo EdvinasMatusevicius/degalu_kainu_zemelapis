@@ -49,6 +49,24 @@ services:
     networks:
       - app-network
 
+  backup:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    user: root
+    environment:
+      PGPASSWORD: postgres
+      TZ: Europe/Vilnius
+    volumes:
+      - ./data/backups/daily:/backups/daily
+      - ./data/backups/monthly:/backups/monthly
+      - ./jobs/backup/backup.sh:/backup.sh:ro
+    entrypoint: ["/bin/sh", "/backup.sh"]
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+
 volumes:
   postgres_data:
 

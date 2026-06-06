@@ -21,7 +21,11 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
   const rows = data['Degalų kainos'] ?? []
   const dataRows = rows.filter((row) => typeof row[0] === 'number')
 
-  const priceDate = excelSerialToDate(dataRows[0][0] as number)
+  const priceDate = mostCommonDate(dataRows)
+  const strayCount = dataRows.filter((r) => excelSerialToDate(r[0] as number) !== priceDate).length
+  if (strayCount > 0) {
+    logger.warn(`[scraper] Dropping ${strayCount} row(s) whose date != canonical ${priceDate}`)
+  }
 
   const existing = await db.select({ id: fuelPrices.id }).from(fuelPrices).where(eq(fuelPrices.priceDate, priceDate)).limit(1)
   if (existing.length > 0) {
@@ -30,7 +34,8 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
   }
 
   for (const row of dataRows) {
-    const rowDate = excelSerialToDate(row[0] as number)
+    if (excelSerialToDate(row[0] as number) !== priceDate) continue
+
     const brand = row[1] as string
     const municipality = row[2] as string
     const address = row[3] as string
@@ -48,7 +53,7 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
     await db
       .insert(fuelPrices)
       .values({
-        priceDate: rowDate,
+        priceDate,
         stationId: station.id,
         price95: toPrice(row[4]),
         priceDiesel: toPrice(row[5]),
@@ -64,6 +69,23 @@ async function saveToDb(data: Record<string, unknown[][]>): Promise<void> {
 
 function excelSerialToDate(serial: number): string {
   return new Date((serial - 25569) * 86400 * 1000).toISOString().split('T')[0]
+}
+
+function mostCommonDate(dataRows: unknown[][]): string {
+  const counts = new Map<string, number>()
+  for (const row of dataRows) {
+    const d = excelSerialToDate(row[0] as number)
+    counts.set(d, (counts.get(d) ?? 0) + 1)
+  }
+  let bestDate = ''
+  let bestCount = -1
+  for (const [d, c] of counts) {
+    if (c > bestCount) {
+      bestDate = d
+      bestCount = c
+    }
+  }
+  return bestDate
 }
 
 function toPrice(value: unknown): string | null {
