@@ -16,13 +16,26 @@ interface CatalogJson {
   stations: CatalogEntry[]
 }
 
+// Match key tolerant of the formatting drift between the ena.lt price feed and the
+// catalog: case, punctuation, whitespace, and the trailing 5-digit postal code the
+// feed appends (e.g. ", 50313") but the catalog usually omits. This normalization is
+// comparison-only — it is never written back, so the stored address (the price join
+// key) is untouched. Verified to produce no catalog-internal key collisions.
+function stationKey(brand: string, address: string): string {
+  const norm = (s: string) =>
+    s.replace(/,?\s*(LT-?)?\d{5}\b\s*$/i, '') // drop trailing postal code
+      .toLowerCase()
+      .replace(/[^0-9a-ząčęėįšųūž]/gi, '') // drop punctuation & whitespace
+  return `${norm(brand)}|||${norm(address)}`
+}
+
 function loadCatalog(): Map<string, CatalogEntry> {
   const filePath = join(process.cwd(), 'data', 'station_catalog.json')
   const raw: CatalogJson = JSON.parse(readFileSync(filePath, 'utf8'))
   const map = new Map<string, CatalogEntry>()
   for (const entry of raw.stations) {
     if (entry.lat != null && entry.lng != null) {
-      map.set(`${entry.company}|||${entry.address}`, entry)
+      map.set(stationKey(entry.company, entry.address), entry)
     }
   }
   return map
@@ -37,7 +50,7 @@ export async function updateCoordinatesFromCatalog(): Promise<void> {
 
   let matched = 0
   for (const station of allStations) {
-    const entry = catalog.get(`${station.brand}|||${station.address}`)
+    const entry = catalog.get(stationKey(station.brand, station.address))
     if (entry) {
       await db.update(stations)
         .set({ lat: entry.lat.toString(), lon: entry.lng.toString() })
