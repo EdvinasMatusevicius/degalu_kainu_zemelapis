@@ -17,6 +17,7 @@ import StationCirclesBlue, {
 import StationCardMarker from "./layers/StationCardMarker";
 import HeatRangeLayer, { priceToColor } from "./layers/HeatRangeLayer";
 import type { FuelKey, FocusRequest } from "./StationsView";
+import FavoriteStar from "./FavoriteStar";
 
 type Station = {
   id: number;
@@ -245,7 +246,10 @@ export default function StationsMap({
               onClose={() => setPopupOpen(false)}
             >
               <div className="text-xs text-gray-800 min-w-[140px]">
-                <p className="font-semibold">{s.brand}</p>
+                <p className="font-semibold flex items-center gap-1.5">
+                  <FavoriteStar id={s.id} size={14} inactiveClass="text-gray-300 hover:text-gray-500" />
+                  {s.brand}
+                </p>
                 <p>
                   {s.address}, {s.municipality}
                 </p>

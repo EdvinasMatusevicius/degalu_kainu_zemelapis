@@ -2,6 +2,8 @@
 
 import { Fragment, useMemo, useState } from "react";
 import type { FuelKey } from "./StationsView";
+import { useFavorites } from "./useFavorites";
+import FavoriteStar from "./FavoriteStar";
 
 type TableRow = {
   id: number;
@@ -76,6 +78,7 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
   const [expanded, setExpanded] = useState<number | null>(null);
   const [sort, setSort] = useState<Sort>(null);
   const [locationExpanded, setLocationExpanded] = useState(false);
+  const { favorites } = useFavorites();
 
   const show95     = fuel === "all" || FUEL_COLUMN[fuel] === "price95";
   const showDiesel = fuel === "all" || FUEL_COLUMN[fuel] === "priceDiesel";
@@ -92,10 +95,12 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
   };
 
   const sortedRows = useMemo(() => {
-    if (!sort) return rows;
-    const { column, dir } = sort;
-    const sign = dir === "asc" ? 1 : -1;
-    return [...rows].sort((a, b) => {
+    // Within-group price comparison; 0 when no sort is active so the array's
+    // stable order (brand/municipality from the query) is preserved.
+    const byPrice = (a: TableRow, b: TableRow) => {
+      if (!sort) return 0;
+      const { column, dir } = sort;
+      const sign = dir === "asc" ? 1 : -1;
       const av = a[column];
       const bv = b[column];
       // nulls always at the bottom regardless of direction
@@ -103,8 +108,17 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
       if (av == null) return 1;
       if (bv == null) return -1;
       return (parseFloat(av) - parseFloat(bv)) * sign;
+    };
+
+    // Favorites form their own block at the top; the active price sort then
+    // orders stations *within* each block (favorites, then the rest).
+    return [...rows].sort((a, b) => {
+      const aFav = favorites.has(a.id) ? 0 : 1;
+      const bFav = favorites.has(b.id) ? 0 : 1;
+      if (aFav !== bFav) return aFav - bFav;
+      return byPrice(a, b);
     });
-  }, [rows, sort]);
+  }, [rows, sort, favorites]);
 
   if (rows.length === 0) {
     return <p className="text-foreground/50 text-sm p-4">Nerasta stočių pagal paieškos užklausą.</p>;
@@ -116,6 +130,7 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
     <table className="border-collapse text-xs md:text-sm w-full">
       <thead className="sticky top-0 bg-background z-10">
         <tr>
+          <th className={`${textCell} text-center w-8 text-foreground/40`} aria-label="Mėgstami">★</th>
           <th className={`${textCell} text-left`}>Tinklas</th>
           <th
             className={`${textCell} text-left cursor-pointer select-none hover:bg-foreground/5`}
@@ -170,6 +185,9 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
               onClick={() => setExpanded(expanded === i ? null : i)}
               className="cursor-pointer hover:bg-foreground/5"
             >
+              <td className={`${textCell} text-center`}>
+                <FavoriteStar id={row.id} />
+              </td>
               <td className={textCell}>
                 {mappableIds.has(row.id) ? (
                   <button
@@ -204,7 +222,7 @@ export default function StationsList({ rows, fuel, mappableIds, onFocusStation }
             </tr>
             {expanded === i && (
               <tr className="md:hidden">
-                <td colSpan={3 + Number(show95) + Number(showDiesel) + Number(showLpg)} className="px-3 py-2 text-xs text-foreground/70 bg-foreground/5 border border-foreground/20">
+                <td colSpan={4 + Number(show95) + Number(showDiesel) + Number(showLpg)} className="px-3 py-2 text-xs text-foreground/70 bg-foreground/5 border border-foreground/20">
                   {row.municipality} — {row.address}
                 </td>
               </tr>
