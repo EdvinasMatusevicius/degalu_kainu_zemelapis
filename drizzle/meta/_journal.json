@@ -15,12 +15,19 @@
       "when": 1777721318561,
       "tag": "0001_unknown_vivisector",
       "breakpoints": true
-    }
-    ,{
+    },
+    {
       "idx": 2,
       "version": "7",
       "when": 1777852800000,
       "tag": "0002_drop_osm_stations",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1781376434377,
+      "tag": "0003_add_legal_name",
       "breakpoints": true
     }
   ]

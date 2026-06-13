@@ -1,7 +1,8 @@
 import { schedule } from 'node-cron'
 import { max } from 'drizzle-orm'
 import { scrapeFuelPrices } from './scrapeFuelPrices'
-import { updateCoordinatesFromCatalog } from './coordinates'
+// Coordinate enrichment disabled — catalog matching is considered complete. Re-enable if needed.
+// import { updateCoordinatesFromCatalog } from './coordinates'
 import { logger } from './logger'
 import { db } from '../src/lib/db'
 import { fuelPrices } from '../src/lib/schema'
@@ -135,8 +136,8 @@ async function tick(): Promise<void> {
   }
 }
 
-updateCoordinatesFromCatalog()
-  .catch((err: unknown) => logger.error({ err }, 'Startup coordinate sync failed'))
+// updateCoordinatesFromCatalog()
+//   .catch((err: unknown) => logger.error({ err }, 'Startup coordinate sync failed'))
 
 bootstrap()
   .catch((err: unknown) => {

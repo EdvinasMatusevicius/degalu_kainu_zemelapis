@@ -2,7 +2,11 @@ import { pgTable, serial, varchar, numeric, date, timestamp, integer, unique, in
 
 export const stations = pgTable('stations', {
   id: serial('id').primaryKey(),
+  // Clean, short name shown to users and used in filters (e.g. "Viada").
   brand: varchar('brand').notNull(),
+  // Legal-entity name from the ena.lt feed (e.g. "UAB Viada LT"). Used as a matching
+  // aid against the scraped data; not shown to users. Populated by the scraper.
+  legalName: varchar('legal_name'),
   municipality: varchar('municipality').notNull(),
   address: varchar('address').notNull(),
   lat: numeric('lat', { precision: 10, scale: 7 }),

@@ -4,11 +4,13 @@ export async function register() {
     const { db } = await import('./lib/db')
     await migrate(db, { migrationsFolder: './drizzle' })
 
-    try {
-      const { updateCoordinatesFromCatalog } = await import('../jobs/coordinates')
-      await updateCoordinatesFromCatalog()
-    } catch (err) {
-      console.error('[coordinates] Startup coordinate update failed:', err)
-    }
+    // Coordinate enrichment disabled — catalog matching is considered complete.
+    // Re-enable if the station catalog is refreshed.
+    // try {
+    //   const { updateCoordinatesFromCatalog } = await import('../jobs/coordinates')
+    //   await updateCoordinatesFromCatalog()
+    // } catch (err) {
+    //   console.error('[coordinates] Startup coordinate update failed:', err)
+    // }
   }
 }
