@@ -4,6 +4,7 @@ import { useState, useMemo, useCallback } from "react";
 import StationsMap from "./StationsMap";
 import StationsList from "./StationsList";
 import StationsFilter from "./StationsFilter";
+import { useFavorites } from "./useFavorites";
 
 type MapStation = {
   id: number;
@@ -71,8 +72,11 @@ export default function StationsView({ mapStations, rows }: Props) {
   const [fuel, setFuel] = useState<FuelKey>("all");
   const [view, setView] = useState<ViewMode>("operator");
   const [selectedBrands, setSelectedBrands] = useState<Set<string>>(new Set());
+  const [favoritesOnly, setFavoritesOnly] = useState(false);
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [focusRequest, setFocusRequest] = useState<FocusRequest | null>(null);
+
+  const { favorites } = useFavorites();
 
   // Always bumps the nonce so clicking the same row's pin twice re-focuses,
   // letting the user recover after panning away by mistake.
@@ -123,18 +127,29 @@ export default function StationsView({ mapStations, rows }: Props) {
     [textFilteredRows, selectedBrands],
   );
 
+  // Favorites filter: when enabled, keep only stations the user has starred.
+  const favFilteredMapStations = useMemo(
+    () => (favoritesOnly ? brandFilteredMapStations.filter((s) => favorites.has(s.id)) : brandFilteredMapStations),
+    [brandFilteredMapStations, favoritesOnly, favorites],
+  );
+
+  const favFilteredRows = useMemo(
+    () => (favoritesOnly ? brandFilteredRows.filter((r) => favorites.has(r.id)) : brandFilteredRows),
+    [brandFilteredRows, favoritesOnly, favorites],
+  );
+
   // Fuel filter: keep stations that have a price for the selected fuel.
   const visibleMapStations = useMemo(() => {
-    if (fuel === "all") return brandFilteredMapStations;
+    if (fuel === "all") return favFilteredMapStations;
     const property = FUEL_PROPERTY[fuel];
-    return brandFilteredMapStations.filter((s) => s[property] != null);
-  }, [brandFilteredMapStations, fuel]);
+    return favFilteredMapStations.filter((s) => s[property] != null);
+  }, [favFilteredMapStations, fuel]);
 
   const filteredRows = useMemo(() => {
-    if (fuel === "all") return brandFilteredRows;
+    if (fuel === "all") return favFilteredRows;
     const property = FUEL_PROPERTY[fuel];
-    return brandFilteredRows.filter((r) => r[property] != null);
-  }, [brandFilteredRows, fuel]);
+    return favFilteredRows.filter((r) => r[property] != null);
+  }, [favFilteredRows, fuel]);
 
   const mappableIds = useMemo(
     () => new Set(visibleMapStations.map((s) => s.id)),
@@ -184,6 +199,8 @@ export default function StationsView({ mapStations, rows }: Props) {
             brands={allBrands}
             selectedBrands={selectedBrands}
             setSelectedBrands={setSelectedBrands}
+            favoritesOnly={favoritesOnly}
+            setFavoritesOnly={setFavoritesOnly}
           />
         </div>
 

@@ -13,6 +13,8 @@ type Props = {
   brands: string[];
   selectedBrands: Set<string>;
   setSelectedBrands: (next: Set<string>) => void;
+  favoritesOnly: boolean;
+  setFavoritesOnly: (value: boolean) => void;
 };
 
 const FUEL_OPTIONS: { value: FuelKey; label: string }[] = [
@@ -41,6 +43,8 @@ export default function StationsFilter({
   brands,
   selectedBrands,
   setSelectedBrands,
+  favoritesOnly,
+  setFavoritesOnly,
 }: Props) {
   const [expanded, setExpanded] = useState(false);
   const [brandsOpen, setBrandsOpen] = useState(false);
@@ -96,6 +100,36 @@ export default function StationsFilter({
         </button>
 
         <div className={`${expanded ? "flex" : "hidden"} md:flex flex-col md:flex-row md:items-end gap-2`}>
+          <div className={fieldClass}>
+            <span className={labelClass}>Mėgstami</span>
+            <button
+              type="button"
+              onClick={() => setFavoritesOnly(!favoritesOnly)}
+              aria-pressed={favoritesOnly}
+              title={favoritesOnly ? "Rodyti visas stotis" : "Rodyti tik mėgstamas"}
+              className={`flex-1 md:flex-initial flex items-center justify-center gap-1.5 border rounded px-2 py-1.5 text-sm transition-colors ${
+                favoritesOnly
+                  ? "border-amber-400 text-amber-400 bg-amber-400/10"
+                  : "border-foreground/20 text-foreground/70 bg-background hover:bg-foreground/5"
+              }`}
+            >
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 24 24"
+                fill={favoritesOnly ? "currentColor" : "none"}
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+              <span>Tik mėgstami</span>
+            </button>
+          </div>
+
           <div className={fieldClass}>
             <span className={`${labelClass} flex items-center gap-1`}>
               <span>Tinklas</span>
