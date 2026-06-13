@@ -5,6 +5,7 @@ import StationsMap from "./StationsMap";
 import StationsList from "./StationsList";
 import StationsFilter from "./StationsFilter";
 import { useFavorites } from "./useFavorites";
+import { useFilterState } from "./useFilterState";
 
 type MapStation = {
   id: number;
@@ -68,11 +69,13 @@ function priceRange(stations: MapStation[], property: FuelProperty) {
 }
 
 export default function StationsView({ mapStations, rows }: Props) {
-  const [filter, setFilter] = useState("");
-  const [fuel, setFuel] = useState<FuelKey>("all");
-  const [view, setView] = useState<ViewMode>("operator");
-  const [selectedBrands, setSelectedBrands] = useState<Set<string>>(new Set());
-  const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const {
+    filter, setFilter,
+    fuel, setFuel,
+    view, setView,
+    selectedBrands, setSelectedBrands,
+    favoritesOnly, setFavoritesOnly,
+  } = useFilterState();
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const [focusRequest, setFocusRequest] = useState<FocusRequest | null>(null);
 
@@ -95,7 +98,7 @@ export default function StationsView({ mapStations, rows }: Props) {
   const handleSetFuel = useCallback((next: FuelKey) => {
     setFuel(next);
     if (next === "all") setView("operator");
-  }, []);
+  }, [setFuel, setView]);
 
   const query = filter.toLowerCase().trim();
 
